@@ -1,0 +1,482 @@
+llama_query,llama_positive matches,llama_llm only matches,llama_gt only matches,llama_correct task inferences,llama_missed task inferences,llama_correct goal classifications,llama_missing goal classifications,llama_positive matches count,llama_llm only matches count,llama_gt only matches count,llama_correct task inferences count,llama_missed task inferences count
+"in terms of the readings, group the similar timestamps for the sants",[],"['aggregation', 'grouping']","['similarity', 'filter']",[],[],False,False,0,2,2,0,0
+"for o3, what is the distribution value",[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+"in the whole table, show me the best record of pm10",[],['find extremum'],['retrieve value'],[],[],True,False,0,1,1,0,0
+"based on their pollution, group the locations together that are similar",[],['clustering'],['cluster'],[],[],False,False,0,1,1,0,0
+please look at the o3 data and find the minimum number,['find extremum'],[],[],[],[],True,False,1,0,0,0,0
+in what manner are good air quality records dispersed throughout the monitored region,[],['relationship'],"['distribution', 'filter']",[],[],False,False,0,1,2,0,0
+are there any outliers in pm10 readings from a temporal perspective,[],['outlier detection'],['find anomalies'],[],[],True,False,0,1,1,0,0
+work out the quality of o3,[],['distribution'],['retrieve value'],[],[],False,False,0,1,1,0,0
+put the readings in order according to their pm 10 values,['sort'],[],[],[],[],True,False,1,0,0,0,0
+is distribution for pm10 value anything other than normal,[],['distribution check'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+show me a day with extremely bad air quality,[],['find extremum'],['filter'],[],[],False,False,0,1,1,0,0
+what days had really bad air quality,['filter'],[],[],['filter'],['filter'],False,False,1,0,0,1,1
+give me the count of missing readings in this table,['retrieve value'],['count'],[],[],[],True,False,1,1,0,0,0
+"show me the data attribute that has the most na values, for example the hardest data points to collect",[],['find pattern'],['filter'],[],[],False,False,0,1,1,0,0
+describe the change in air quality over one day describe the change in each air pollutant,['trend'],"['relationship', 'correlation']",[],['trend'],['trend'],False,False,1,2,0,1,1
+could you search all available values for pm10 quality,['retrieve value'],[],[],[],[],True,False,1,0,0,0,0
+are the o3 value and the pm10 value dependent on each other,[],['correlation'],['dependency'],[],[],False,False,0,1,1,0,0
+"across the monitored region, what is the distribution of records for good air quality",['distribution'],[],"['summarize', 'filter']",[],[],False,False,1,0,2,0,0
+what months are hurricanes most common,[],['distribution'],['find extremum'],[],[],True,False,0,1,1,0,0
+where are storms most common depending on the time of year,[],['relationship'],['compare'],[],[],False,False,0,1,1,0,0
+are there more storms in recent years,[],"['correlation', 'trend']",['characterize distribution'],[],[],False,False,0,2,1,0,0
+what does the distribution of the storms look like,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what is the most frequent status over the year,[],['frequency distribution'],['find extremum'],[],[],False,False,0,1,1,0,0
+"what is the main factor depending on different status (wind, time, pressure, or etc)",[],"['correlation', 'relationship']",['dependency'],[],[],True,False,0,2,1,0,0
+what was the name of the earliest storm,['retrieve value'],[],[],['retrieve value'],['retrieve value'],False,False,1,0,0,1,1
+how many hurricanes,[],['count'],"['compute derived value', 'filter']",[],[],False,False,0,1,2,0,0
+what is the name of the largest storm,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+what storm produced the greatest air pressure,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+how many storms are named caroline,[],['retrieve count'],['retrieve value'],[],[],False,False,0,1,1,0,0
+what storm produced the least air pressure,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+what storm had the greatest diameter of tropical storm strength winds,[],['find_extremum'],"['find extremum', 'filter']",[],[],False,False,0,1,2,0,0
+what storm had the greatest diameter of hurricane strength winds,[],['find extreme'],"['find extremum', 'filter']",[],[],False,False,0,1,2,0,0
+"how many storms occur per year, on average",[],['aggregation'],['compute derived value'],[],[],False,False,0,1,1,0,0
+"on average, what is the first date that a tropical cyclone (tropical depression, tropical storm, or hurricane) forms on every year",[],"['aggregate', 'calculate statistic']","['compute derived value', 'filter']",[],[],False,False,0,2,2,0,0
+is there a correlation between wind speed and air pressure,[],['correlation'],['correlate'],[],[],False,False,0,1,1,0,0
+is there a correlation between the duration of the storm and wind speed,[],['correlation'],['correlate'],[],[],False,False,0,1,1,0,0
+where have all hurricanes been recorded on the globe where are they more common,[],"['spatial distribution', 'correlation']","['characterize distribution', 'filter']",[],[],True,False,0,2,2,0,0
+what lat/long locations are most likely to experience hurricanes,[],"['correlation', 'relationship']","['characterize distribution', 'filter']",[],[],True,False,0,2,2,0,0
+what are lengths/timings of hurricane seasons in different regions of the world,[],"['correlation', 'distribution']","['compute derived value', 'compare']",[],[],True,False,0,2,2,0,0
+what is the average storm length,[],['aggregation'],['compute derived value'],[],[],False,False,0,1,1,0,0
+what is the average time that it takes to go from depression to storm,[],['aggregation'],['compute derived value'],[],[],False,False,0,1,1,0,0
+"what is the relationship, if any, between wind and pressure",[],['relationship'],['correlation'],[],[],False,False,0,1,1,0,0
+how does wind change over the course of each hurricane,['trend'],[],['filter'],['trend'],['trend'],False,False,1,0,1,1,1
+average tropical storm diameter,[],['average'],"['compute derived value', 'filter']",[],[],True,False,0,1,2,0,0
+what is the relationship between storm day and hu_diameter,[],['relationship'],['dependency'],[],[],False,False,0,1,1,0,0
+are there any repeat names of storms,[],['check duplicate'],['summarize'],[],[],True,False,0,1,1,0,0
+what month has the strongest hurricanes,[],['aggregate'],"['find extremum', 'filter']",[],[],False,False,0,1,2,0,0
+how has wind speed changed over time,['trend'],['correlation'],[],['trend'],['trend'],True,False,1,1,0,1,1
+what is the maximum pressure of a certain hurricane,['find extremum'],[],"['summarize', 'filter']",['find extremum'],['find extremum'],False,False,1,0,2,1,1
+relationship between position and the strength of the hurricane,[],['relationship'],"['dependency', 'filter']",[],[],False,False,0,1,2,0,0
+average time for each hurricane status,[],['aggregation'],"['compute derived value', 'compare']",[],[],True,False,0,1,2,0,0
+which hurricane lasted the longest,[],['find duration'],"['compare', 'filter']",[],[],True,False,0,1,2,0,0
+can you tell me the sales distribution of type 4046 in 2015,['distribution'],[],['filter'],[],[],True,False,1,0,1,0,0
+what are the groups of regions according to three types of avocados sales ratio,[],"['clustering/grouping', 'correlation']",['cluster'],[],[],True,False,0,2,1,0,0
+"using the three types of avocado's sales ratio, provide the groups of regions",[],"['relationship', 'categorization']",['cluster'],[],[],False,False,0,2,1,0,0
+provide the distribution of the sales in 2015 of type 4046,['distribution'],[],['filter'],[],[],True,False,1,0,1,0,0
+the oldest user was born in what year,['find extremum'],[],[],['find extremum'],['find extremum'],False,False,1,0,0,1,1
+indicate all the travels taking more than 1000 minutes,[],['filter'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+"show me a list of the tripe that take longer than 1,000 minutes",['retrieve value'],['filter'],[],[],[],True,False,1,1,0,0,0
+tell me the distribution of travel times between wells st & elm st and lake shore dr & ohio st,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+show me the relationship between age and travel time,[],['relationship'],['correlation'],[],[],False,False,0,1,1,0,0
+do you know of any trip that would take longer than 1000 minutes,[],['find extremum'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+show me a list of neighborhoods with the number of male births from least to most,[],"['rank', 'sort']",['retrieve value'],[],[],True,False,0,2,1,0,0
+show me the distribution of births across all districts in 2017,['distribution'],[],['filter'],[],[],False,False,1,0,1,0,0
+let me know if there are groups of neighborhoods with similar birth gender ratios,[],"['clustering', 'similarity measurement']","['compares', 'culstering']",[],[],False,False,0,2,2,0,0
+retrieve the neighborhood with more than 100 female births in ciutat vella in 2013,[],"['filter', 'selection']",['retrieve value'],[],[],True,False,0,2,1,0,0
+which neighborhood in ciutat vella has more than 100 females born in the year 2013,[],"['filter', 'selection']",['retrieve value'],[],[],False,False,0,2,1,0,0
+"barcelona's districts, please list each",[],['retrieve distinct values'],"['retrieve value', 'filter']",[],[],True,False,0,1,2,0,0
+what is the distribution of all births in all districts between 2013 and 2017,['distribution'],[],['filter'],[],[],True,False,1,0,1,0,0
+what neighborhood had 56 boys born in 2017,[],['retrieval'],"['retrieve value', 'filter']",[],[],True,False,0,1,2,0,0
+is there a correlation between acceleration and horsepower,['correlation'],[],[],[],[],True,False,1,0,0,0,0
+how many heavy cars are in the dataset,[],['retrieve count'],['compute derived value'],[],[],True,False,0,1,1,0,0
+are there any american 5 cylinder cars,['filter'],[],[],[],[],True,False,1,0,0,0,0
+how does displacement relate to fuel economy for cars from europe v usa,[],['relationship'],"['dependency', 'filter']",[],[],False,False,0,1,2,0,0
+which cylinder cars have the highest fuel economy,[],['find extreme'],['dependency'],[],[],False,False,0,1,1,0,0
+which countries have the most cars in this dataset,[],['aggregation'],"['compare', 'find extremum']",[],[],False,False,0,1,2,0,0
+which countries have the highest acceleration for cars of different cylinders,['compare'],['rank'],[],['compare'],['compare'],False,False,1,1,0,1,1
+how do the horsepowers of the cars from different regions change with years,[],['relationship'],['trend'],[],[],True,False,0,1,1,0,0
+the distribution of the number of cylinders of cars based on different origins,['distribution'],[],['compare'],[],[],False,False,1,0,1,0,0
+what is the correlation between displacement and mpg of cars with different origins,['correlation'],[],[],[],[],True,False,1,0,0,0,0
+count the number of cars based on their origins,[],['distribution'],['compare'],[],[],True,False,0,1,1,0,0
+what is the correlation between horsepower and acceleration,['correlation'],[],[],[],[],True,False,1,0,0,0,0
+is there a correlation between cars' horsepower and acceleration,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+"how does displacement relate to mpg for individual models, partitioned by country",[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+"how does weight relate to acceleration for car models, small multiples by origin",[],"['correlation', 'relationship', 'small multiple']",['dependency'],[],[],True,False,0,3,1,0,0
+how does horsepower relate to acceleration for individual car models,['correlation'],['relationship'],[],[],[],True,False,1,1,0,0,0
+"compare the number of models in usa, japan and europe",[],"['aggregation', 'comparison']","['compare', 'filter']",[],[],True,False,0,2,2,0,0
+does higher horsepower mean lower acceleration,['correlation'],[],[],['correlation'],['correlation'],False,False,1,0,0,1,1
+how many cylinders do cars manufactured in different countries have,[],"['distribution', 'aggregation']",['compare'],[],[],True,False,0,2,1,0,0
+compare car cylinder count against acceleration across countries,[],"['relationship', 'correlation']",['compare'],[],[],False,False,0,2,1,0,0
+how many cars do each country manufacture,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what's the mileage for cars based on the number of cylinders present,[],['correlation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+does higher cylinder count mean mean lower mileage,['correlation'],[],[],['correlation'],['correlation'],True,False,1,0,0,1,1
+how does mileage relate to cylinder count,[],['relationship'],['dependency'],[],[],True,False,0,1,1,0,0
+what is the average mpg for different cylinders,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what is the relation between horsepower and acceleration,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+how weight varies each year,[],['relationship'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+how is acceleration related to horsepower,[],['relationship'],['correlation'],[],[],False,False,0,1,1,0,0
+how has horsepower changed over time by country,[],"['correlation', 'relationship']","['trend', 'characterize distribution']",[],[],True,False,0,2,2,0,0
+have cars gotten lighter over time,[],['correlation'],['trend'],[],[],True,False,0,1,1,0,0
+how many models are proudced by each country,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what is the average weight of cars over time,['trend'],['average'],[],['trend'],['trend'],False,False,1,1,0,1,1
+what is the distribution of weight across all cars,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+how much do various cars weigh,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what is the range of weights for all cars,[],['range'],['determine range'],[],[],False,False,0,1,1,0,0
+where do the cars originate from,[],['retrieval'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+how has avg (horsepower) evolved over time | segregate it by the car origin,[],"['correlation', 'aggregation']","['trend', 'comparisoon']",[],[],False,False,0,2,2,0,0
+compare avg (acceleration) with cylinders | segregate the cylinders by their origin,[],"['correlation', 'segregation']",['compare'],[],[],False,False,0,2,1,0,0
+how does avg (weight) evolve over the years,['trend'],[],[],[],[],False,False,1,0,0,0,0
+how does the acceleration of cars from different countries vary by the number of cylinders,[],"['correlation', 'relationship']",['compare'],[],[],True,False,0,2,1,0,0
+how does acceleration vary by weight for cars from different regions,[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+what is the average mpg for cars with different cylinders,[],['aggregation'],['dependency'],[],[],False,False,0,1,1,0,0
+how does mpg vary by the number of cylinders in a car,[],['relationship'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+how does acceleration change with horsepower,['correlation'],[],[],['correlation'],['correlation'],False,False,1,0,0,1,1
+how does acceleration behave compared to horsepower,[],['relationship'],['correlation'],[],[],False,False,0,1,1,0,0
+how many cars are from each region,[],['aggregation'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+"how does mpg compare to displacement, broken out by region",['compare'],['relationship'],[],[],[],False,False,1,1,0,0,0
+"for each region, how does a car's mpg vary with displacement",[],['relationship'],['compare'],[],[],False,False,0,1,1,0,0
+how has horsepower changed over time in each region,['trend'],[],['compare'],[],[],True,False,1,0,1,0,0
+what is the breakdown of cars by the number of cylinders in each region,[],"['breakdown', 'aggregation']",['characterize distribution'],[],[],True,False,0,2,1,0,0
+how many cars have various numbers of cylinders in each region,[],['distribution'],['compute derived value'],[],[],False,False,0,1,1,0,0
+what is the average weight of cars by model year,[],['aggregate'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+how has the average weight of cars changed over the years,['trend'],[],[],['trend'],['trend'],False,False,1,0,0,1,1
+how can the population of ashley be illustrated to show distribution across five years,['distribution'],[],['filter'],[],[],False,False,1,0,1,0,0
+"how likely is it that, if i was born in 2000, i was born in a county with no less than 20,000 people",[],['probability estimation'],"['dependency', 'filter']",[],[],False,False,0,1,2,0,0
+give me the average population rating for ashley in the year 2000,[],['average'],['summarize'],[],[],True,False,0,1,1,0,0
+identify the county that has the least population each year,['find extremum'],['rank'],[],['find extremum'],['find extremum'],True,False,1,1,0,1,1
+what is the average population in 2000,[],['calculate aggregation'],['summarize'],[],[],True,False,0,1,1,0,0
+is there a regional concentration trend in gdp development,[],['relationship'],['trend'],[],[],True,False,0,1,1,0,0
+how are gdp and mteu correlated,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+is there an outlier within the value distribution of albinism that causes the result to be skewed,[],['outlier detection'],['find anomalies'],[],[],False,False,0,1,1,0,0
+"find all the types of genetic diseases with greater than 1,000 patients",['retrieve value'],['filter'],[],['retrieve value'],['retrieve value'],False,False,1,1,0,1,1
+tell me the maximum and minimum number of patients with autism across all regions,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+what is the spatial and temporal correlation of albinism,['correlation'],['relationship'],[],[],[],False,False,1,1,0,0,0
+does this data represent outliers in the number of patients,[],['outlier detection'],['find anomalies'],[],[],True,False,0,1,1,0,0
+take out the regions with a number of patients larger than 500,[],['filtering'],"['compute derived value', 'filter']",[],[],True,False,0,1,2,0,0
+"looking at the number of people in all regions with a visual impairment, what is the median",[],['aggregation'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+does the value distribution of albinism look skewed,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+is there an obvious clustering,[],['clustering'],['cluster'],[],[],True,False,0,1,1,0,0
+kindly rate the regions on the basis of the number of patients,[],"['ranking', 'aggregation']","['sort', 'summarize']",[],[],True,False,0,2,2,0,0
+give me the movie that received the most nominations,[],['aggregation'],['find extremum'],[],[],True,False,0,1,1,0,0
+"out of the winners for best performance by an actor in a motion picture- musical or comedy from 2003 to 2020, the most abnormal age belongs to which actor",[],['find anomaly'],[''],[],[],False,False,0,1,1,0,0
+can you organize the results of the table by sorting the list according to the age of the stars,['sort'],[],[],[],[],False,False,1,0,0,0,0
+can you list all the results in the table about the movie ' about  ',[],['retrieval'],['filter'],[],[],True,False,0,1,1,0,0
+what was the gender of all actors among all the final winners in the 60th ceremony,[],"['filter', 'retrieve attribute']",['characterize distribution'],[],[],False,False,0,2,1,0,0
+tell me who won the best performance by an actor in a motion picture- drama award at the 60th ceremony,['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+can you list all the results in the table about the movie ' about schmidt ',[],['retrieval'],['filter'],[],[],True,False,0,1,1,0,0
+i would like to review the dispersement of the amount of nominations,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+"in the 60th ceremony, the award for best performance by an actor in a motion picture was won by whom",['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+which actor was nominated for the most awards,[],['aggregation'],['retrieve value'],[],[],False,False,0,1,1,0,0
+can the actors nationality impact the outcome,[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+what was the number of candidates that were nominated for best performance by an actor in a motion picture-drama at he 60th ceremony,[],"['filter', 'count']",['retrieve value'],[],[],True,False,0,2,1,0,0
+what is the total number of movies released in the year 1998,[],['aggregate'],"['summarize', 'filter']",[],[],True,False,0,1,2,0,0
+can you tell me what movie won best original score in a motion picture in 1997,['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+what is the correlation between the nomination and the age of a star,['correlation'],[],[],[],[],True,False,1,0,0,0,0
+tell me the distribution for the book ratings,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+can you rearrange the table by book rating in descending order,['sort'],[],[],[],[],True,False,1,0,0,0,0
+what books have low ratings that seem suspect,['filter'],['retrieval'],[],[],[],True,False,1,1,0,0,0
+tell me the book ratings distribution,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+which author has worked with dark horse comics most frequently,[],['frequency'],"['find extremum', 'filter']",[],[],True,False,0,1,2,0,0
+please go and get all of the books written in english,[],['retrieval'],['filter'],[],[],True,False,0,1,1,0,0
+are there outliers in the book ratings,[],['find outlier'],['find anomalies'],[],[],False,False,0,1,1,0,0
+"of fiction books, which are written in english",[],"['filter', 'retrieve instances']",['retrieve value'],[],[],True,False,0,2,1,0,0
+how many books have been released by dark horse comics,[],['retrieval'],['filter'],[],[],False,False,0,1,1,0,0
+what is the most expensive book and who published it,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+show a list of similarly rated books,[],['retrieval'],['similarity'],[],[],False,False,0,1,1,0,0
+produce a list of book titles published during the current year,['retrieve value'],[],[],['retrieve value'],['retrieve value'],True,False,1,0,0,1,1
+dark horse comic has how many books,[],['retrieval'],['retrieve value'],[],[],True,False,0,1,1,0,0
+what is the total number of categories,[],['aggregation'],['summarize'],[],[],True,False,0,1,1,0,0
+what's the size of ' kids paint free- drawing fun ',['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+does a app exist that is much different than the others,[],['outlier detection'],['find anomalies'],[],[],True,False,0,1,1,0,0
+what is the total amount of genres,[],['aggregation'],['summarize'],[],[],False,False,0,1,1,0,0
+what is the title of the biggest app,[],['retrieval'],['find extremum'],[],[],True,False,0,1,1,0,0
+what apps have a perfect rating and a lot of reviews,['filter'],[],[],[],[],False,False,1,0,0,0,0
+see if you can locate the most recent gaming app,[],"['retrieval', 'ordering']","['find extremum', 'filter']",[],[],True,False,0,2,2,0,0
+tell me free or paid apps have a higher mean rating,[],['compare means'],['filter'],[],[],True,False,0,1,1,0,0
+which genres are included in the dataset,[],['retrieve value'],['summarize'],[],[],False,False,0,1,1,0,0
+which apps have support for versions of android lower than 40,[],['filter'],['retrieve value'],[],[],True,False,0,1,1,0,0
+describe shape of the distribution for the number of installations,[],['distribution description'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+show me the app that costs the most,[],['find extreme'],"['find extremum', 'retrieve value']",[],[],True,False,0,1,2,0,0
+is there a relationship between the android version of an app and its installations,[],['relationship'],['dependency'],[],[],False,False,0,1,1,0,0
+show me the most recent version of androids ' discover color ',[],['retrieve value'],['find extremum'],[],[],True,False,0,1,1,0,0
+"when taking different android versions into account, does that have any impact on installation",[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+give me a list of all the free business apps that have received rating that were higher than a 45,[],['filter'],['retrieve value'],[],[],True,False,0,1,1,0,0
+can you tell me the attribute 'rating ' be affected 'installation,[],['correlation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what's the price distribution in beauty apps,[],['distribution'],"['characterize distribution', 'filter']",[],[],False,False,0,1,2,0,0
+"which app has a rating that doesn 't follow a trend between installations, rating and number of reviews",[],"['correlation', 'anomaly detection']",['find anomalies'],[],[],True,False,0,2,1,0,0
+what is the app with the most abnormal pattern,[],['anomaly detection'],['find anomalies'],[],[],True,False,0,1,1,0,0
+are there an unusually high number of reviews for any of the apps,[],['find anomaly'],['find anomalies'],[],[],True,False,0,1,1,0,0
+what is the distribution of the number based on shape of installations,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+is there an effect on price caused by the app's genre,[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+is there a correlation between apps with more installations and higher ratings,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+"tell me the most pricey apps by release date, recent to oldest",['sort'],['rank'],[],['sort'],['sort'],True,False,1,1,0,1,1
+find out any app that is distinctive from the rest,[],['find anomaly'],['find anomalies'],[],[],True,False,0,1,1,0,0
+list the top 10 gaming apps sorted from highest to lowest installations,['sort'],['rank'],['filter'],[],[],False,False,1,1,1,0,0
+can you tell me the price distribution of all the beauty apps,[],['distribution'],"['characterize distribution', 'filter']",[],[],False,False,0,1,2,0,0
+name any apps that can support any version of android lower than 40,[],['filter'],['retrieve value'],[],[],True,False,0,1,1,0,0
+what differences are there among the students who acquired more than 270 points between 2010-2019,['compare'],"['filter', 'relationship']",[],['compare'],['compare'],True,False,1,2,0,1,1
+tell me all of the categories of grade types,[],['retrieval'],['summarize'],[],[],True,False,0,1,1,0,0
+use the midterm exam and final exam as the 2nd and 1st keywords respectively in order to assign a rank to every one of the students,[],['rank'],['sort'],[],[],True,False,0,1,1,0,0
+what did the majority of students receive as a grade,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+use the final exam as the first keyword and midterm exam as the second keyword to rank all the students,[],['ranking'],['sort'],[],[],True,False,0,1,1,0,0
+"show me the scope, among all the students, of the cw2 score",[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+"in cw1, how many students achieved the feat of 100%, or full marks",['filter'],['count'],[],['filter'],['filter'],True,False,1,1,0,1,1
+rank the grades from highest to lowest according to the average score,[],['ranking'],['sort'],[],[],True,False,0,1,1,0,0
+can you tell me the median score of the cw1 class,[],['calculate statistic'],['compute derived value'],[],[],True,False,0,1,1,0,0
+do you know the median score of all students in cw1,[],['calculate statistic'],['compute derived value'],[],[],True,False,0,1,1,0,0
+how many students received an a,[],['retrieve value'],['filter'],[],[],False,False,0,1,1,0,0
+select all cw1 scores not less than 80%,['filter'],[],[],[],[],True,False,1,0,0,0,0
+arrange the students by grade and furnish me with a list,['sort'],['ranking'],[],[],[],True,False,1,1,0,0,0
+what is the distribution of the total points of the students,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+was the same midterm exam given to velma paul and glynis caine,['retrieve value'],[],[],['retrieve value'],['retrieve value'],True,False,1,0,0,1,1
+what is the relationship between level of education and crime rate,[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+what is the most frequent place of violent crime,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+are there any correlations between crime types and geographic location,['correlation'],['relationship'],[],[],[],True,False,1,1,0,0,0
+what is the distribution for non-violent crimes based on age,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+are there any correlations in violent or non-violent crimes based on congressional district and year,['correlation'],['relationship'],[],[],[],True,False,1,1,0,0,0
+is there a somewhat even distribution between the year and congressional district,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what city has the highest crime rate,[],['retrieval'],['compare'],[],[],False,False,0,1,1,0,0
+what’s the frequency of gun violence incidents with multiple victims,[],['frequency'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+how many gun violence incidents are there each year,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+are there any significant correlations between any 2 variables in the dataset,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+how many incidents of gun violence result in death (ie what proportion are fatal vs non-fatal),[],['aggregation'],['summarize'],[],[],False,False,0,1,1,0,0
+what鈥檚 the frequency of gun violence incidents with multiple victims,[],['frequency'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+are males or females more likely to die of gun violence,[],"['correlation', 'compare groups']",['compare'],[],[],False,False,0,2,1,0,0
+is one sex more likely to perpetrate gun violence,[],"['correlation', 'comparision']",['compare'],[],[],False,False,0,2,1,0,0
+how have homicide rates increased over time,['trend'],['correlation'],['filter'],[],[],False,False,1,1,1,0,0
+what type of gun violence has seen the most growth over the years,[],"['growth rate calculation', 'time series analysis']","['compare', 'trend']",[],[],False,False,0,2,2,0,0
+are most gun death because of suicide,[],['proportion'],"['compare', 'filter']",[],[],False,False,0,1,2,0,0
+did most gun violence happen inside home,[],['proportion'],"['compare', 'filter']",[],[],False,False,0,1,2,0,0
+what is the correlation between education levels and suicide rates,['correlation'],[],['filter'],[],[],False,False,1,0,1,0,0
+which state/year has the most gun deaths,[],"['retrieval', 'extreme value']",['compare'],[],[],False,False,0,2,1,0,0
+"according to population, what is the rank of each of region",[],['rank'],['sort'],[],[],True,False,0,1,1,0,0
+what is the number of hospitals located in manyara,[],['retrieve value'],['filter'],['retrieve value'],['retrieve value'],True,False,0,1,1,1,1
+which 10 regions have the most health centers,[],"['ranking', 'retrieval']",['find extreme'],[],[],True,False,0,2,1,0,0
+look up regions that names start with the letter a,['filter'],['lookup'],[],[],[],True,False,1,1,0,0,0
+make a list of the number of total hfs in descending order,[],['ranking'],['sort'],[],[],True,False,0,1,1,0,0
+what is the average count of hospitals,[],['calculate mean'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what is the number of clinics that are in mara,[],['retrieve_value'],"['filter', 'filter']",[],[],False,False,0,1,2,0,0
+what's the distribution of the entire hfs,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+which region has the lowest population ratio of hf,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+enter the regions from this table,[],[],['retrieve value'],[],[],False,False,0,0,1,0,0
+look for the region that has the most people living in it,['find extremum'],[],[],['find extremum'],['find extremum'],True,False,1,0,0,1,1
+remove any regions with a population ratio of hf lower than 15,['filter'],[],[],[],[],True,False,1,0,0,0,0
+the population range needs to be discovered,[],['range'],['determine range'],[],[],True,False,0,1,1,0,0
+do any regions have their population ratio over 20 hf,['filter'],[],[],[],[],False,False,1,0,0,0,0
+"when the score difference is more than 5, please list the extreme matches to this",[],['find extreme'],"['filter', 'find extremum']",[],[],True,False,0,1,2,0,0
+please indicate the friendly tournament matches in which the home team beat the away team,['filter'],[],[],['filter'],['filter'],False,False,1,0,0,1,1
+tell me all the tournament matches that the home team won against the away team,['filter'],[],[],[],[],False,False,1,0,0,0,0
+which group of nations won the most games,[],"['aggregation', 'ranking']",['compare'],[],[],False,False,0,2,1,0,0
+"based on the number of matches, can you tell me what the distribution of cities is",[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what group of nations of have the most games,[],['aggregation'],['find extremum'],[],[],False,False,0,1,1,0,0
+what countries have won a similar number of games,[],"['correlation', 'clustering']",['cluster'],[],[],True,False,0,2,1,0,0
+what is the propensity of the number of vehicles in japan and korea from the year 2000 to 2010,[],['correlation'],[''],[],[],False,False,0,1,1,0,0
+does life expectancy have any relation with the percentage of smokers,[],['correlation'],['dependency'],[],[],True,False,0,1,1,0,0
+is the male to female ratio more imbalanced in the last decade in russia,,,,,,,,,,,,
+is the speed of economic development relative to the population of each country,[],['correlation'],[''],[],[],False,False,0,1,1,0,0
+show me the gdp ranking of european countries,[],['ranking'],[''],[],[],False,False,0,1,1,0,0
+"to cluster the states in the us, i wish to use middle income",[],['clustering'],['cluster'],[],[],False,False,0,1,1,0,0
+do all the countries in africa have a lower average pci than all the countries in europe,[],['compare averages'],[''],[],[],False,False,0,1,1,0,0
+could you tell me the continental location of the poorest ( lowest income ) country,[],['find extremum'],['retrieve value'],[],[],True,False,0,1,1,0,0
+"when looking at the average income in european countries, what is the variance",[],['calculate statistic'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what are the minimum and maximum populations of the chinese provinces,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+what is the average height of the floors of these buildings,[],['calculate mean'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+compare the number of tall buildings in hong kong with taiwan,[],['comparison'],"['compare', 'filter']",[],[],True,False,0,1,2,0,0
+compare the number of tall buildings in hong kong with taiwan,[],['comparison'],"['compare', 'filter']",[],[],True,False,0,1,2,0,0
+what location has the highest number of tall buildings,[],['aggregation'],['find extremum'],[],[],False,False,0,1,1,0,0
+"provide the total sum of all the separated, divorced, and widowed people in lindi",[],['aggregation'],"['compute derived value', 'filter']",[],[],True,False,0,1,2,0,0
+does simiyu have a similar structure of peope as that of katavi,[],['relationship'],"['similarity', 'filter']",[],[],False,False,0,1,2,0,0
+can you tell me how mara attributes are distributed,['distribution'],[],['filter'],[],[],False,False,1,0,1,0,0
+is the total attribute of one area equal to the sum of the other attributes in any area,[],['relationship'],['compare'],[],[],True,False,0,1,1,0,0
+relationship between imdb rating and rotten tomatoes rating,['correlation'],[],[],['correlation'],['correlation'],False,False,1,0,0,1,1
+what's the production budget for movies in different years,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+movie gross and budget relationship based on genre,[],"['correlation', 'relationship']",['dependency'],[],[],False,False,0,2,1,0,0
+show me imdb rating versus rotten tomatoes rating,[],['relationship'],['correlation'],[],[],False,False,0,1,1,0,0
+what creative type of movie had the highest production budget for each content rating,[],"['aggregation', 'retrieve value']",['characterize distribution'],[],[],False,False,0,2,1,0,0
+what is the relationship between production budget and worldwide gross for each major genre,[],['relationship'],['dependency'],[],[],True,False,0,1,1,0,0
+what is the relationship between release year and average production budget,[],['relationship'],['dependency'],[],[],True,False,0,1,1,0,0
+what major genre had the highest average worldwide gross,[],"['aggregate', 'rank']",['find extremum'],[],[],False,False,0,2,1,0,0
+what major genre had the lowest average worldwide gross,[],"['aggregate', 'rank']",['find extremum'],[],[],False,False,0,2,1,0,0
+how much did average worldwide gross vary by major genre,[],"['aggregate', 'compare']",['find extremum'],[],[],True,False,0,2,1,0,0
+how many movies are there are of each creative type,[],['aggregation'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+which creative type had the most movies,[],['aggregation'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+which creative type had the fewest movies,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+what is the total worldwide gross for each major genre across time,[],['aggregation'],['summarize'],[],[],False,False,0,1,1,0,0
+is there a relationship between production budget and worldwide gross for each content rating,[],"['correlation', 'relationship']",['correlate'],[],[],False,False,0,2,1,0,0
+what is the distribution of running times for each movie,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+is there a relationship between imdb rating and rotten tomatoes rating,['correlation'],[],[],['correlation'],['correlation'],False,False,1,0,0,1,1
+movie run time distribution,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+how production budget changes over release years,[],['correlation'],['trend'],[],[],True,False,0,1,1,0,0
+what was the average production budget of movies by year,[],['aggregation'],['trend'],[],[],False,False,0,1,1,0,0
+"what's the average production budget of the different rated movies, separated by creative type",[],"['aggregation', 'separation_by_group']",['compare'],[],[],False,False,0,2,1,0,0
+which genre movie makes most worldwide gross,[],"['aggregation', 'retrieval']",['find extremum'],[],[],False,False,0,2,1,0,0
+are imdb rating and rotten tomatoes rating related,[],['correlation'],['correlate'],[],[],True,False,0,1,1,0,0
+what is the worldwide gross distribution per genre,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what's the breakdown of production budget by creative type per content rating,[],['breakdown'],['compare'],[],[],False,False,0,1,1,0,0
+how does rotten tomatoes rating change as imdb rating,[],['correlation'],['correlate'],[],[],False,False,0,1,1,0,0
+what is the total worldwide gross earned by each major genre and content rating,[],['aggregation'],['compare'],[],[],False,False,0,1,1,0,0
+"for each genre and rating, what is the total world-wide gross earnings",[],"['aggregation', 'categorization']",['compare'],[],[],True,False,0,2,1,0,0
+how much did each type of movie earn in across the whole world,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+how much money did movies of each genre and rating make,[],"['aggregation', 'categorization']",['compare'],[],[],True,False,0,2,1,0,0
+"what was the average budget for each content rating and creative type, as multiple column charts",['compare'],"['aggregate', 'categorize']",[],['compare'],['compare'],False,False,1,2,0,1,1
+what is the average production budget in each year,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+compare imdb rating to rotten tomatoes rating,[],"['correlation', 'comparison']",['compare'],[],[],False,False,0,2,1,0,0
+which creative types have the most movies,[],['aggregation'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+"on average, how much was earned by movies of each genre",[],"['aggregation', 'relationship']","['compare', 'characterize distribution']",[],[],False,False,0,2,2,0,0
+how many movies are of each length,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+help me see outliers in imdb and rotten tomatoes ratings,[],['identify outlier'],['find anomalies'],[],[],False,False,0,1,1,0,0
+what was the average worldwide gross of movies by genre,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+how much did major genres gross in total,[],['aggregation'],['compare'],[],[],False,False,0,1,1,0,0
+gross across genres regarding content rating,[],"['correlation', 'relationship']",['compare'],[],[],False,False,0,2,1,0,0
+what's the distribution of running times by movie,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+how many movies are there in 20 minute bins of running time,[],"['binning', 'aggregation']",['characterize distribution'],[],[],True,False,0,2,1,0,0
+how many movies are there for each creative type,[],['aggregation'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+show me the variation in the amount ordered by different entities in different orders,[],"['variation', 'correlation']",[''],[],[],False,False,0,2,1,0,0
+worldwide gross for each genre for each year 1995 to now,[],"['aggregation', 'grouping']","['filter', 'compare']",[],[],True,False,0,2,2,0,0
+"cumulative gross for each content rating, by major genre",[],"['aggregation', 'categorization']",['compare'],[],[],True,False,0,2,1,0,0
+relation between worldwide gross and production budget for each major genre,[],['relationship'],['dependency'],[],[],False,False,0,1,1,0,0
+which position has the highest average of playing time,[],['aggregate'],['find extremum'],[],[],False,False,0,1,1,0,0
+name movies released in 2017,[],['retrieve value'],['filter'],[],[],True,False,0,1,1,0,0
+is the normal distribuition satisfied by the length of the movies,[],['distribution check'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+sort the movies by length,['sort'],[],['filter'],[],[],True,False,1,0,1,0,0
+how long is the run time of average r-rated movies,[],['average calculation'],"['characterize distribution', 'filter']",[],[],True,False,0,1,2,0,0
+give me the numbers of movies that were released in 2017,[],['retrieve value'],"['compute derived value', 'filter']",[],[],False,False,0,1,2,0,0
+is there an average run time for movies,[],['calculate mean'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+is the running time of movies recently longer than it used to be,[],['compare'],['trend'],[],[],False,False,0,1,1,0,0
+do movie tags and duration have a connection,[],['correlation'],['dependency'],[],[],False,False,0,1,1,0,0
+determine if the running time of movies has increased in recent years,['trend'],['correlation'],[],['trend'],['trend'],True,False,1,1,0,1,1
+show me the dates that netflix released movies,[],['retrieve value'],"['characterize distribution', 'filter']",[],[],True,False,0,1,2,0,0
+does any movies not have a description,[],['existence check'],['summarize'],[],[],True,False,0,1,1,0,0
+at what point was data added to the table for netflix,['retrieve value'],[],[],[],[],True,False,1,0,0,0,0
+"what is the percentage of the white population in blount county, alabama",[],['retrieve value'],"['compute derived value', 'compare', 'filter']",[],[],False,False,0,1,3,0,0
+"what percentage of the blount county, alabama population is white",[],['calculate proportion'],"['compute derived value', 'compare', 'filter']",[],[],False,False,0,1,3,0,0
+sort all the counties in connecticut by the percentages of the hispanic population,[],"['ranking', 'sorting']",['sort'],[],[],True,False,0,2,1,0,0
+tell me which county has the greatest number of female residents,[],['find extreme'],['find extremum'],[],[],True,False,0,1,1,0,0
+calculate the average black population for each state,[],['aggregation'],['compute derived value'],[],[],True,False,0,1,1,0,0
+i want to see the distribution of the school rankings in geita in 2006,[],['distribution'],"['characterize distribution', 'filter']",[],[],False,False,0,1,2,0,0
+do the pass rate and the ownership of schools have any correlation,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+create a list of schools showing the descending order by change_p,['sort'],['ranking'],[],['sort'],['sort'],True,False,1,1,0,1,1
+can you provide a list of school names in geita,['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+determine if there are any schools in neighboring regions that have similar avg_m,[],"['relationship', 'comparison']",['similarity'],[],[],False,False,0,2,1,0,0
+list the values of kwema modern pr school's change_p in all the years,['retrieve value'],[],[],['retrieve value'],['retrieve value'],True,False,1,0,0,1,1
+what schools have similar avg_m in the neighboring region,[],"['clustering', 'proximity']",['similarity'],[],[],False,False,0,2,1,0,0
+which of these school have a pass rate of over 90,[],['filter'],['compare'],[],[],True,False,0,1,1,0,0
+they want to know what tactic is most effective during football,[],"['correlation', 'comparison']",['compare'],[],[],True,False,0,2,1,0,0
+were you aware of the most recent news,[],[],[''],[],[],False,False,0,0,1,0,0
+the clubs should be arranged by their shooting attempts,[],['ranking'],['compare'],[],[],True,False,0,1,1,0,0
+what was the total amount of goals scored in the game that liverpool played in,[],['retrieval'],['compute derived value'],[],[],True,False,0,1,1,0,0
+the games are sorted by experts by their date,[],[],['sort'],[],[],False,False,0,0,1,0,0
+rank these clubs by their shooting attempts,[],['ranking'],['rank'],[],[],True,False,0,1,1,0,0
+are the students who are younger more likely to use wechat,[],['correlation'],"['correlate', 'filter']",[],[],False,False,0,1,2,0,0
+can lower study times among students cause greater failure rates in class,[],['correlation'],['correlate'],[],[],False,False,0,1,1,0,0
+can you name an unusual reason for choosing this school,[],['retrieve value'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+could you show me the list sorted by study time ( longest to shortest ),['sort'],[],[],[],[],True,False,1,0,0,0,0
+find the distribution by age,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+can you tell me which students have fathers that are teachers,['filter'],[],[],[],[],True,False,1,0,0,0,0
+retrieve the students with fathers who work as teachers,['filter'],[],[],[],[],True,False,1,0,0,0,0
+tell me the youngest students in the dataset,[],['retrieve value'],['find extremum'],[],[],True,False,0,1,1,0,0
+tell me the types of jobs the student's mothers have,[],['retrieval'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+i 'm wondering would the travel time decrease for students if they spent more time studying,[],['correlation'],['correlate'],[],[],False,False,0,1,1,0,0
+would more time spent on studying reduce travel time for students,[],['correlation'],['correlate'],[],[],True,False,0,1,1,0,0
+do countries with high populations wish to slow down population growth,[],['correlation'],['correlate'],[],[],False,False,0,1,1,0,0
+can you tell me the state which may have the largest average population in the next year,[],['prediction'],['compare'],[],[],True,False,0,1,1,0,0
+can you see any abnormalities in the suicide rates,[],['anomaly detection'],['find anomalies'],[],[],False,False,0,1,1,0,0
+name the country with the lowest suicide rate,[],['find extreme'],['find extremum'],[],[],True,False,0,1,1,0,0
+do you know the average number of suicides in europe,[],['average'],['compute derived data'],[],[],True,False,0,1,1,0,0
+are there any countries with anomalously low suicides rates,[],['anomaly detection'],['find anomalies'],[],[],False,False,0,1,1,0,0
+is there similarities between gdp per capita and suicide rates,[],['correlation'],['similarity'],[],[],False,False,0,1,1,0,0
+were there any countries with abnormally low suicide rates,[],['anomaly detection'],['find anomalies'],[],[],True,False,0,1,1,0,0
+"with the suicide larger than 100, determine the ages in albania",[],"['filter', 'retrieve value']",['characterize distribution'],[],[],False,False,0,2,1,0,0
+the country with the lowest suicide rate is,[],['find extreme'],['find extremum'],[],[],True,False,0,1,1,0,0
+what is the distribution rate of suicide,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what is the total number of all suicides in 1999,[],['retrieve value'],"['characterize distribution', 'filter']",[],[],False,False,0,1,2,0,0
+would there be any clustering of countries in terms of suicide rates,['clustering'],['correlation'],[],[],[],True,False,1,1,0,0,0
+create a list showing the ages of people who committed suicide in albania,[],['list elements'],"['retrieve value', 'filter']",[],[],False,False,0,1,2,0,0
+"for the gdp of china, has it gone up or down over the last decade",['trend'],[],['filter'],['trend'],['trend'],True,False,1,0,1,1,1
+"of all countries, how is the gdp distribution",[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+has there been an increase or decrease in the gdp of china over the last 10 years,['trend'],[],['filter'],['trend'],['trend'],True,False,1,0,1,1,1
+how much is the average of profit of each state,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+how do the company earn in each state,[],['aggregation'],['compare'],[],[],False,False,0,1,1,0,0
+what were the total sales for each date in each category,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+how much was sold each day for each category,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+what is the average profit for each state,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+what is the relationship between profit and sales,[],['relationship'],['dependency'],[],[],False,False,0,1,1,0,0
+what is the average profit of each ship mode divided by segment,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+what is the sales forecast for each date,[],['retrieve value'],['compare'],[],[],False,False,0,1,1,0,0
+how many orders were placed for each order quantity,[],['distribution'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what is the relationship between sales and profit for each region,[],['relationship'],['dependency'],[],[],True,False,0,1,1,0,0
+how many orders were placed for each sub-category,[],['aggregation'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+"what is the total profit for each region, based on ship status",[],"['aggregation', 'categorization']",['compare'],[],[],False,False,0,2,1,0,0
+what is the sales trend of the different product categories,['trend'],[],[],[],[],False,False,1,0,0,0,0
+how many products have 3 or more quantity ordered,[],"['filter', 'aggregation']",['compare'],[],[],False,False,0,2,1,0,0
+how many products are ordered in single quantity,[],"['filter', 'aggregation']",['compare'],[],[],False,False,0,2,1,0,0
+density of sales across regions and their profitability,[],"['aggregation', 'relationship']",['compare'],[],[],False,False,0,2,1,0,0
+what are the profits across different states,[],['aggregation'],['compare'],[],[],False,False,0,1,1,0,0
+what product category has more orders placed,[],['aggregation'],['compare'],[],[],False,False,0,1,1,0,0
+sales forecast between jan 2016 and july 2017,['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+i want to know how many orders there are by the quantity of the order,[],['distribution'],['compute derived value'],[],[],False,False,0,1,1,0,0
+what is our profit based on shipping mode by customer segment,[],"['aggregation', 'relationship']",['compare'],[],[],False,False,0,2,1,0,0
+what is the sales vs profit ratio of the four regions,[],['ratio calculation'],['compare'],[],[],False,False,0,1,1,0,0
+what is the average profit of each state,[],['aggregation'],['compare'],[],[],False,False,0,1,1,0,0
+what is the sales vs profit ratio of all the zones,[],['correlation'],['compare'],[],[],False,False,0,1,1,0,0
+what is the average profit of different segments on the ship modes of transport,[],"['aggregation', 'categorization']",['compare'],[],[],False,False,0,2,1,0,0
+how much is the profit for sales for each,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+what is the correlation between sales and profit by region,[],['correlation'],"['correlate', 'compare']",[],[],True,False,0,1,2,0,0
+can you create a graph showing sales and profit by region,[],['relationship'],['compare'],[],[],False,False,0,1,1,0,0
+"from all of the universities in london, list the one who has the most faculties",[],['retrieve value'],['filter'],[],[],True,False,0,1,1,0,0
+show me a university that has more than 30 faculties and more than 50 teachers,['filter'],[],[],[],[],True,False,1,0,0,0,0
+universities with similar number of teachers,[],['relationship'],['similarity'],[],[],False,False,0,1,1,0,0
+"from all of the universities in london, list the one who has the most faculties",[],['retrieve value'],['filter'],[],[],True,False,0,1,1,0,0
+the universities cover which locations,[],['retrieval'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+what is the teacher distribution of new york universities,[],['distribution'],"['characterize distribution', 'filter']",[],[],False,False,0,1,2,0,0
+would teachers in harvard be considered outliers if the university was in new york,[],['outlier detection'],"['find anomalies', 'filter']",[],[],False,False,0,1,2,0,0
+what is the number of divisions in harvard university,[],['retrieval'],['filter'],[],[],False,False,0,1,1,0,0
+which movie is the highest-grossing,[],['find extreme'],['find extremum'],[],[],False,False,0,1,1,0,0
+do you feel that midfield players have a lower market value than front court players,[],"['relationship', 'comparison']","['comparision', 'filter']",[],[],True,False,0,2,2,0,0
+can you tell me if there is a correlation between revenue and the release year,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+is there a typical film lengths group,[],['clustering'],[''],[],[],False,False,0,1,1,0,0
+in the premier league how are the transferred players ages distributed,[],['distribution'],"['characterize distribution', 'filter']",[],[],False,False,0,1,2,0,0
+tell me a reason why top backcourt players have a higher market value than the top frontcourt player,[],"['correlation', 'compare']",['filter'],[],[],False,False,0,2,1,0,0
+which player had an abnormal transfer_fee,[],['anomaly detection'],['find anomalies'],[],[],True,False,0,1,1,0,0
+how old was david when he was transferred in 2010,['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],False,False,1,0,1,1,1
+"what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010鈥毭劽011",[],['retrieval'],"['filter', 'filter']",[],[],False,False,0,1,2,0,0
+"for the center forward position, what was the highest market value for the 2011-2012 season",['find extremum'],[],['filter'],['find extremum'],['find extremum'],True,False,1,0,1,1,1
+tell me the numbers of the transferred players in different leagues in the 2010-2011 season,[],['aggregation'],"['compare', 'filter']",[],[],True,False,0,1,2,0,0
+"what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010‚äì2011",[],['retrieval'],"['filter', 'filter']",[],[],False,False,0,1,2,0,0
+could you buy a player with his market value higher than a transfer fee,[],['comparison'],['filter'],[],[],True,False,0,1,1,0,0
+what is the average transfer_fee for players who transferred to the premier league,[],['calculate mean'],"['characterize distribution', 'filter']",[],[],True,False,0,1,2,0,0
+list center-backs by what their transfer_fee was,[],['ranking'],"['retrieve value', 'filter']",[],[],True,False,0,1,2,0,0
+which player was the oldest that was transferred,['find extremum'],[],[],['find extremum'],['find extremum'],False,False,1,0,0,1,1
+what is the distribution of the leagues who paid for transferred players in 2010,[],['distribution'],"['characterize distribution', 'filter']",[],[],True,False,0,1,2,0,0
+are you aware of any clustering of the seasons in which players were transferred to the premier league,['clustering'],[],['filter'],[],[],False,False,1,0,1,0,0
+"if you were to average it out, how upbeat would you say the songs are",[],['aggregate'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+describe the popularity of the loudest song,['retrieve value'],['correlation'],[],['retrieve value'],['retrieve value'],True,False,1,1,0,1,1
+can you help me find some popular songs,[],['ranking'],['sort'],[],[],False,False,0,1,1,0,0
+"in terms of length, how long is ' beautiful people '",['retrieve value'],[],['filter'],['retrieve value'],['retrieve value'],True,False,1,0,1,1,1
+tell me which genres were mentioned,[],['retrieve unique values'],['summarize'],[],[],False,False,0,1,1,0,0
+what songs of the pop genrea has sam smith released,[],['retrieval'],"['compare', 'filter']",[],[],False,False,0,1,2,0,0
+are there singers who span multiple genres,[],['relationship'],['retrieve value'],[],[],False,False,0,1,1,0,0
+determine in what year the income of undergraduate students was higher,[],['find extreme'],"['compare', 'trend']",[],[],True,False,0,1,2,0,0
+how are postgraduate student numbers distributed every year,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+could you tell me if there is any correlation between the number of undergraduate and postgraduate students,['correlation'],[],[],[],[],True,False,1,0,0,0,0
+state the average income of postgraduate students in each country,[],['aggregation'],['compare'],[],[],True,False,0,1,1,0,0
+what is the number of postgraduate students for each year,[],['retrieve value'],['characterize distribution'],[],[],True,False,0,1,1,0,0
+"in each year, what is the distribution of the number of postgraduates",[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+the chart teaches them the horsepower range,[],['distribution'],['determine range'],[],[],False,False,0,1,1,0,0
+name me a country that's happiness score does not coincide with the region it belongs to,[],['relationship'],['dependency'],[],[],False,False,0,1,1,0,0
+tell me the country with the lowest trust score,[],['find extreme'],['find extremum'],[],[],True,False,0,1,1,0,0
+is there a correlation between happiness scores and other attributes,['correlation'],[],[],[],[],False,False,1,0,0,0,0
+"what countries, other than finland, have higher happiness scores and lower gdp",[],"['comparison', 'filter']",['compare'],[],[],True,False,0,2,1,0,0
+can you tell me the area in the previous decade that increased rapidly in the happiness score,[],['change over time'],['trend'],[],[],False,False,0,1,1,0,0
+"can you tell me, in terms of economy, what is the range across all countries",[],['range'],['determine range'],[],[],False,False,0,1,1,0,0
+show me any clustering there may be in the gdp that has a happiness score of larger than 5,['clustering'],[],[],[],[],False,False,1,0,0,0,0
+within the last year have any countries experienced a sudden decrease in happiness score,[],['identify change'],['trend'],[],[],False,False,0,1,1,0,0
+can you tell me the range of happiness score in western europe,[],['range'],"['determine range', 'filter']",[],[],True,False,0,1,2,0,0
+"out of all the countries, which ones have a happiness score higher then finland",['filter'],['compare'],[],['filter'],['filter'],True,False,1,1,0,1,1
+can you tell me in what range will the number of countries in each region fall,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+please identify the parameters of the happiness score in western europe,[],['retrieve value'],"['characterize distribution', 'filter']",[],[],True,False,0,1,2,0,0
+show all the countries with happiness scores higher than 5,['filter'],[],[],[],[],True,False,1,0,0,0,0
+name the continent that contains the greatest number of countries that are top 10 on the happiness index,[],"['retrieve value', 'aggregation']",['find extremum'],[],[],True,False,0,2,1,0,0
+do any countries have happiness scores that don 't match with their gdp,[],['relationship'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+"of all the countries trust score, which country has the lowest",['find extremum'],[],[],['find extremum'],['find extremum'],True,False,1,0,0,1,1
+name the country that scores the least on trust,['find extremum'],['retrieve value'],[],['find extremum'],['find extremum'],True,False,1,1,0,1,1
+what is the range across all the countries in terms of economy,[],['range'],['find extremum'],[],[],True,False,0,1,1,0,0
+"organize the countries based on happiness score, with the score limit on each group being 10",[],"['ranking', 'binning']",['characterize distribution'],[],[],True,False,0,2,1,0,0
+show me the distribution of the health score as it is presented in different regions,[],['distribution'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+tell me the average gdp of countries in western europe,[],['aggregate'],"['characterize distribution', 'filter']",[],[],True,False,0,1,2,0,0
+organize the countries by their region,[],['organization'],['sort'],[],[],False,False,0,1,1,0,0
+"for all the regions, can you show me the pattern of the happiness score",[],['pattern'],['cluster'],[],[],False,False,0,1,1,0,0
+what are all the countries that have a happiness score similar to fineland 5 is an acceptable error score,[],['retrieval by similarity'],"['filter', 'similarity']",[],[],False,False,0,1,2,0,0
+what is the range of economy across all the countries,[],['range'],['determine range'],[],[],True,False,0,1,1,0,0
+rank countries high to low by their family score,[],['ranking'],['sort'],[],[],True,False,0,1,1,0,0
+can we conclude that higher happiness comes from higher freedom,[],['correlation'],['correlate'],[],[],True,False,0,1,1,0,0
+what dimension of the happiness index has the maximum fluctuation,[],"['find variation', 'compare']",['summarize'],[],[],False,False,0,2,1,0,0
+retrieve the country that has had a sudden decrease in happiness score within a year,[],['find anomaly'],['filter'],[],[],True,False,0,1,1,0,0
+"across all regions, what is the happiness score pattern",[],['pattern identification'],['characterize distribution'],[],[],False,False,0,1,1,0,0
+the health score is highest in which country,['find extremum'],[],[],['find extremum'],['find extremum'],True,False,1,0,0,1,1
+the highest health score is held by which country,['find extremum'],[],[],['find extremum'],['find extremum'],True,False,1,0,0,1,1
+please help me identify the least common age,[],['find extremum'],['find anomalies'],[],[],True,False,0,1,1,0,0
+"how does mpg compare to displacement, for each region",['compare'],['relationship'],[],[],[],False,False,1,1,0,0,0
+can you tell me the total number of categories,[],['aggregation'],['summarize'],[],[],True,False,0,1,1,0,0

@@ -1,0 +1,412 @@
+[
+    {
+        "query": "they want to know what tactic is most effective during football .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what was the total amount of goals scored in the game that liverpool played in ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "the games are sorted by experts by their date",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can lower study times among students cause greater failure rates in class ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you name an unusual reason for choosing this school ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "find the distribution by age .",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me which students have fathers that are teachers ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "retrieve the students with fathers who work as teachers",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the youngest students in the dataset .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "i 'm wondering would the travel time decrease for students if they spent more time studying ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "would more time spent on studying reduce travel time for students ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "please help me identify the least common age .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me the country with the lowest trust score",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me , in terms of economy , what is the range across all countries ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what countries , other than finland , have higher happiness scores and lower gdp ?",
+        "Low-level visualization task": [
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the area in the previous decade that increased rapidly in the happiness score ?",
+        "Low-level visualization task": [
+            "trend",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me any clustering there may be in the gdp that has a happiness score of larger than 5 .",
+        "Low-level visualization task": [
+            "clustering",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "within the last year have any countries experienced a sudden decrease in happiness score ?",
+        "Low-level visualization task": [
+            "Find Anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "out of all the countries , which ones have a happiness score higher then finland ?",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me in what range will the number of countries in each region fall ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "please identify the parameters of the happiness score in western europe .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show all the countries with happiness scores higher than 5 .",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "do any countries have happiness scores that don 't match with their gdp ?",
+        "Low-level visualization task": [
+            "Compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name the country that scores the least on trust",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the distribution of the health score as it is presented in different regions",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the average gdp of countries in western europe .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "organize the countries by their region .",
+        "Low-level visualization task": [
+            "Sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "for all the regions , can you show me the pattern of the happiness score ?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the range of economy across all the countries",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "rank countries high to low by their family score .",
+        "Low-level visualization task": [
+            "sort",
+            "rank"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "were you aware of the most recent news ?",
+        "Low-level visualization task": [],
+        "Low-level visualization task classification": []
+    },
+    {
+        "query": "the clubs should be arranged by their shooting attempts .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "rank these clubs by their shooting attempts",
+        "Low-level visualization task": [
+            "rank",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "could you show me the list sorted by study time ( longest to shortest ) .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the types of jobs the student 's mothers have .",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "name me a country that 's happiness score does not coincide with the region it belongs to .",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there a correlation between happiness scores and other attributes ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the range of happiness score in western europe ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "name the continent that contains the greatest number of countries that are top 10 on the happiness index ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "of all the countries trust score , which country has the lowest ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the range across all the countries in terms of economy ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "organize the countries based on happiness score , with the score limit on each group being 10 .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what are all the countries that have a happiness score similar to fineland . 5 is an acceptable error score",
+        "Low-level visualization task": [
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can we conclude that higher happiness comes from higher freedom ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    }
+]

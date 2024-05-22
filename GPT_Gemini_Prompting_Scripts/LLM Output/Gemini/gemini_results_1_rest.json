@@ -1,0 +1,49 @@
+[
+    {
+        "query": "compare the number of tall buildings in hong kong with taiwan .",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me a list of the tripe that take longer than 1,000 minutes .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "please indicate the friendly tournament matches in which the home team beat the away team .",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "how can the population of ashley be illustrated to show distribution across five years ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "give me the average population rating for ashley in the year 2000 .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    }
+]

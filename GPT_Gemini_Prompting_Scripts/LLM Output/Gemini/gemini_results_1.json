@@ -1,0 +1,428 @@
+[
+    {
+        "query": "Relationship between IMDB Rating and Rotten Tomatoes Rating",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what's the production budget for movies in different years?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "summarize",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Movie gross and budge relationship based on genre",
+        "Low-level visualization task": [
+            "Correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What creative type of movie had the highest production budget for each content rating?",
+        "Low-level visualization task": [
+            "find extremum",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between production budget and worldwide gross for each major genre?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What major genre had the lowest average worldwide gross?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many movies are there are of each creative type?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which creative type had the most movies?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which creative type had the fewest movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the total worldwide gross for each major genre across time?",
+        "Low-level visualization task": [
+            "summarize",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the distribution of running times for each movie?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a relationship between IMDB rating and rotten tomatoes rating?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Movie run time distribution",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How production budge changes over release years?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What's the average production budget of the different rated movies, separated by creative type.",
+        "Low-level visualization task": [
+            "compute derived value",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which genre movie makes most worldwide gross",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are IMDb rating and rotten tomatoes rating related",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the worldwide gross distribution per genre",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what's the breakdown of production budget by creative type per content rating?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how does Rotten Tomatoes Rating change as IMDB Rating?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "For each genre and rating, what is the total world-wide gross earnings?",
+        "Low-level visualization task": [
+            "Summarize",
+            "Find Extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much did each type of movie earn in across the whole world?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How much money did movies of each genre and rating make?",
+        "Low-level visualization task": [
+            "summarize",
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average production budget in each year",
+        "Low-level visualization task": [
+            "retrieve value",
+            "summarize",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Compare imdb rating to rotten tomatoes rating",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many movies are of each length?",
+        "Low-level visualization task": [
+            "Retrieve Value",
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Help me see outliers in IMDB and Rotten Tomatoes ratings",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What was the average worldwide gross of movies by genre?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what's the distribution of running times by movie",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how many movies are there in 20 minute bins of running time",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me imdb rating versus rotten tomatoes rating",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the relationship between release year and average production budget?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What major genre had the highest average worldwide gross?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much did average worldwide gross vary by major genre?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is there a relationship between production budget and worldwide gross for each content rating?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What was the average production budget of movies by year?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the total worldwide gross earned by each major genre and content rating?",
+        "Low-level visualization task": [
+            "Summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What was the average budget for each content rating and creative type, as multiple column charts",
+        "Low-level visualization task": [
+            "summarize",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which creative types have the most movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "On average, how much was earned by movies of each genre?",
+        "Low-level visualization task": [
+            "average",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How much did major genres gross in total",
+        "Low-level visualization task": [
+            "compute derived value",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "gross across genres regarding content rating",
+        "Low-level visualization task": [
+            "Correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how many movies are there for each creative type",
+        "Low-level visualization task": [
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which creative types had the most movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    }
+]
