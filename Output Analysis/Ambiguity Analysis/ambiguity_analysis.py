@@ -59,23 +59,10 @@ def load_data_file(path):
     return data
 if __name__=="__main__":
     files = {
-<<<<<<< HEAD
-<<<<<<< HEAD
         "gpt":["./results/gpt_ambiguity_results.csv", "../final LLM Annotations/gpt4_results.json"],
         "gemini":["./results/gemini_ambiguity_results.csv","../final LLM Annotations/gemini_results.json"],
         "llama":["./results/llama_ambiguity_results.csv","../final LLM Annotations/llama_results.json"],
         "mixtral": ["./results/mixtral_ambiguity_results.csv","../final LLM Annotations/mixtral_results.json"]
-=======
-=======
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-        "gpt":["./results/gpt_ambiguity_results.csv", "./final LLM Annotations/gpt4_results.json"],
-        "gemini":["./results/gemini_ambiguity_results.csv","./final LLM Annotations/gemini_results.json"],
-        "llama":["./results/llama_ambiguity_results.csv","./Output Analysis/final LLM Annotations/llama_results.json"],
-        "mixtral": ["./results/mixtral_ambiguity_results.csv","./Output Analysis/final LLM Annotations//gpt4_results.json"]
-<<<<<<< HEAD
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-=======
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
     }
     out=[]
     for key, value in files.items():
@@ -85,15 +72,7 @@ if __name__=="__main__":
         
     
     headers= out[0].keys()
-<<<<<<< HEAD
-<<<<<<< HEAD
     filename = f"./results/cleaned_ambiguity_results.csv"
-=======
-    filename = f"./results/cleaned_ambiguity_gptonly_results.csv"
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-=======
-    filename = f"./results/cleaned_ambiguity_gptonly_results.csv"
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
     with open(filename, 'w') as f:
         csv_writer = csv.DictWriter(f, fieldnames=headers)
         csv_writer.writeheader()

@@ -223,8 +223,8 @@ if __name__=="__main__":
     files={
         "gpt": "../final LLM Annotations/gpt4_results.json",
         "gemini": "../final LLM Annotations/gemini_results.json",
-        # "llama": "../final LLM Annotations/llama_results.json",
-        # "mixtral": "../final LLM Annotations/mixtral_results.json"
+        "llama": "../final LLM Annotations/llama_results.json",
+        "mixtral": "../final LLM Annotations/mixtral_results.json"
     }
     for key, value in files.items():
         run(value, key)
