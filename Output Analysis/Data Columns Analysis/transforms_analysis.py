@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import  csv, re, json
-=======
 import pandas as pd
 import numpy, csv, re, json
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-=======
-import pandas as pd
-import numpy, csv, re, json
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
 
 def extract_imports(code):
     pattern = r'\b(?:import\s+([\w.]+)|from\s+([\w.]+)\s+import\s+([\w,*]+))\b'
@@ -105,46 +96,15 @@ def load_data_file(path):
     return data
 if __name__=="__main__":
     files = {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "gpt":["./results/gpt_transforms_results.csv", "../final LLM Annotations/gpt4_results.json"],
-        "gemini":["./results/gemini_transforms_results.csv","../final LLM Annotations/gemini_results.json"],
-        "llama":["./results/llama_transforms_results.csv","../final LLM Annotations/llama_results.json"],
-        "mixtral": ["./results/mixtral_transforms_results.csv","../final LLM Annotations/mixtral_results.json"]
-=======
-=======
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
         "gpt":["./results/gpt_ambiguity_results.csv", "./final LLM Annotations/gpt4_results.json"],
         "gemini":["./results/gemini_ambiguity_results.csv","./final LLM Annotations/gemini_results.json"],
         "llama":["./results/llama_ambiguity_results.csv","./Output Analysis/final LLM Annotations/llama_results.json"],
         "mixtral": ["./results/mixtral_ambiguity_results.csv","./Output Analysis/final LLM Annotations//gpt4_results.json"]
-<<<<<<< HEAD
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-=======
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
     }
     out=[]
     for key, value in files.items():
         data = load_data_file(value[0])
-<<<<<<< HEAD
-<<<<<<< HEAD
-        print(len([i for i in data if "pandas.core.groupby.generic" in i["gpt_gt_output"] or  i["gpt_gt_output"] == "Error running code"]))
-        out.append(clean(data, key))
-    
-    headers= out[0].keys()
-    filename = f"./results/cleaned_transforms_results.csv"
-    with open(filename, 'w') as f:
-        csv_writer = csv.DictWriter(f, fieldnames=headers)
-        csv_writer.writeheader()
-        csv_writer.writerows(out)
-=======
         # print(len([i for i in data if "pandas.core.groupby.generic" in i["gpt_gt_output"] or  i["gpt_gt_output"] == "Error running code"]))
         # out.extend(gt_unmatched_ambiguities(data, key))
     #TODO: writ out to file
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-=======
-        # print(len([i for i in data if "pandas.core.groupby.generic" in i["gpt_gt_output"] or  i["gpt_gt_output"] == "Error running code"]))
-        # out.extend(gt_unmatched_ambiguities(data, key))
-    #TODO: writ out to file
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
     

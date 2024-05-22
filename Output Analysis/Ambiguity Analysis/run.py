@@ -149,18 +149,8 @@ if __name__=="__main__":
     files={
         "gpt": "../final LLM Annotations/gpt4_results.json",
         "gemini": "../final LLM Annotations/gemini_results.json",
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "llama": "../final LLM Annotations/llama_results.json",
-        "mixtral": "../final LLM Annotations/mixtral_results.json"
-=======
         # "llama": "../final LLM Annotations/llama_results.json",
         # "mixtral": "../final LLM Annotations/mixtral_results.json"
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
-=======
-        # "llama": "../final LLM Annotations/llama_results.json",
-        # "mixtral": "../final LLM Annotations/mixtral_results.json"
->>>>>>> 39fba0656289cbc7f54bd0386e7de2762b6e44cb
     }
     for key, value in files.items():
         run(value, key)
