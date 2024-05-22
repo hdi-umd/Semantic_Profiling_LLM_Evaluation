@@ -85,41 +85,27 @@ async def get_completion_list(content_list, max_parallel_calls, timeout, api="op
 async def query(queries):
     # input should be a list of dicts with {dataset:"", text:""}
     messages = []
-    # with open("./prompt_2.txt", "r") as f:
-    #     prompt = f.read()
-    current=[]
-    # qq = json.load(open("./LLM Output/Gemini/gemini_results_12.json")) #change to the corresponding file for llms to make sure you're not repeating prompts
-    # current = [i['query'] for i in qq]
-
-    print("formatting queries")
-    with open("./batch_input_files/batch_12.jsonl", 'r') as f:
-        data = [json.loads(i) for i in f]
-        for d in data:
-            if d["body"]["messages"][1]["content"][6:] not in current:
-                # print(d["body"]["messages"][1]["content"][6:])
-                messages.append(
-                    f'{d["body"]["messages"][0]["content"]} \n {d["body"]["messages"][1]["content"]}\n'
-                )
+    with open("./prompt.txt", "r") as f:
+        prompt = f.read()
+   
+    for q in queries:
+        # if q["text"].replace(".", "").replace("?", "").replace(" ,", ",").strip() not in missing:  # TODO: comment if this is first run for LLM.
+        messages.append( f'{prompt} \n dataset:{q["dataset"]} \n query:{ q["text"]}')
     
-    # for q in queries:
-    #     if q["text"].replace(".", "").replace("?", "").replace(" ,", ",").strip() not in missing:  # TODO: comment if this is first run for LLM.
-    #         messages.append( f'{prompt} \n dataset:{q["dataset"]} \n query:{ q["text"]}')
-    
-    # print("Starting queries to Openai API")
-    # start_time = time.perf_counter()
-    # res = await get_completion_list(content_list=messages, max_parallel_calls=50, timeout=150)
-    # print("Time elapsed: ", time.perf_counter() - start_time, "seconds.")
-    # with open("./LLM Output/gpt4_results_1.json", 'w') as f:
-    #     json.dump(res, f)
+    print("Starting queries to Openai API")
+    start_time = time.perf_counter()
+    res = await get_completion_list(content_list=messages, max_parallel_calls=50, timeout=150)
+    print("Time elapsed: ", time.perf_counter() - start_time, "seconds.")
+    with open("./LLM Output/gpt4_results.json", 'w') as f:
+        json.dump(res, f)
 
    
-    # print("Starting queries to gemini API")
-    # start_time = time.perf_counter()
-    # res = await get_completion_list(content_list=messages, max_parallel_calls=50, timeout=150, api="gemini", apikey=config["google_h"])
-    # print("Time elapsed: ", time.perf_counter() - start_time, "seconds.")
-    # # with open("./LLM Output/Gemini/gemini_results_1_rest.json", 'w') as f:
-    # with open("./LLM Output/Gemini/gemini_results_12.json", 'w') as f:
-    #     json.dump(res, f)
+    print("Starting queries to gemini API")
+    start_time = time.perf_counter()
+    res = await get_completion_list(content_list=messages, max_parallel_calls=50, timeout=150, api="gemini", apikey=config["google_h"])
+    print("Time elapsed: ", time.perf_counter() - start_time, "seconds.")
+    with open("./LLM Output/Gemini/gemini_results.json", 'w') as f:
+        json.dump(res, f)
     
 def gemini_cleanup():
     master = "./LLM Output/gemini_master.json"
