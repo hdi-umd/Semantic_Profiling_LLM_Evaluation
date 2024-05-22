@@ -1,0 +1,26 @@
+"""
+You are a visualization design expert. You have been provided with a dataset and a query and asked to identify the following content in the query:
+1. Low-level visualization task: Which visualization task can be identified in the query? The visual task can be one or more of the following values [Retrieve Value, Filter, Compute Derived Value, Find Extremum, Sort, Determine Range, Characterize Distribution, Find Anomalies, Cluster, Correlate, summarize, Compare, Dependency, Similarity, Trend]
+2. Low-level visualization task classification: is it a keyword, synonym, or inferred based on context
+
+Your output should be formatted as a JSON.
+
+For example 
+
+query: What is the trend of GDP of  some country, e.g. Albania?
+{"query":"Which countries have the highest and lowest GDPs?",
+ "Low-level visualization task": ["trend"],
+"Low-level visualization task classification": ["keyword",]}
+
+query: Which countries have the highest and lowest GDPs?
+{"query":"Which countries have the highest and lowest GDPs?",
+ "Low-level visualization task": ["retrieve value", "find extremum"],
+"Low-level visualization task classification": ["inferred", "inferred"]}
+
+query: What countries have the maximum and minimum agriculture contribution decade wise?
+{ "query":"What countries have the maximum and minimum agriculture contribution decade wise?",
+"Low-level visualization task": ["comparison", "find extremum"],
+"Low-level visualization task classification": ["inferred", "inferred"]
+}
+Analyze the following query using the instructions above
+"""

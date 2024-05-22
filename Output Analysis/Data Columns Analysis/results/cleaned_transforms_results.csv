@@ -1,0 +1,5 @@
+llm,errors_count,imports,imports_count,blank_transforms,non_df_returned_count,total_dfs_returned,matching_df,mismatching_df,non_df_pos_match
+gpt,59,{'statsmodels.api'},1,0,66,360,197,163,7
+gemini,96,set(),0,2,90,290,121,169,5
+llama,119,"{'spatial', 'scipy.stats', 'statsmodels.api', 'pandas', 'scipy', 'KMeans', 'cluster', 'stats', 'seaborn', 'sklearn', 'geohash', 'geopylib', 'matplotlib.pyplot', 'numpy', 'distance'}",15,1,57,292,134,158,6
+mixtral,111,"{'pearsonr', 'EllipticEnvelope', 'covariance', 'scipy.stats', 'spatial', 'scipy', 'datetime', 'KMeans', 'cluster', 'stats', 'seaborn', 'sklearn', 'matplotlib.pyplot', 'numpy', 'distance'}",15,9,52,296,143,153,8

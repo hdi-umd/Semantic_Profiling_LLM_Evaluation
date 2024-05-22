@@ -1,0 +1,10 @@
+old2/
+old_llm_annotations_analysis_scripts/
+__pycache__/
+Paper Submissions/
+NL Corpus Codes/
+GPT_Gemini_Prompting_Scripts/config.yaml
+GPT_Gemini_Prompting_Scripts.zip
+first_run.zip
+LLM_HM_Comparisons.zip
+.DS_Store

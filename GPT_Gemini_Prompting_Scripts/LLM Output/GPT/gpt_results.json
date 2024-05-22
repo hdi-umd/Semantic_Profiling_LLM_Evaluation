@@ -1,0 +1,4726 @@
+[
+    {
+        "query": "can you tell me what peacland english medium school 's change pre is in 2016 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "list the values of kwema modern pr . school 's change_p in all the years .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what schools have similar avg_m in the neighboring region ?",
+        "Low-level visualization task": [
+            "similarity",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "which of these school have a pass rate of over 90 ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the average height of the floors of these buildings ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "compare the number of tall buildings in hong kong with taiwan",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what location has the highest number of tall buildings ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "the oldest user was born in what year ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "indicate all the travels taking more than 1000 minutes.",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me a list of the trips that take longer than 1,000 minutes.",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the distribution of travel times between wells st & elm st and lake shore dr & ohio st",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the relationship between age and travel time",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do you know of any trip that would take longer than 1000 minutes ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which position has the highest average of playing time ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "if you were to average it out, how upbeat would you say the songs are?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "describe the popularity of the loudest song",
+        "Low-level visualization task": [
+            "retrieve value",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you help me find some popular songs ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in terms of length, how long is 'beautiful people'?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me which genres were mentioned.",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what songs of the pop genre has sam smith released?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "are there singers who span multiple genres ?",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "when the score difference is more than 5, please list the extreme matches to this.",
+        "Low-level visualization task": [
+            "filter",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "please indicate the friendly tournament matches in which the home team beat the away team.",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me all the tournament matches that the home team won against the away team",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which group of nations won the most games ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "based on the number of matches, can you tell me what the distribution of cities is?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what group of nations have the most games?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what countries have won a similar number of games ?",
+        "Low-level visualization task": [
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how can the population of ashley be illustrated to show distribution across five years ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how likely is it that, if i was born in 2000, i was born in a county with no less than 20,000 people?",
+        "Low-level visualization task": [
+            "filter",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me the average population rating for ashley in the year 2000",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "identify the county that has the least population each year",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the average population in 2000 ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "from all of the universities in London, list the one who has the most faculties.",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me a university that has more than 30 faculties and more than 50 teachers",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "universities with similar number of teachers",
+        "Low-level visualization task": [
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "the universities cover which locations ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the teacher distribution of new york universities ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "would teachers in harvard be considered outliers if the university was in new york ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the number of divisions in harvard university ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there a regional concentration trend in gdp development ?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how are gdp and mteu correlated ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the propensity of the number of vehicles in japan and korea from the year 2000 to 2010 ?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "does life expectancy have any relation with the percentage of smokers?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Relationship between IMDB Rating and Rotten Tomatoes Rating",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what's the production budget for movies in different years?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Movie gross and budget relationship based on genre",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me imdb rating versus rotten tomatoes rating",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What creative type of movie had the highest production budget for each content rating?",
+        "Low-level visualization task": [
+            "find extremum",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between production budget and worldwide gross for each major genre?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the relationship between release year and average production budget?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What major genre had the highest average worldwide gross?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What major genre had the lowest average worldwide gross?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much did average worldwide gross vary by major genre?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many movies are there of each creative type?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which creative type had the most movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which creative type had the fewest movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the total worldwide gross for each major genre across time?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is there a relationship between production budget and worldwide gross for each content rating?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the distribution of running times for each movie?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a relationship between IMDB rating and rotten tomatoes rating?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Movie run time distribution",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How production budget changes over release years?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What was the average production budget of movies by year?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What's the average production budget of the different rated movies, separated by creative type.",
+        "Low-level visualization task": [
+            "compute derived value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which genre movie makes most worldwide gross",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are IMDb rating and rotten tomatoes rating related",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the worldwide gross distribution per genre",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what's the breakdown of production budget by creative type per content rating?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how does Rotten Tomatoes Rating change as IMDB Rating?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the total worldwide gross earned by each major genre and content rating?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "For each genre and rating, what is the total world-wide gross earnings?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much did each type of movie earn across the whole world?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much money did movies of each genre and rating make?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What was the average budget for each content rating and creative type, as multiple column charts?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average production budget in each year",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Compare imdb rating to rotten tomatoes rating",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Which creative types have the most movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "On average, how much was earned by movies of each genre?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many movies are of each length?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Help me see outliers in IMDB and Rotten Tomatoes ratings",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What was the average worldwide gross of movies by genre?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much did major genres gross in total",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "gross across genres regarding content rating",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what's the distribution of running times by movie",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how many movies are there in 20 minute bins of running time",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how many movies are there for each creative type",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which creative types had the most movies?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there a correlation between apps with more installations and higher ratings ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the most pricey apps by release date, recent to oldest.",
+        "Low-level visualization task": [
+            "find extremum",
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "find out any app that is distinctive from the rest.",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "list the top 10 gaming apps sorted from highest to lowest installations",
+        "Low-level visualization task": [
+            "sort",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the price distribution of all the beauty apps?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name any apps that can support any version of android lower than 4.0.",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "according to population, what is the rank of each region?",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the number of hospitals located in manyara ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which 10 regions have the most health centers ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "look up regions that names start with the letter a",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "make a list of the number of total hfs in descending order",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the average count of hospitals ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the number of clinics that are in mara ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what 's the distribution of the entire hfs ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which region has the lowest population ratio of hf ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "enter the regions from this table.",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "look for the region that has the most people living in it",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "remove any regions with a population ratio of hf lower than 1.5",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "the population range needs to be discovered",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do any regions have their population ratio over 2.0 hf?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me the movie that received the most nominations",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "out of the winners for best performance by an actor in a motion picture - musical or comedy from 2003 to 2020, the most abnormal age belongs to which actor?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you organize the results of the table by sorting the list according to the age of the stars ?",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you list all the results in the table about the movie 'About Schmidt'?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what was the gender of all actors among all the final winners in the 60th ceremony?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me who won the best performance by an actor in a motion picture - drama award at the 60th ceremony",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "i would like to review the dispersement of the amount of nominations",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in the 60th ceremony, the award for best performance by an actor in a motion picture was won by whom?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which actor was nominated for the most awards ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can the actors nationality impact the outcome ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what was the number of candidates that were nominated for best performance by an actor in a motion picture -drama at the 60th ceremony?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the total number of movies released in the year 1998 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me what movie won best original score in a motion picture in 1997 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the correlation between the nomination and the age of a star ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there an outlier within the value distribution of albinism that causes the result to be skewed ?",
+        "Low-level visualization task": [
+            "find anomalies",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "find all the types of genetic diseases with greater than 1,000 patients",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the maximum and minimum number of patients with autism across all regions",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the spatial and temporal correlation of albinism ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "does this data represent outliers in the number of patients?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "take out the regions with a number of patients larger than 500",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "looking at the number of people in all regions with a visual impairment, what is the median?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "does the value distribution of albinism look skewed ?",
+        "Low-level visualization task": [
+            "characterize distribution",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there an obvious clustering?",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "kindly rate the regions on the basis of the number of patients",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "discover the most liked removed video",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "are there are special characters included in the title ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do videos with longer titles get more attention ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me about the \"plush - bad unboxing fan mail\" video.",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you show me how the likes are distributed ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what differences are there among the students who acquired more than 270 points between 2010 -2019 ?",
+        "Low-level visualization task": [
+            "filter",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me all of the categories of grade types.",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "use the midterm exam and final exam as the 2nd and 1st keywords respectively in order to assign a rank to every one of the students.",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what did the majority of students receive as a grade ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "use the final exam as the first keyword and midterm exam as the second keyword to rank all the students.",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the scope, among all the students, of the cw2 score.",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in cw1, how many students achieved the feat of 100%, or full marks?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "rank the grades from highest to lowest according to the average score.",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the median score of the cw1 class ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "do you know the median score of all students in cw1 ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "how many students received an a ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "select all cw1 scores not less than 80% .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "arrange the students by grade and furnish me with a list.",
+        "Low-level visualization task": [
+            "sort",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution of the total points of the students ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "was the same midterm exam given to velma paul and glynis caine ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "provide the total sum of all the separated, divorced, and widowed people in Lindi.",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "does simiyu have a similar structure of people as that of katavi?",
+        "Low-level visualization task": [
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me how mara attributes are distributed ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is the total attribute of one area equal to the sum of the other attributes in any area ?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you see any abnormalities in the suicide rates ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name the country with the lowest suicide rate",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "do you know the average number of suicides in europe ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "are there any countries with anomalously low suicides rates ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there similarities between gdp per capita and suicide rates ?",
+        "Low-level visualization task": [
+            "correlate",
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "were there any countries with abnormally low suicide rates",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "with the suicide larger than 100, determine the ages in Albania.",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "the country with the lowest suicide rate is ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution rate of suicide ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the total number of all suicides in 1999 ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "would there be any clustering of countries in terms of suicide rates",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "create a list showing the ages of people who committed suicide in Albania.",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "for the gdp of china, has it gone up or down over the last decade?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "of all countries, how is the gdp distribution?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "has there been an increase or decrease in the gdp of china over the last 10 years",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "i want to see the distribution of the school rankings in geita in 2006",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do the pass rate and the ownership of schools have any correlation?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "create a list of schools showing the descending order by change_p",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you provide a list of school names in geita ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "determine if there are any schools in neighboring regions that have similar avg_m",
+        "Low-level visualization task": [
+            "similarity",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "they want to know what tactic is most effective during football.",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "were you aware of the most recent news ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "the clubs should be arranged by their shooting attempts.",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what was the total amount of goals scored in the game that liverpool played in ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "the games are sorted by experts by their date",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "rank these clubs by their shooting attempts",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can lower study times among students cause greater failure rates in class ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you name an unusual reason for choosing this school ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "could you show me the list sorted by study time ( longest to shortest ) .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "find the distribution by age",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me which students have fathers that are teachers ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "retrieve the students with fathers who work as teachers",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the youngest students in the dataset",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me the types of jobs the student 's mothers have.",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "I'm wondering would the travel time decrease for students if they spent more time studying?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "would more time spent on studying reduce travel time for students ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "please help me identify the least common age.",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name me a country that 's happiness score does not coincide with the region it belongs to.",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me the country with the lowest trust score",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there a correlation between happiness scores and other attributes ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me , in terms of economy , what is the range across all countries ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what countries, other than Finland, have higher happiness scores and lower GDP?",
+        "Low-level visualization task": [
+            "filter",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the area in the previous decade that increased rapidly in the happiness score ?",
+        "Low-level visualization task": [
+            "find anomalies",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me any clustering there may be in the gdp that has a happiness score of larger than 5",
+        "Low-level visualization task": [
+            "filter",
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "within the last year have any countries experienced a sudden decrease in happiness score ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the range of happiness score in western europe ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "out of all the countries, which ones have a happiness score higher than Finland?",
+        "Low-level visualization task": [
+            "filter",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me in what range will the number of countries in each region fall ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "please identify the parameters of the happiness score in western europe",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "show all the countries with happiness scores higher than 5",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name the continent that contains the greatest number of countries that are top 10 on the happiness index ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "do any countries have happiness scores that don't match with their gdp?",
+        "Low-level visualization task": [
+            "find anomalies",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "of all the countries trust score, which country has the lowest?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name the country that scores the least on trust",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the range across all the countries in terms of economy ?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "organize the countries based on happiness score, with the score limit on each group being 10.",
+        "Low-level visualization task": [
+            "sort",
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the distribution of the health score as it is presented in different regions",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the average gdp of countries in western europe",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "organize the countries by their region",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "for all the regions, can you show me the pattern of the happiness score?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what are all the countries that have a happiness score similar to Finland. 5 is an acceptable error score",
+        "Low-level visualization task": [
+            "similarity",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the range of economy across all the countries",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "rank countries high to low by their family score",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can we conclude that higher happiness comes from higher freedom?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is the male to female ratio more imbalanced in the last decade in russia ?",
+        "Low-level visualization task": [
+            "compare",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "is the speed of economic development relative to the population of each country ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the gdp ranking of european countries",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "to cluster the states in the us, i wish to use middle income.",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do all the countries in africa have a lower average pci than all the countries in europe ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "could you tell me the continental location of the poorest (lowest income) country?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "when looking at the average income in european countries, what is the variance?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what are the minimum and maximum populations of the chinese provinces ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do countries with high populations wish to slow down population growth ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the state which may have the largest average population in the next year ?",
+        "Low-level visualization task": [
+            "predict",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "are the students who are younger more likely to use wechat ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which movie is the highest-grossing?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me if there is a correlation between revenue and the release year?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there a typical film lengths group ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how much revenue did \"titanic\" earn?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "the chart teaches them the horsepower range.",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Show me the variation in the amount ordered by different entities in different orders",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "relation between rotten tomatoes rating and IMDB rating",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "relation between rotten tomatoes and IMDB ratings",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "worldwide gross for each genre for each year 1995 to now",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "how many films of each creative type",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Cumulative gross for each content rating, by major genre",
+        "Low-level visualization task": [
+            "compute derived value",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Relation between worldwide gross and production budget for each major genre",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Relationship of Rotten Tomatoes rating to IMDB rating.",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is there a correlation between acceleration and horsepower?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many heavy cars are in the dataset?",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are there any American 5 cylinder cars?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does displacement relate to fuel economy for cars from Europe v. USA?",
+        "Low-level visualization task": [
+            "correlate",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which cylinder cars have the highest fuel economy?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which countries have the most cars in this dataset?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which countries have the highest acceleration for cars of different cylinders?",
+        "Low-level visualization task": [
+            "find extremum",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How do the horsepowers of the cars from different regions change with years?",
+        "Low-level visualization task": [
+            "trend",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "The distribution of the number of cylinders of cars based on different origins.",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the correlation between displacement and MPG of cars with different origins?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "count the number of cars based on their origins.",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the correlation between horsepower and acceleration?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a correlation between cars' horsepower and acceleration?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how does displacement relate to mpg for individual models, partitioned by country",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how does weight relate to acceleration for car models, small multiples by origin",
+        "Low-level visualization task": [
+            "correlate",
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "how does horsepower relate to acceleration for individual car models",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Compare the number of models in USA, Japan and Europe?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Does higher horsepower mean lower acceleration?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many cylinders do cars manufactured in different countries have?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Compare car cylinder count against acceleration across countries",
+        "Low-level visualization task": [
+            "compare",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many cars do each country manufacture?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What's the mileage for cars based on the number of cylinders present?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Does higher cylinder count mean lower mileage?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does mileage relate to cylinder count?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the average MPG for different cylinders",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relation between horsepower and acceleration",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how weight varies each year",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how is acceleration related to horsepower",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How has horsepower changed over time by country?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Have cars gotten lighter over time?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how many models are produced by each country",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the average weight of cars over time",
+        "Low-level visualization task": [
+            "compute derived value",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the distribution of weight across all cars?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How much do various cars weigh?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the range of weights for all cars?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "where do the cars originate from?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are there any significant correlations between any 2 variables in the dataset?",
+        "Low-level visualization task": [
+            "correlate",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many incidents of gun violence result in death? (I.e. what proportion are fatal vs. non-fatal?)",
+        "Low-level visualization task": [
+            "compute derived value",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What\u2019s the frequency of gun violence incidents with multiple victims?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are males or females more likely to die of gun violence?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is one sex more likely to perpetrate gun violence?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is more gun violence committed with stolen guns or non stolen guns?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How have homicide rates increased over time?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What type of gun violence has seen the most growth over the years?",
+        "Low-level visualization task": [
+            "trend",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are most gun death because of suicide?",
+        "Low-level visualization task": [
+            "characterize distribution",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Did most gun violence happen inside home?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the correlation between education levels and suicide rates?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Which state/year has the most gun deaths?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me a list of neighborhoods with the number of male births from least to most.",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the distribution of births across all districts in 2017",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "let me know if there are groups of neighborhoods with similar birth gender ratios",
+        "Low-level visualization task": [
+            "cluster",
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "retrieve the neighborhood with more than 100 female births in ciutat vella in 2013",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "which neighborhood in ciutat vella has more than 100 females born in the year 2013 ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "barcelona 's districts , please list each .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution of all births in all districts between 2013 and 2017 ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what neighborhood had 56 boys born in 2017 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the total number of categories ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the total number of categories ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what 's the size of \" kids paint free - drawing fun \" ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "does a app exist that is much different than the others ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the total amount of genres ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the title of the biggest app ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "what apps have a perfect rating and a lot of reviews ?",
+        "Low-level visualization task": [
+            "filter",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "see if you can locate the most recent gaming app",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me free or paid apps have a higher mean rating",
+        "Low-level visualization task": [
+            "compare",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "which genres are included in the dataset ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which apps have support for versions of android lower than 4.0 ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "describe shape of the distribution for the number of installations",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the app that costs the most",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there a relationship between the android version of an app and its installations ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the most recent version of androids 'discover color'",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "when taking different android versions into account, does that have any impact on installation?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me a list of all the free business apps that have received rating that were higher than a 4.5",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the attribute 'rating' be affected 'installation'",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what 's the price distribution in beauty apps ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which app has a rating that doesn't follow a trend between installations, rating and number of reviews?",
+        "Low-level visualization task": [
+            "find anomalies",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the app with the most abnormal pattern ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "are there an unusually high number of reviews for any of the apps ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution of the number based on shape of installations ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there an effect on price caused by the app 's genre ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Can you create a graph showing sales and profit by region?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What months are hurricanes most common?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Where are storms most common depending on the time of year?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are there more storms in recent years?",
+        "Low-level visualization task": [
+            "trend",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What does the distribution of the storms look like?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the most frequent status over the year?",
+        "Low-level visualization task": [
+            "find extremum",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the main factor depending on different status? (wind, time, pressure, or etc.?)",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What was the name of the earliest storm?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many hurricanes?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the name of the largest storm",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What storm produced the greatest air pressure?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many storms are named Caroline?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What storm produced the least air pressure?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What storm had the greatest diameter of tropical storm strength winds?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What storm had the greatest diameter of hurricane strength winds?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many storms occur per year, on average?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "On average, what is the first date that a tropical cyclone (tropical depression, tropical storm, or hurricane) forms on every year?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is there a correlation between wind speed and air pressure?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a correlation between the duration of the storm and wind speed?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Where have all hurricanes been recorded on the globe? Where are they more common?",
+        "Low-level visualization task": [
+            "filter",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What lat/long locations are most likely to experience hurricanes?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What are lengths/timings of hurricane seasons in different regions of the world?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average storm length?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average time that it takes to go from depression to storm?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship, if any, between wind and pressure?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does wind change over the course of each hurricane?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Average tropical storm diameter?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between storm day and hu_diameter?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are there any repeat names of storms?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What month has the strongest hurricanes",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How has wind speed changed over time",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the maximum pressure of a certain hurricane?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Relationship between position and the strength of the hurricane",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Average time for each hurricane status",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which hurricane lasted the longest",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between level of education and crime rate?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Are there any visible trends in violent crime rates over the time period?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the most frequent place of violent crime?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are there any correlations between crime types and geographic location?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the distribution for non-violent crimes based on age?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Are there any correlations in violent or non-violent crimes based on congressional district and year?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a somewhat even distribution between the year and congressional district?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What city has the highest crime rate?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many gun violence incidents are there each year?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How has AVG (Horsepower) evolved over time? | Segregate it by the car origin.",
+        "Low-level visualization task": [
+            "trend",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Compare AVG (Acceleration) with Cylinders. | Segregate the cylinders by their origin.",
+        "Low-level visualization task": [
+            "compare",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does AVG (Weight) evolve over the years?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How does the acceleration of cars from different countries vary by the number of cylinders?",
+        "Low-level visualization task": [
+            "correlate",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does acceleration vary by weight for cars from different regions?",
+        "Low-level visualization task": [
+            "correlate",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average MPG for cars with different cylinders?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does MPG vary by the number of cylinders in a car?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does acceleration change with horsepower?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does acceleration behave compared to horsepower?",
+        "Low-level visualization task": [
+            "correlate",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many cars are from each region?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how does MPG compare to displacement, broken out by region?",
+        "Low-level visualization task": [
+            "compare",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "For each region, how does a car's MPG vary with displacement?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How has horsepower changed over time in each region?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the breakdown of cars by the number of cylinders in each region?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many cars have various numbers of cylinders in each region?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average weight of cars by model year?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How has the average weight of cars changed over the years?",
+        "Low-level visualization task": [
+            "trend",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much is the average of profit of each state?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How do the company earn in each state?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What were the total sales for each date in each category?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much was sold each day for each category?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average profit for each state?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between profit and sales?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the average profit of each ship mode divided by segment?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the sales forecast for each date?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many orders were placed for each order quantity?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between sales and profit for each region?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many orders were placed for each sub-category?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the total profit for each region, based on ship status?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the sales trend of the different product categories?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many products have 3 or more quantity ordered ?",
+        "Low-level visualization task": [
+            "filter",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many products are ordered in single quantity?",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Density of sales across regions and their profitability",
+        "Low-level visualization task": [
+            "characterize distribution",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What are the profits across different states?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What product category has more orders placed?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "sales forecast between Jan 2016 and July 2017",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "I want to know how many orders there are by the quantity of the order",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is our profit based on shipping mode by customer segment?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the sales vs profit ratio of the four regions",
+        "Low-level visualization task": [
+            "compute derived value",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the average profit of each state",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the sales vs profit ratio of all the zones",
+        "Low-level visualization task": [
+            "compute derived value",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average profit of different segments on the ship modes of transport",
+        "Low-level visualization task": [
+            "compute derived value",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "how much is the profit for sales for each",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the correlation between sales and profit by region",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "could you buy a player with his market value higher than a transfer fee ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the average transfer_fee for players who transferred to the premier league ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "list center-backs by what their transfer_fee was.",
+        "Low-level visualization task": [
+            "retrieve value",
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "which player was the oldest that was transferred ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution of the leagues who paid for transferred players in 2010 ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "are you aware of any clustering of the seasons in which players were transferred to the premier league?",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do you feel that midfield players have a lower market value than front court players ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name movies released in 2017",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "is the normal distribution satisfied by the length of the movies?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "sort the movies by length",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how long is the run time of average r-rated movies?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me the numbers of movies that were released in 2017",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there an average run time for movies ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is the running time of movies recently longer than it used to be?",
+        "Low-level visualization task": [
+            "trend",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "do movie tags and duration have a connection ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "determine if the running time of movies has increased in recent years",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the dates that netflix released movies",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "does any movies not have a description ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "at what point was data added to the table for netflix ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the percentage of the white population in blount county, alabama?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what percentage of the Blount County, Alabama population is white?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "sort all the counties in connecticut by the percentages of the hispanic population",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me which county has the greatest number of female residents",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "calculate the average black population for each state",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the sales distribution of type 4046 in 2015",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what are the groups of regions according to three types of avocados sales ratio ?",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "using the three types of avocado's sales ratio, provide the groups of regions",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "provide the distribution of the sales in 2015 of type 4046",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "determine in what year the income of undergraduate students was higher ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how are postgraduate student numbers distributed every year ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "could you tell me if there is any correlation between the number of undergraduate and postgraduate students ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "state the average income of postgraduate students in each country",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the number of postgraduate students for each year ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in each year, what is the distribution of the number of postgraduates?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do you know which videos have more than 100 tags ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in the videos by \"eminemvevo\", what are the average number of comments made?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "filter all the videos published before yesterday",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which videos are missing thumbnail links ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "\"plush - bad unboxing fan mail\" belongs to which specific channel?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which video has the most tags ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me a list of videos, ordered by the number of likes, that are on the channel 'eminemvevo'",
+        "Low-level visualization task": [
+            "filter",
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the video with the highest number of tags",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "indicate the number of likes that \" plush - bad unboxing fan mail \" receives .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the number of likes from the 'plush - bad unboxing fan mail' video?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what dimension of the happiness index has the maximum fluctuation?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "retrieve the country that has had a sudden decrease in happiness score within a year",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "across all regions, what is the happiness score pattern?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "the health score is highest in which country ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "the highest health score is held by which country ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me the distribution for the book ratings",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you rearrange the table by book rating in descending order ?",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what books have low ratings that seem suspect",
+        "Low-level visualization task": [
+            "filter",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the book ratings distribution.",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which author has worked with dark horse comics most frequently ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "please go and get all of the books written in english",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "are there outliers in the book ratings ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "of fiction books, which are written in English?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "please review this dataset and tell me which authors it includes.",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how many books have been released by dark horse comics ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the most expensive book and who published it ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "show a list of similarly rated books",
+        "Low-level visualization task": [
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "produce a list of book titles published during the current year",
+        "Low-level visualization task": [
+            "filter",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "dark horse comic has how many books ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in terms of the readings, group the similar timestamps for the sants.",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "for o3, what is the distribution value?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in the whole table, show me the best record of pm10",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "based on their pollution, group the locations together that are similar.",
+        "Low-level visualization task": [
+            "cluster",
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "please look at the o3 data and find the minimum number.",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "in what manner are good air quality records dispersed throughout the monitored region ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "are there any outliers in pm10 readings from a temporal perspective ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "work out the quality of o3",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "put the readings in order according to their pm 10 values.",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is distribution for pm10 value anything other than normal ?",
+        "Low-level visualization task": [
+            "characterize distribution",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me a day with extremely bad air quality",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what days had really bad air quality ?",
+        "Low-level visualization task": [
+            "filter",
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me the count of missing readings in this table.",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the data attribute that has the most na values, for example the hardest data points to collect",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "describe the change in air quality over one day . describe the change in each air pollutant .",
+        "Low-level visualization task": [
+            "trend",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "could you search all available values for pm10 quality .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "are the o3 value and the pm10 value dependent on each other?",
+        "Low-level visualization task": [
+            "dependency"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "across the monitored region, what is the distribution of records for good air quality?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "in the premier league how are the transferred players ages distributed ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me a reason why top backcourt players have a higher market value than the top frontcourt player",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which player had an abnormal transfer_fee ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how old was david when he was transferred in 2010 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010\u20132011?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "for the center forward position, what was the highest market value for the 2011-2012 season?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the numbers of the transferred players in different leagues in the 2010 -2011 season",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    }
+]

@@ -1,0 +1,410 @@
+[
+    {
+        "query": "find out any app that is distinctive from the rest .",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "list the top 10 gaming apps sorted from highest to lowest installations .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the price distribution of all the beauty apps ?",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "name any apps that can support any version of android lower than 4.0 .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "according to population , what is the rank of each of region ?",
+        "Low-level visualization task": [
+            "rank"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the number of hospitals located in manyara ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which 10 regions have the most health centers ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "sort",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "look up regions that names start with the letter a .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "make a list of the number of total hfs in descending order .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the average count of hospitals ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "look for the region that has the most people living in it .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "remove any regions with a population ratio of hf lower than 1.5 .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "the population range needs to be discovered .",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do any regions have their population ratio over 2.0 hf ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me the movie that received the most nominations",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you organize the results of the table by sorting the list according to the age of the stars ?",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you list all the results in the table about the movie \" about schmidt \"?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what was the gender of all actors among all the final winners in the 60th ceremony ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me who won the best performance by an actor in a motion picture - drama award at the 60th ceremony .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "i would like to review the dispersement of the amount of nominations .",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which actor was nominated for the most awards ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me what movie won best original score in a motion picture in 1997 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the correlation between the nomination and the age of a star ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the maximum and minimum number of patients with autism across all regions .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the spatial and temporal correlation of albinism ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "does this data represent outliers in the number of patients ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "take out the regions with a number of patients larger than 500 .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "looking at the number of people in all regions with a visual impairment , what is the median ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "does the value distribution of albinism look skewed ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "kindly rate the regions on the basis of the number of patients",
+        "Low-level visualization task": [
+            "sort",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there a correlation between apps with more installations and higher ratings ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me the most pricey apps by release date , recent to oldest .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the number of clinics that are in mara ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what 's the distribution of the entire hfs ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which region has the lowest population ratio of hf ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "enter the regions from this table .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "out of the winners for best performance by an actor in a motion picture - musical or comedy from 2003 to 2020 , the most abnormal age belongs to which actor ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you list all the results in the table about the movie \" about schmidt ? \" ",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "in the 60th ceremony , the award for best performance by an actor in a motion picture was won by whom ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can the actors nationality impact the outcome ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what was the number of candidates that were nominated for best performance by an actor in a motion picture -drama at he 60th ceremony ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the total number of movies released in the year 1998 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there an outlier within the value distribution of albinism that causes the result to be skewed ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "find all the types of genetic diseases with greater than 1,000 patients .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    }
+]

@@ -1,0 +1,442 @@
+[
+    {
+        "query": "How has AVG (Horsepower) evolved over time? | Segregate it by the car origin.",
+        "Low-level visualization task": [
+            "trend",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "Compare AVG (Acceleration) with Cylinders. | Segregate the cylinders by their origin.",
+        "Low-level visualization task": [
+            "compare",
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "How does the acceleration of cars from different countries vary by the number of cylinders?",
+        "Low-level visualization task": [
+            "trend",
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many cars are from each region?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How has horsepower changed over time in each region?",
+        "Low-level visualization task": [
+            "trend",
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How much was sold each day for each category?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the relationship between profit and sales?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the sales forecast for each date?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many orders were placed for each sub-category?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many products have 3 or more quantity ordered ?",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many products are ordered in single quantity ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Density of sales across regions and their profitability",
+        "Low-level visualization task": [
+            "summarize",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What are the profits across different states?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What product category has more orders placed?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the sales vs profit ratio of the four regions",
+        "Low-level visualization task": [
+            "comparison",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the sales vs profit ratio of all the zones",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How does AVG (Weight) evolve over the years?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does acceleration vary by weight for cars from different regions?",
+        "Low-level visualization task": [
+            "correlate",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the average MPG for cars with different cylinders?",
+        "Low-level visualization task": [
+            "summarize",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does MPG vary by the number of cylinders in a car?",
+        "Low-level visualization task": [
+            "compare",
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does acceleration change with horsepower?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does acceleration behave compared to horsepower?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how does MPG compare to displacement, broken out by region?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "For each region, how does a car's MPG vary with displacement?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the breakdown of cars by the number of cylinders in each region?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many cars have various numbers of cylinders in each region?",
+        "Low-level visualization task": [
+            "summarize",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average weight of cars by model year?",
+        "Low-level visualization task": [
+            "summarize",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How has the average weight of cars changed over the years?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How much is the average of profit of each state?",
+        "Low-level visualization task": [
+            "summarize",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How do the company earn in each state?",
+        "Low-level visualization task": [
+            "summarize",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What were the total sales for each date in each category?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compare",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average profit for each state?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the average profit of each ship mode divided by segment?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "summarize",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many orders were placed for each order quantity?",
+        "Low-level visualization task": [
+            "summarize",
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relationship between sales and profit for each region?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the total profit for each region, based on ship status?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the sales trend of the different product categories?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "sales forecast between Jan 2016 and July 2017",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "I want to know how many orders there are by the quantity of the order",
+        "Low-level visualization task": [
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is our profit based on shipping mode by customer segment?",
+        "Low-level visualization task": [
+            "compute derived value",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average profit of each state",
+        "Low-level visualization task": [
+            "summarize",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the average profit of different segments on the ship modes of transport",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how much is the profit for sales for each",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the correlation between sales and profit by region",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    }
+]

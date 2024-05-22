@@ -1,0 +1,406 @@
+[
+    {
+        "query": "discover the most liked removed video",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "are there are special characters included in the title ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do videos with longer titles get more attention ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me about the \"plush - bad unboxing fan mail\" video .",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what differences are there among the students who acquired more than 270 points between 2010 -2019 ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "use the midterm exam and final exam as the 2nd and 1st keywords respectively in order to assign a rank to every one of the students .",
+        "Low-level visualization task": [
+            "rank"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "use the final exam as the first keyword and midterm exam as the second keyword to rank all the students .",
+        "Low-level visualization task": [
+            "rank"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the scope , among all the students , of the cw2 score .",
+        "Low-level visualization task": [
+            "determine range",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "rank the grades from highest to lowest according to the average score .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the median score of the cw1 class ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do you know the median score of all students in cw1 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "was the same midterm exam given to velma paul and glynis caine ?",
+        "Low-level visualization task": [
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me how mara attributes are distributed ?",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name the country with the lowest suicide rate .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "do you know the average number of suicides in europe ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there similarities between gdp per capita and suicide rates ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "were there any countries with abnormally low suicide rates",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "with the suicide larger than 100 , determine the ages in albania .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the total number of all suicides in 1999 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "would there be any clustering of countries in terms of suicide rates",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "create a list showing the ages of people who committed suicide in albania .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "for the gdp of china , has it gone up or down over the last decade ?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "of all countries , how is the gdp distribution ?",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "has there been an increase or decrease in the gdp of china over the last 10 years",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do the pass rate and the ownership of schools have any correlation ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "create a list of schools showing the descending order by change_p .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you provide a list of school names in geita ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "determine if there are any schools in neighboring regions that have similar avg_m",
+        "Low-level visualization task": [
+            "find similarity"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you show me how the likes are distributed ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me all of the categories of grade types .",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what did the majority of students receive as a grade ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "in cw1 , how many students achieved the feat of 100% , or full marks ?",
+        "Low-level visualization task": [
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how many students received an a ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "select all cw1 scores not less than 80% .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "arrange the students by grade and furnish me with a list .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the distribution of the total points of the students ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "provide the total sum of all the separated , divorced , and widowed people in lindi .",
+        "Low-level visualization task": [
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "does simiyu have a similar structure of peope as that of katavi ?",
+        "Low-level visualization task": [
+            "similarity"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is the total attribute of one area equal to the sum of the other attributes in any area ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "are there any countries with anomalously low suicides rates ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "the country with the lowest suicide rate is ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution rate of suicide ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "i want to see the distribution of the school rankings in geita in 2006 .",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "determine if there are any schools in neighboring regions that have similar avg_m",
+        "Low-level visualization task": [
+            "find similarity"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    }
+]

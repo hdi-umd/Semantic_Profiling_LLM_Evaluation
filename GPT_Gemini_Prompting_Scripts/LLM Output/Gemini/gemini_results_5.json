@@ -1,0 +1,416 @@
+[
+    {
+        "query": "Are there any significant correlations between any 2 variables in the dataset?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is more gun violence committed with stolen guns or non stolen guns",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What type of gun violence has seen the most growth over the years?",
+        "Low-level visualization task": [
+            "trend",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Did most gun violence happen inside home",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which state/year has the most gun deaths?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "let me know if there are groups of neighborhoods with similar birth gender ratios .",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which neighborhood in ciutat vella has more than 100 females born in the year 2013 ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution of all births in all districts between 2013 and 2017 ?",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what neighborhood had 56 boys born in 2017 ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the total number of categories ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "does a app exist that is much different than the others ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the total amount of genres ?",
+        "Low-level visualization task": [
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what apps have a perfect rating and a lot of reviews ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which genres are included in the dataset ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which apps have support for versions of android lower than 4.0 ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the app that costs the most .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the most recent version of androids \" discover color \" .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "when taking different android versions into account , does that have any impact on installation ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me a list of all the free business apps that have received rating that were higher than a 4.5 .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the attribute ' 'rating ' ' be affected ' 'installation",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what 's the price distribution in beauty apps ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How many incidents of gun violence result in death? (I.e. what proportion are fatal vs. non-fatal?)",
+        "Low-level visualization task": [
+            "retrieve value",
+            "summarize",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What\u2019s the frequency of gun violence incidents with multiple victims?",
+        "Low-level visualization task": [
+            "summarize",
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are males or females more likely to die of gun violence?",
+        "Low-level visualization task": [
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Is one sex more likely to perpetrate gun violence?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How have homicide rates increased over time?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Are most gun death because of suicide?",
+        "Low-level visualization task": [
+            "determine range",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the correlation between education levels and suicide rates?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me a list of neighborhoods with the number of male births from least to most .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the distribution of births across all districts in 2017 .",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "retrieve the neighborhood with more than 100 female births in ciutat vella in 2013",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "barcelona 's districts , please list each .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the total number of categories ?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what 's the size of \" kids paint free - drawing fun \" ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the title of the biggest app ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "see if you can locate the most recent gaming app",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "tell me free or paid apps have a higher mean rating .",
+        "Low-level visualization task": [
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "describe shape of the distribution for the number of installations",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there a relationship between the android version of an app and its installations ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which app has a rating that doesn 't follow a trend between installations , rating and number of reviews ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the app with the most abnormal pattern ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "are there an unusually high number of reviews for any of the apps ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the distribution of the number based on shape of installations ?",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is there an effect on price caused by the app 's genre ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    }
+]

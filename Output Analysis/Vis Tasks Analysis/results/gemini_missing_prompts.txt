@@ -1,0 +1,10 @@
+show me the relationship between age and travel time;
+how does mpg compare to displacement, for each region;
+what is the distribution of the total points of the students;
+is the speed of economic development relative to the population of each country;
+what are the minimum and maximum populations of the chinese provinces;
+do the pass rate and the ownership of schools have any correlation;
+do countries with high populations wish to slow down population growth;
+what is the number of divisions in harvard university;
+can you tell me if there is a correlation between revenue and the release year;
+is there a typical film lengths group;

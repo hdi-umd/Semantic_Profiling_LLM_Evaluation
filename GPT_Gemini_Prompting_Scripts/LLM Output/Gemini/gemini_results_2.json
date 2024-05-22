@@ -1,0 +1,430 @@
+[
+    {
+        "query": "Show me the variation in the amount ordered by different entities in different orders",
+        "Low-level visualization task": [
+            "compare",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "relation between rotten tomatoes rating and IMDB rating",
+        "Low-level visualization task": [
+            "compare",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "relation between rotten tomatoes and IMDB ratings",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "worldwide gross for each genre for each year 1995 to now",
+        "Low-level visualization task": [
+            "retrieve value",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "how many films of each creative type",
+        "Low-level visualization task": [
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Relation between worldwide gross and production budget for each major genre",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Relationship of Rotten Tomatoes rating to IMDB rating.",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a correlation between acceleration and horsepower?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many heavy cars are in the dataset?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Are there any American 5 cylinder cars?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Which cylinder cars have the highest fuel economy?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which countries have the most cars in this dataset?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "The distribution of the number of cylinders of cars based on different origins.",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the correlation between horsepower and acceleration?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Is there a correlation between cars' horsepower and acceleration?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how does displacement relate to mpg for individual models, partitioned by country",
+        "Low-level visualization task": [
+            "compare",
+            "find pattern",
+            "partition"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "how does weight relate to acceleration for car models, small multiples by origin",
+        "Low-level visualization task": [
+            "compare",
+            "correlation",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "how does horsepower relate to acceleration for individual car models",
+        "Low-level visualization task": [
+            "compare",
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "Compare the number of models in USA, Japan and Europe ?",
+        "Low-level visualization task": [
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many cylinders do cars manufactured in different countries have?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "Compare car cylinder count against acceleration across countries",
+        "Low-level visualization task": [
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How many cars do each country manufacture?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What's the mileage for cars based on the number of cylinders present?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "How does mileage relate to cylinder count?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the relation between horsepower and acceleration",
+        "Low-level visualization task": [
+            "Correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How has horsepower changed over time by country?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Have cars gotten lighter over time?",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How much do various cars weigh?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the range of weights for all cars?",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "where do the cars originate from?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Cumulative gross for each content rating, by major genre",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "How does displacement relate to fuel economy for cars from Europe v. USA?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Which countries have the highest acceleration for cars of different cylinders?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum",
+            "comparison"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "How do the horsepowers of the cars from different regions change with years?",
+        "Low-level visualization task": [
+            "Trend",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "What is the correlation between displacement and MPG of cars with different origins?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "count the number of cars based on their origins.",
+        "Low-level visualization task": [
+            "Retrieve Value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Does higher horsepower mean lower acceleration?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "Does higher cylinder count mean mean lower mileage?",
+        "Low-level visualization task": [
+            "compare",
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the average MPG for different cylinders",
+        "Low-level visualization task": [
+            "summarize",
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "how weight varies each year",
+        "Low-level visualization task": [
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how is acceleration related to horsepower",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how many models are proudced by each country",
+        "Low-level visualization task": [
+            "count"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the average weight of cars over time",
+        "Low-level visualization task": [
+            "trend",
+            "average"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "What is the distribution of weight across all cars?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    }
+]

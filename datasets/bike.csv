@@ -1,0 +1,300 @@
+trip_id,start_time,end_time,bikeid,tripduration,from_station_id,from_station_name,to_station_id,to_station_name,usertype,gender,birthyear
+17536702,######,######,3304,323,69,Damen Ave & Pierce Ave,159,Claremont Ave & Hirsch St,Subscriber,Male,1988
+17536703,######,######,5367,377,253,Winthrop Ave & Lawrence Ave,325,Clark St & Winnemac Ave (Temp),Subscriber,Male,1984
+17536704,######,######,4599,"2,904.00",98,LaSalle St & Washington St,509,Troy St & North Ave,Subscriber,Male,1989
+17536705,######,######,2302,747,125,Rush St & Hubbard St,364,Larrabee St & Oak St,Subscriber,Male,1983
+17536706,######,######,3696,183,129,Blue Island Ave & 18th St,205,Paulina St & 18th St,Subscriber,Male,1989
+17536707,######,######,6298,266,304,Broadway & Waveland Ave,299,Halsted St & Roscoe St,Subscriber,Female,1994
+17536708,######,######,1169,314,164,Franklin St & Lake St,174,Canal St & Madison St,Subscriber,Male,1998
+17536709,######,######,6351,794,182,Wells St & Elm St,142,McClurg Ct & Erie St,Subscriber,Male,1990
+17536710,######,######,1920,"1,481.00",99,Lake Shore Dr & Ohio St,99,Lake Shore Dr & Ohio St,Customer,,
+17536711,######,######,4783,,99,Lake Shore Dr & Ohio St,99,Lake Shore Dr & Ohio St,Customer,,
+17536712,######,######,3881,"1,361.00",99,Lake Shore Dr & Ohio St,99,Lake Shore Dr & Ohio St,Customer,,
+17536713,######,######,3838,212,13,Wilton Ave & Diversey Pkwy,220,Clark St & Drummond Pl,Subscriber,Male,1992
+17536714,######,######,6160,448,296,Broadway & Belmont Ave,304,Broadway & Waveland Ave,Subscriber,Female,1985
+17536715,######,######,6330,346,85,Michigan Ave & Oak St,106,State St & Pearson St,Subscriber,Female,1993
+17536718,######,######,6099,677,462,Winchester (Ravenswood) Ave & Balmoral Ave,238,Wolcott (Ravenswood) Ave & Montrose Ave (*),Subscriber,Male,1979
+17536719,######,######,966,219,118,Sedgwick St & North Ave,291,Wells St & Evergreen Ave,Subscriber,Male,1993
+17536720,######,######,520,320,165,Clark St & Grace St,256,Broadway & Sheridan Rd,Subscriber,Male,1994
+17536721,######,######,6050,498,198,Green St & Madison St,89,Financial Pl & Congress Pkwy (Temp),Subscriber,Male,1981
+17536722,######,######,586,272,69,Damen Ave & Pierce Ave,213,Leavitt St & North Ave,Subscriber,Female,1986
+17536724,######,######,5765,172,69,Damen Ave & Pierce Ave,213,Leavitt St & North Ave,Subscriber,Male,1985
+17536725,######,######,3439,244,117,Wilton Ave & Belmont Ave,156,Clark St & Wellington Ave,Subscriber,Male,1992
+17536727,######,######,3883,351,76,Lake Shore Dr & Monroe St,49,Dearborn St & Monroe St,Subscriber,Male,1983
+17536731,######,######,5354,735,118,Sedgwick St & North Ave,16,Paulina Ave & North Ave,Subscriber,Male,1988
+17536732,######,######,6267,906,232,Pine Grove Ave & Waveland Ave,325,Clark St & Winnemac Ave (Temp),Subscriber,Male,1990
+17536733,######,######,2342,263,110,Dearborn St & Erie St,142,McClurg Ct & Erie St,Subscriber,Male,1985
+17536734,######,######,213,686,331,Halsted St & Clybourn Ave (*),620,Orleans St & Chestnut St (NEXT Apts),Subscriber,Male,1991
+17536735,######,######,193,945,447,Glenwood Ave & Morse Ave,467,Western Ave & Lunt Ave,Subscriber,Male,1983
+17536736,######,######,5585,188,325,Clark St & Winnemac Ave (Temp),463,Clark St & Berwyn Ave,Subscriber,Male,1984
+17536737,######,######,6068,762,193,State St & 29th St,120,Wentworth Ave & Cermak Rd (Temp),Subscriber,Male,1991
+17536738,######,######,3944,310,312,Clarendon Ave & Gordon Ter,114,Sheffield Ave & Waveland Ave,Subscriber,Male,1990
+17536739,######,######,2036,274,405,Wentworth Ave & 35th St,278,Wallace St & 35th St,Subscriber,Male,1978
+17536740,######,######,6128,"1,092.00",626,Delano Ct & Roosevelt Rd,129,Blue Island Ave & 18th St,Subscriber,Male,1982
+17536741,######,######,6415,498,276,California Ave & North Ave,69,Damen Ave & Pierce Ave,Subscriber,Male,1991
+17536742,######,######,5960,768,260,Kedzie Ave & Milwaukee Ave,509,Troy St & North Ave,Subscriber,Male,1992
+17536743,######,######,3120,117,183,Damen Ave & Thomas St (Augusta Blvd),128,Damen Ave & Chicago Ave,Subscriber,Male,1987
+17536744,######,######,6264,495,247,Shore Dr & 55th St,418,Ellis Ave & 53rd St,Subscriber,Male,1993
+17536745,######,######,540,462,206,Halsted St & Archer Ave,339,Emerald Ave & 31st St,Subscriber,Male,1962
+17536746,######,######,3775,717,72,Wabash Ave & 16th St,36,Franklin St & Jackson Blvd,Subscriber,Male,1987
+17536747,######,######,4784,261,303,Broadway & Cornelia Ave,296,Broadway & Belmont Ave,Subscriber,Male,1990
+17536748,######,######,2645,246,327,Sheffield Ave & Webster Ave,302,Sheffield Ave & Wrightwood Ave,Subscriber,Male,1994
+17536749,######,######,5964,195,273,Michigan Ave & 18th St,338,Calumet Ave & 18th St,Subscriber,Male,1960
+17536750,######,######,3495,343,172,Rush St & Cedar St,211,St. Clair St & Erie St,Subscriber,Male,1980
+17536751,######,######,741,269,13,Wilton Ave & Diversey Pkwy,220,Clark St & Drummond Pl,Subscriber,Male,1959
+17536752,######,######,5235,649,364,Larrabee St & Oak St,211,St. Clair St & Erie St,Subscriber,Male,1987
+17536753,######,######,6373,545,74,Kingsbury St & Erie St,26,McClurg Ct & Illinois St,Subscriber,Male,1972
+17536755,######,######,5179,265,296,Broadway & Belmont Ave,303,Broadway & Cornelia Ave,Subscriber,Male,1990
+17536756,######,######,6391,155,38,Clark St & Lake St,194,Wabash Ave & Wacker Pl,Subscriber,Female,1989
+17536757,######,######,548,981,113,Bissell St & Armitage Ave,268,Lake Shore Dr & North Blvd,Subscriber,Male,1993
+17536758,######,######,1609,451,268,Lake Shore Dr & North Blvd,288,Larrabee St & Armitage Ave,Subscriber,Male,1994
+17536759,######,######,2968,945,3,Shedd Aquarium,41,Federal St & Polk St,Subscriber,Male,1994
+17536760,######,######,4581,"1,233.00",7,Field Blvd & South Water St,7,Field Blvd & South Water St,Subscriber,Male,1966
+17536761,######,######,6153,596,192,Canal St & Adams St,125,Rush St & Hubbard St,Subscriber,Male,1975
+17536762,######,######,1682,"1,228.00",401,Shields Ave & 28th Pl,84,Milwaukee Ave & Grand Ave,Subscriber,Male,1990
+17536763,######,######,4691,983,192,Canal St & Adams St,173,Mies van der Rohe Way & Chicago Ave,Subscriber,Male,1983
+17536764,######,######,1072,277,240,Sheridan Rd & Irving Park Rd,232,Pine Grove Ave & Waveland Ave,Subscriber,Male,1974
+17536765,######,######,6013,642,77,Clinton St & Madison St,53,Wells St & Huron St,Subscriber,Female,1983
+17536766,######,######,782,"1,028.00",44,State St & Randolph St,224,Halsted St & Willow St,Subscriber,Female,1991
+17536767,######,######,5676,360,240,Sheridan Rd & Irving Park Rd,232,Pine Grove Ave & Waveland Ave,Subscriber,Male,1974
+17536768,######,######,5966,957,268,Lake Shore Dr & North Blvd,113,Bissell St & Armitage Ave,Subscriber,Male,1993
+17536769,######,######,5808,"1,164.00",374,Western Ave & Walton St,163,Damen Ave & Clybourn Ave,Subscriber,Male,1992
+17536770,######,######,1846,666,16,Paulina Ave & North Ave,87,Racine Ave & Fullerton Ave,Subscriber,Female,1984
+17536771,######,######,3781,305,223,Clifton Ave & Armitage Ave,87,Racine Ave & Fullerton Ave,Subscriber,Male,1979
+17536772,######,######,3013,217,257,Lincoln Ave & Waveland Ave,230,Lincoln Ave & Roscoe St,Subscriber,Male,1981
+17536773,######,######,3737,274,211,St. Clair St & Erie St,53,Wells St & Huron St,Subscriber,Male,1982
+17536775,######,######,5872,219,31,Franklin St & Chicago Ave,182,Wells St & Elm St,Subscriber,Male,1979
+17536776,######,######,1682,236,84,Milwaukee Ave & Grand Ave,96,Desplaines St & Randolph St,Subscriber,Male,1976
+17536777,######,######,6450,560,59,Wabash Ave & Roosevelt Rd,57,Clinton St & Roosevelt Rd,Subscriber,Male,2000
+17536778,######,######,5771,223,58,Marshfield Ave & Cortland St,219,Damen Ave & Cortland St,Subscriber,Female,1985
+17536779,######,######,6249,399,180,Ritchie Ct & Banks St,142,McClurg Ct & Erie St,Subscriber,Male,1985
+17536780,######,######,6373,"1,032.00",26,McClurg Ct & Illinois St,112,Green St & Randolph St,Subscriber,Female,1991
+17536782,######,######,5146,980,26,McClurg Ct & Illinois St,112,Green St & Randolph St,Subscriber,Male,1992
+17536783,######,######,5872,139,182,Wells St & Elm St,46,Wells St & Walton St,Subscriber,Male,1979
+17536784,######,######,1628,591,288,Larrabee St & Armitage Ave,58,Marshfield Ave & Cortland St,Subscriber,Male,1990
+17536785,######,######,688,301,130,Damen Ave & Division St,213,Leavitt St & North Ave,Subscriber,Male,1987
+17536786,######,######,5556,256,50,Clark St & Congress Pkwy,75,Canal St & Jackson Blvd,Subscriber,Male,1986
+17536787,######,######,642,191,16,Paulina Ave & North Ave,58,Marshfield Ave & Cortland St,Subscriber,Male,1992
+17536788,######,######,112,794,137,Morgan Ave & 14th Pl,286,Franklin St & Quincy St,Subscriber,Male,1969
+17536789,######,######,73,695,297,Paulina St & Montrose Ave,239,Western Ave & Leland Ave,Subscriber,Female,1989
+17536790,######,######,2652,285,153,Southport Ave & Wellington Ave,115,Sheffield Ave & Wellington Ave,Subscriber,Male,1979
+17536791,######,######,5285,366,321,Wabash Ave & 9th St,626,Delano Ct & Roosevelt Rd,Subscriber,Female,1971
+17536792,######,######,5667,327,143,Sedgwick St & Webster Ave,340,Clark St & Wrightwood Ave,Subscriber,Male,1993
+17536793,######,######,3092,310,321,Wabash Ave & 9th St,626,Delano Ct & Roosevelt Rd,Subscriber,Male,1971
+17536794,######,######,5070,"1,871.00",242,Damen Ave & Leland Ave,242,Damen Ave & Leland Ave,Subscriber,Male,1965
+17536795,######,######,1305,329,449,Clark St & Columbia Ave,447,Glenwood Ave & Morse Ave,Subscriber,Female,1981
+17536796,######,######,5782,431,374,Western Ave & Walton St,69,Damen Ave & Pierce Ave,Subscriber,Male,1981
+17536798,######,######,4008,134,148,State St & 33rd St,184,State St & 35th St,Subscriber,Male,1996
+17536799,######,######,5340,374,303,Broadway & Cornelia Ave,300,Broadway & Barry Ave,Subscriber,Female,1976
+17536800,######,######,4820,241,325,Clark St & Winnemac Ave (Temp),463,Clark St & Berwyn Ave,Subscriber,Male,1981
+17536801,######,######,3436,282,240,Sheridan Rd & Irving Park Rd,232,Pine Grove Ave & Waveland Ave,Subscriber,Male,1962
+17536802,######,######,1192,679,303,Broadway & Cornelia Ave,293,Broadway & Wilson Ave,Subscriber,Male,1992
+17536803,######,######,2302,421,364,Larrabee St & Oak St,140,Dearborn Pkwy & Delaware Pl,Subscriber,Male,1966
+17536804,######,######,6285,940,93,Sheffield Ave & Willow St,198,Green St & Madison St,Subscriber,Male,1983
+17536805,######,######,2101,364,74,Kingsbury St & Erie St,337,Clark St & Chicago Ave,Subscriber,Male,1986
+17536806,######,######,5293,232,254,Pine Grove Ave & Irving Park Rd,231,Sheridan Rd & Montrose Ave,Subscriber,Male,1975
+17536807,######,######,2251,496,506,Spaulding Ave & Armitage Ave,510,Spaulding Ave & Division St,Subscriber,Male,1988
+17536808,######,######,720,506,310,Damen Ave & Charleston St,61,Wood St & Milwaukee Ave,Subscriber,Female,1959
+17536809,######,######,4556,288,110,Dearborn St & Erie St,176,Clark St & Elm St,Subscriber,Male,1984
+17536810,######,######,134,289,183,Damen Ave & Thomas St (Augusta Blvd),210,Ashland Ave & Division St,Subscriber,Male,1981
+17536811,######,######,2346,296,239,Western Ave & Leland Ave,316,Damen Ave & Sunnyside Ave,Subscriber,Male,1961
+17536812,######,######,5676,348,232,Pine Grove Ave & Waveland Ave,240,Sheridan Rd & Irving Park Rd,Subscriber,Male,1974
+17536814,######,######,6285,124,198,Green St & Madison St,134,Peoria St & Jackson Blvd,Subscriber,Male,1983
+17536815,######,######,1273,703,331,Halsted St & Clybourn Ave (*),340,Clark St & Wrightwood Ave,Subscriber,Male,1989
+17536816,######,######,5693,448,59,Wabash Ave & Roosevelt Rd,341,Adler Planetarium,Subscriber,Female,1981
+17536817,######,######,4556,409,176,Clark St & Elm St,110,Dearborn St & Erie St,Subscriber,Male,1993
+17536818,######,######,3747,274,227,Southport Ave & Waveland Ave,165,Clark St & Grace St,Subscriber,Male,1991
+17536822,######,######,6373,933,112,Green St & Randolph St,24,Fairbanks Ct & Grand Ave,Subscriber,Female,1991
+17536823,######,######,6170,927,112,Green St & Randolph St,24,Fairbanks Ct & Grand Ave,Subscriber,Male,1992
+17536825,######,######,1072,280,232,Pine Grove Ave & Waveland Ave,240,Sheridan Rd & Irving Park Rd,Subscriber,Male,1974
+17536826,######,######,4982,360,423,University Ave & 57th St,418,Ellis Ave & 53rd St,Subscriber,Female,1989
+17536827,######,######,2471,616,26,McClurg Ct & Illinois St,74,Kingsbury St & Erie St,Subscriber,Male,1972
+17536828,######,######,4916,"3,133.00",173,Mies van der Rohe Way & Chicago Ave,3,Shedd Aquarium,Customer,,
+17536829,######,######,4691,"3,158.00",173,Mies van der Rohe Way & Chicago Ave,3,Shedd Aquarium,Customer,,
+17536834,######,######,2573,316,620,Orleans St & Chestnut St (NEXT Apts),110,Dearborn St & Erie St,Subscriber,Male,1995
+17536837,######,######,383,425,349,Halsted St & Wrightwood Ave,224,Halsted St & Willow St,Subscriber,Male,1965
+17536840,######,######,155,413,38,Clark St & Lake St,140,Dearborn Pkwy & Delaware Pl,Subscriber,Female,1973
+17536842,######,######,1238,"2,958.00",173,Mies van der Rohe Way & Chicago Ave,3,Shedd Aquarium,Customer,,
+17536845,######,######,1419,454,59,Wabash Ave & Roosevelt Rd,57,Clinton St & Roosevelt Rd,Subscriber,Male,1990
+17536850,######,######,4185,"1,323.00",604,Sheridan Rd & Noyes St (NU),604,Sheridan Rd & Noyes St (NU),Subscriber,Male,1951
+17536851,######,######,5703,236,286,Franklin St & Quincy St,107,Desplaines St & Jackson Blvd,Subscriber,Male,1980
+17536852,######,######,297,255,286,Franklin St & Quincy St,107,Desplaines St & Jackson Blvd,Subscriber,Female,1988
+17536853,######,######,4795,163,449,Clark St & Columbia Ave,453,Clark St & Schreiber Ave,Subscriber,Male,1987
+17536859,######,######,570,441,364,Larrabee St & Oak St,140,Dearborn Pkwy & Delaware Pl,Subscriber,Male,1983
+17536860,######,######,1733,"5,027.00",175,Wells St & Polk St,55,Halsted St & Roosevelt Rd,Customer,,
+17536861,######,######,2563,276,59,Wabash Ave & Roosevelt Rd,72,Wabash Ave & 16th St,Subscriber,Male,1991
+17536862,######,######,961,274,59,Wabash Ave & Roosevelt Rd,72,Wabash Ave & 16th St,Subscriber,Female,1991
+17536863,######,######,1846,731,87,Racine Ave & Fullerton Ave,16,Paulina Ave & North Ave,Subscriber,Female,1984
+17536872,######,######,2299,309,59,Wabash Ave & Roosevelt Rd,57,Clinton St & Roosevelt Rd,Subscriber,Male,1995
+17536873,######,######,1419,414,57,Clinton St & Roosevelt Rd,59,Wabash Ave & Roosevelt Rd,Subscriber,Male,1990
+17536874,######,######,5618,573,169,Canal St & Harrison St,41,Federal St & Polk St,Subscriber,Male,1940
+17536875,######,######,5340,348,300,Broadway & Barry Ave,303,Broadway & Cornelia Ave,Subscriber,Female,1976
+17536876,######,######,948,213,232,Pine Grove Ave & Waveland Ave,256,Broadway & Sheridan Rd,Subscriber,Male,1962
+17536887,######,######,4670,132,292,Southport Ave & Clark St,246,Ashland Ave & Belle Plaine Ave,Subscriber,Male,1987
+17536888,######,######,3590,239,343,Racine Ave & Wrightwood Ave,188,Greenview Ave & Fullerton Ave,Subscriber,Male,1988
+17536889,######,######,4077,298,24,Fairbanks Ct & Grand Ave,181,LaSalle St & Illinois St,Subscriber,Male,1988
+17536890,######,######,1715,"1,702.00",337,Clark St & Chicago Ave,176,Clark St & Elm St,Subscriber,Male,1994
+17536891,######,######,270,263,186,Ogden Ave & Race Ave,84,Milwaukee Ave & Grand Ave,Subscriber,Male,1987
+17536892,######,######,2564,286,17,Honore St & Division St,128,Damen Ave & Chicago Ave,Subscriber,Male,1981
+17536893,######,######,1764,217,223,Clifton Ave & Armitage Ave,307,Southport Ave & Clybourn Ave,Subscriber,Male,1970
+17536894,######,######,4581,397,7,Field Blvd & South Water St,44,State St & Randolph St,Subscriber,Male,1984
+17536895,######,######,4835,"1,292.00",349,Halsted St & Wrightwood Ave,35,Streeter Dr & Grand Ave,Subscriber,Male,1990
+17536896,######,######,6225,411,195,Columbus Dr & Randolph St,18,Wacker Dr & Washington St,Subscriber,Male,1991
+17536897,######,######,5626,698,98,LaSalle St & Washington St,168,Michigan Ave & 14th St,Subscriber,Male,1988
+17536898,######,######,5793,329,277,Ashland Ave & Grand Ave,128,Damen Ave & Chicago Ave,Subscriber,Male,1984
+17536906,######,######,1389,392,241,Morgan St & Polk St,14,Morgan St & 18th St,Subscriber,Male,1990
+17536908,######,######,5002,669,100,Orleans St & Merchandise Mart Plaza,289,Wells St & Concord Ln,Subscriber,Male,1986
+17536909,######,######,2471,413,74,Kingsbury St & Erie St,138,Clybourn Ave & Division St,Subscriber,Male,1991
+17536910,######,######,3925,"1,305.00",35,Streeter Dr & Grand Ave,120,Wentworth Ave & Cermak Rd (Temp),Subscriber,Male,1990
+17536911,######,######,1715,"1,192.00",176,Clark St & Elm St,24,Fairbanks Ct & Grand Ave,Subscriber,Male,1994
+17536912,######,######,3713,184,80,Aberdeen St & Monroe St,198,Green St & Madison St,Subscriber,Male,1978
+17536913,######,######,1305,377,447,Glenwood Ave & Morse Ave,520,Greenview Ave & Jarvis Ave,Subscriber,Female,1985
+17536914,######,######,1525,358,166,Ashland Ave & Wrightwood Ave,67,Sheffield Ave & Fullerton Ave,Subscriber,Male,1986
+17536915,######,######,2928,"1,363.00",626,Delano Ct & Roosevelt Rd,178,State St & 19th St,Subscriber,Male,1992
+17536919,######,######,6101,275,520,Greenview Ave & Jarvis Ave,515,Paulina St & Howard St,Subscriber,Female,1985
+17536921,######,######,6460,348,273,Michigan Ave & 18th St,59,Wabash Ave & Roosevelt Rd,Subscriber,Female,1982
+17536922,######,######,3328,366,273,Michigan Ave & 18th St,59,Wabash Ave & Roosevelt Rd,Subscriber,Male,1982
+17536939,######,######,5155,181,126,Clark St & North Ave,141,Clark St & Lincoln Ave,Subscriber,Female,1967
+17536940,######,######,3013,208,230,Lincoln Ave & Roscoe St,257,Lincoln Ave & Waveland Ave,Subscriber,Male,1981
+17536941,######,######,5150,293,26,McClurg Ct & Illinois St,110,Dearborn St & Erie St,Subscriber,Male,1989
+17536942,######,######,5656,689,286,Franklin St & Quincy St,72,Wabash Ave & 16th St,Subscriber,Male,1987
+17536943,######,######,4561,724,254,Pine Grove Ave & Irving Park Rd,300,Broadway & Barry Ave,Subscriber,Male,1953
+17536944,######,######,6006,675,522,Bosworth Ave & Howard St,515,Paulina St & Howard St,Subscriber,Male,1969
+17536945,######,######,4618,388,153,Southport Ave & Wellington Ave,332,Burling St (Halsted) & Diversey Pkwy (Temp),Subscriber,Female,1983
+17536946,######,######,5793,444,128,Damen Ave & Chicago Ave,277,Ashland Ave & Grand Ave,Subscriber,Male,1984
+17536947,######,######,3716,427,149,Calumet Ave & 33rd St,263,Rhodes Ave & 32nd St,Subscriber,Female,1993
+17536950,######,######,2928,"1,343.00",178,State St & 19th St,282,Halsted St & Maxwell St,Subscriber,Male,1992
+17536955,######,######,3092,220,626,Delano Ct & Roosevelt Rd,321,Wabash Ave & 9th St,Subscriber,Male,1971
+17536956,######,######,5285,216,626,Delano Ct & Roosevelt Rd,321,Wabash Ave & 9th St,Subscriber,Female,1971
+17536959,######,######,5534,"1,109.00",134,Peoria St & Jackson Blvd,134,Peoria St & Jackson Blvd,Subscriber,Male,1950
+17536962,######,######,6288,165,340,Clark St & Wrightwood Ave,349,Halsted St & Wrightwood Ave,Subscriber,Male,1991
+17536963,######,######,5252,"1,447.00",263,Rhodes Ave & 32nd St,4,Burnham Harbor,Subscriber,Female,1995
+17536964,######,######,2381,541,29,Noble St & Milwaukee Ave,56,Desplaines St & Kinzie St,Subscriber,Male,1990
+17536965,######,######,1764,272,307,Southport Ave & Clybourn Ave,223,Clifton Ave & Armitage Ave,Subscriber,Male,1970
+17536966,######,######,1625,"1,247.00",263,Rhodes Ave & 32nd St,4,Burnham Harbor,Subscriber,Female,1993
+17536967,######,######,2471,369,138,Clybourn Ave & Division St,74,Kingsbury St & Erie St,Subscriber,Male,1991
+17536968,######,######,6410,124,94,Clark St & Armitage Ave,141,Clark St & Lincoln Ave,Subscriber,Male,1963
+17536969,######,######,527,208,343,Racine Ave & Wrightwood Ave,67,Sheffield Ave & Fullerton Ave,Subscriber,Male,1991
+17536970,######,######,6083,424,5,State St & Harrison St,98,LaSalle St & Washington St,Subscriber,Male,1983
+17536971,######,######,3708,826,22,May St & Taylor St,119,Ashland Ave & Lake St (Temp),Subscriber,Female,1997
+17536972,######,######,5975,314,145,Mies van der Rohe Way & Chestnut St,24,Fairbanks Ct & Grand Ave,Subscriber,Male,1977
+17536973,######,######,6186,290,48,Larrabee St & Kingsbury St,133,Kingsbury St & Kinzie St,Subscriber,Male,1986
+17536976,######,######,2928,"1,518.00",282,Halsted St & Maxwell St,66,Clinton St & Lake St,Subscriber,Male,1992
+17536980,######,######,3495,623,211,St. Clair St & Erie St,48,Larrabee St & Kingsbury St,Subscriber,Female,1989
+17536981,######,######,4561,307,300,Broadway & Barry Ave,115,Sheffield Ave & Wellington Ave,Subscriber,Male,1953
+17536982,######,######,6006,152,515,Paulina St & Howard St,522,Bosworth Ave & Howard St,Subscriber,Male,1969
+17536983,######,######,65,152,243,Lincoln Ave & Leavitt St,316,Damen Ave & Sunnyside Ave,Subscriber,Male,1974
+17536984,######,######,5765,228,213,Leavitt St & North Ave,309,Leavitt St & Armitage Ave,Subscriber,Male,1985
+17536993,######,######,2055,379,188,Greenview Ave & Fullerton Ave,127,Lincoln Ave & Fullerton Ave,Subscriber,Male,1986
+17536994,######,######,3644,871,447,Glenwood Ave & Morse Ave,459,Lakefront Trail & Bryn Mawr Ave,Subscriber,Male,1969
+17536995,######,######,1473,93,342,Wolcott Ave & Polk St,261,Hermitage Ave & Polk St,Subscriber,Male,1970
+17536996,######,######,6057,415,130,Damen Ave & Division St,130,Damen Ave & Division St,Subscriber,Male,1990
+17536997,######,######,4677,443,253,Winthrop Ave & Lawrence Ave,344,Ravenswood Ave & Lawrence Ave,Subscriber,Male,1993
+17536998,######,######,688,114,213,Leavitt St & North Ave,213,Leavitt St & North Ave,Subscriber,Male,1987
+17536999,######,######,1085,330,260,Kedzie Ave & Milwaukee Ave,503,Drake Ave & Fullerton Ave,Subscriber,Male,1990
+17537000,######,######,6398,"1,124.00",520,Greenview Ave & Jarvis Ave,454,Broadway & Granville Ave,Subscriber,Female,1955
+17537001,######,######,1428,605,140,Dearborn Pkwy & Delaware Pl,133,Kingsbury St & Kinzie St,Subscriber,Female,1992
+17537002,######,######,1265,508,174,Canal St & Madison St,181,LaSalle St & Illinois St,Subscriber,Male,1998
+17537006,######,######,711,810,160,Campbell Ave & North Ave,128,Damen Ave & Chicago Ave,Subscriber,Male,1984
+17537008,######,######,5113,605,289,Wells St & Concord Ln,110,Dearborn St & Erie St,Subscriber,Male,1986
+17537009,######,######,2042,"1,047.00",290,Kedzie Ave & Palmer Ct,491,Talman Ave & Addison St,Subscriber,Male,1987
+17537010,######,######,6315,549,233,Sangamon St & Washington Blvd (*),133,Kingsbury St & Kinzie St,Subscriber,Male,1982
+17537011,######,######,3647,"2,060.00",145,Mies van der Rohe Way & Chestnut St,25,Michigan Ave & Pearson St,Subscriber,Male,1994
+17537012,######,######,2928,"1,687.00",66,Clinton St & Lake St,140,Dearborn Pkwy & Delaware Pl,Subscriber,Male,1992
+17537013,######,######,5966,533,113,Bissell St & Armitage Ave,307,Southport Ave & Clybourn Ave,Subscriber,Male,1990
+17537014,######,######,3644,"1,411.00",459,Lakefront Trail & Bryn Mawr Ave,300,Broadway & Barry Ave,Subscriber,Male,1969
+17537015,######,######,5435,900,97,Field Museum,76,Lake Shore Dr & Monroe St,Subscriber,Female,1993
+17537016,######,######,407,869,97,Field Museum,76,Lake Shore Dr & Monroe St,Subscriber,Female,1995
+17537020,######,######,5625,159,129,Blue Island Ave & 18th St,205,Paulina St & 18th St,Subscriber,Male,1988
+17537022,######,######,45,245,56,Desplaines St & Kinzie St,74,Kingsbury St & Erie St,Subscriber,Male,1990
+17537033,######,######,5625,218,205,Paulina St & 18th St,129,Blue Island Ave & 18th St,Subscriber,Male,1988
+17537034,######,######,4665,340,143,Sedgwick St & Webster Ave,327,Sheffield Ave & Webster Ave,Subscriber,Female,1991
+17537035,######,######,4762,"6,430.00",460,Clark St & Bryn Mawr Ave,460,Clark St & Bryn Mawr Ave,Subscriber,Male,1984
+17537036,######,######,5002,190,289,Wells St & Concord Ln,291,Wells St & Evergreen Ave,Subscriber,Male,1963
+17537037,######,######,5053,"1,859.00",451,Sheridan Rd & Loyola Ave,447,Glenwood Ave & Morse Ave,Subscriber,Female,1988
+17537038,######,######,6463,"1,828.00",451,Sheridan Rd & Loyola Ave,447,Glenwood Ave & Morse Ave,Subscriber,Male,1984
+17537040,######,######,311,283,300,Broadway & Barry Ave,157,Lake Shore Dr & Wellington Ave,Subscriber,Male,1972
+17537041,######,######,6398,945,454,Broadway & Granville Ave,354,Sheridan Rd & Greenleaf Ave,Subscriber,Female,1955
+17537042,######,######,2266,523,25,Michigan Ave & Pearson St,620,Orleans St & Chestnut St (NEXT Apts),Subscriber,Male,1995
+17537043,######,######,6429,230,300,Broadway & Barry Ave,157,Lake Shore Dr & Wellington Ave,Subscriber,Female,1972
+17537044,######,######,3644,162,300,Broadway & Barry Ave,156,Clark St & Wellington Ave,Subscriber,Male,1969
+17537045,######,######,2928,"1,551.00",140,Dearborn Pkwy & Delaware Pl,59,Wabash Ave & Roosevelt Rd,Subscriber,Male,1992
+17537046,######,######,6336,345,337,Clark St & Chicago Ave,74,Kingsbury St & Erie St,Subscriber,Male,1986
+17537047,######,######,3697,468,56,Desplaines St & Kinzie St,186,Ogden Ave & Race Ave,Subscriber,Male,1987
+17537048,######,######,6438,356,148,State St & 33rd St,149,Calumet Ave & 33rd St,Subscriber,Male,1992
+17537049,######,######,6189,"1,254.00",37,Dearborn St & Adams St,38,Clark St & Lake St,Customer,,
+17537050,######,######,151,370,626,Delano Ct & Roosevelt Rd,72,Wabash Ave & 16th St,Subscriber,Male,1946
+17537051,######,######,6398,750,354,Sheridan Rd & Greenleaf Ave,520,Greenview Ave & Jarvis Ave,Subscriber,Female,1955
+17537052,######,######,4644,143,254,Pine Grove Ave & Irving Park Rd,232,Pine Grove Ave & Waveland Ave,Subscriber,Male,1984
+17537056,######,######,4621,"1,824.00",145,Mies van der Rohe Way & Chestnut St,110,Dearborn St & Erie St,Subscriber,Male,1994
+17537059,######,######,778,303,129,Blue Island Ave & 18th St,15,Racine Ave & 18th St,Subscriber,Male,1990
+17537060,######,######,6288,154,349,Halsted St & Wrightwood Ave,13,Wilton Ave & Diversey Pkwy,Subscriber,Male,1992
+17537061,######,######,6083,190,98,LaSalle St & Washington St,283,LaSalle St & Jackson Blvd,Subscriber,Male,1983
+17537068,######,######,6288,167,13,Wilton Ave & Diversey Pkwy,349,Halsted St & Wrightwood Ave,Subscriber,Male,1992
+17537069,######,######,1907,632,239,Western Ave & Leland Ave,297,Paulina St & Montrose Ave,Customer,,
+17537072,######,######,6189,"1,838.00",38,Clark St & Lake St,53,Wells St & Huron St,Customer,,
+17537073,######,######,1525,267,67,Sheffield Ave & Fullerton Ave,188,Greenview Ave & Fullerton Ave,Subscriber,Male,1967
+17537074,######,######,6186,309,133,Kingsbury St & Kinzie St,48,Larrabee St & Kingsbury St,Subscriber,Male,1986
+17537075,######,######,3903,"1,808.00",329,Lake Shore Dr & Diversey Pkwy,329,Lake Shore Dr & Diversey Pkwy,Subscriber,Male,1969
+17537076,######,######,5150,"1,037.00",110,Dearborn St & Erie St,313,Lakeview Ave & Fullerton Pkwy,Subscriber,Male,1992
+17537077,######,######,4556,354,110,Dearborn St & Erie St,176,Clark St & Elm St,Subscriber,Male,1993
+17537078,######,######,2471,274,74,Kingsbury St & Erie St,110,Dearborn St & Erie St,Subscriber,Male,1986
+17537079,######,######,2214,399,76,Lake Shore Dr & Monroe St,52,Michigan Ave & Lake St,Subscriber,Male,1991
+17537080,######,######,1525,249,188,Greenview Ave & Fullerton Ave,87,Racine Ave & Fullerton Ave,Subscriber,Male,1967
+17537084,######,######,2679,469,44,State St & Randolph St,77,Clinton St & Madison St,Subscriber,Male,1970
+17537085,######,######,2928,218,59,Wabash Ave & Roosevelt Rd,626,Delano Ct & Roosevelt Rd,Subscriber,Male,1992
+17537086,######,######,4621,790,110,Dearborn St & Erie St,176,Clark St & Elm St,Subscriber,Male,1994
+17537087,######,######,3817,344,364,Larrabee St & Oak St,133,Kingsbury St & Kinzie St,Subscriber,Male,1985
+17537090,######,######,4019,241,575,Cottage Grove Ave & 78th St,574,Eberhart (Vernon) Ave & 79th St,Subscriber,Male,1997
+17537091,######,######,2928,242,626,Delano Ct & Roosevelt Rd,414,Canal St & Taylor St,Subscriber,Male,1992
+17537092,######,######,180,"1,060.00",340,Clark St & Wrightwood Ave,58,Marshfield Ave & Cortland St,Subscriber,Male,1964
+17537094,######,######,2928,"1,317.00",414,Canal St & Taylor St,103,Clinton St & Polk St (*),Subscriber,Male,1992
+17537097,######,######,2833,455,144,Larrabee St & Webster Ave,223,Clifton Ave & Armitage Ave,Subscriber,Female,1993
+17537098,######,######,6141,763,214,Damen Ave & Grand Ave,219,Damen Ave & Cortland St,Subscriber,Male,1971
+17537099,######,######,2120,851,575,Cottage Grove Ave & 78th St,575,Cottage Grove Ave & 78th St,Subscriber,Male,1997
+17537100,######,######,6189,"1,521.00",53,Wells St & Huron St,52,Michigan Ave & Lake St,Customer,,
+17537101,######,######,5235,228,211,St. Clair St & Erie St,53,Wells St & Huron St,Subscriber,Male,1987
+17537102,######,######,4089,660,290,Kedzie Ave & Palmer Ct,502,California Ave & Altgeld St,Subscriber,Female,1987
+17537103,######,######,2045,721,26,McClurg Ct & Illinois St,174,Canal St & Madison St,Subscriber,Male,1964
+17537104,######,######,3241,224,160,Campbell Ave & North Ave,276,California Ave & North Ave,Subscriber,Male,1975
+17537105,######,######,4589,727,199,Wabash Ave & Grand Ave,192,Canal St & Adams St,Subscriber,Male,1975
+17537106,######,######,6265,405,53,Wells St & Huron St,364,Larrabee St & Oak St,Subscriber,Male,1987
+17537107,######,######,3839,375,140,Dearborn Pkwy & Delaware Pl,364,Larrabee St & Oak St,Subscriber,Male,1966
+17537108,######,######,5518,776,502,California Ave & Altgeld St,491,Talman Ave & Addison St,Subscriber,Female,1987
+17537109,######,######,2727,"2,445.00",574,Eberhart (Vernon) Ave & 79th St,575,Cottage Grove Ave & 78th St,Subscriber,Male,1997
+17537110,######,######,6265,"1,257.00",364,Larrabee St & Oak St,90,Millennium Park,Subscriber,Male,1963
+17537111,######,######,2928,502,103,Clinton St & Polk St (*),103,Clinton St & Polk St (*),Subscriber,Male,1992
+17537112,######,######,1815,331,133,Kingsbury St & Kinzie St,174,Canal St & Madison St,Subscriber,Male,1982
+17537117,######,######,4698,197,52,Michigan Ave & Lake St,38,Clark St & Lake St,Subscriber,Female,1976
+17537120,######,######,6127,330,195,Columbus Dr & Randolph St,49,Dearborn St & Monroe St,Subscriber,Male,1981
+17537121,######,######,6189,"1,173.00",52,Michigan Ave & Lake St,181,LaSalle St & Illinois St,Customer,,
+17537122,######,######,2928,391,103,Clinton St & Polk St (*),626,Delano Ct & Roosevelt Rd,Subscriber,Male,1992
+17537125,######,######,433,"1,900.00",160,Campbell Ave & North Ave,113,Bissell St & Armitage Ave,Subscriber,Male,1987
+17537126,######,######,2928,482,626,Delano Ct & Roosevelt Rd,626,Delano Ct & Roosevelt Rd,Subscriber,Male,1992
+17537130,######,######,2471,328,110,Dearborn St & Erie St,74,Kingsbury St & Erie St,Subscriber,Male,1986
+17537131,######,######,2941,817,26,McClurg Ct & Illinois St,77,Clinton St & Madison St,Subscriber,Male,1985
+17537132,######,######,5179,800,303,Broadway & Cornelia Ave,251,Clarendon Ave & Leland Ave,Subscriber,Female,1964
+17537133,######,######,5520,282,164,Franklin St & Lake St,49,Dearborn St & Monroe St,Subscriber,Male,1991
+17537134,######,######,3817,395,133,Kingsbury St & Kinzie St,364,Larrabee St & Oak St,Subscriber,Male,1985
+17537135,######,######,3,340,51,Clark St & Randolph St,195,Columbus Dr & Randolph St,Subscriber,Male,1993
+17537136,######,######,5285,106,321,Wabash Ave & 9th St,59,Wabash Ave & Roosevelt Rd,Subscriber,Male,1978
+17537137,######,######,3806,427,211,St. Clair St & Erie St,74,Kingsbury St & Erie St,Subscriber,Male,1983
+17537138,######,######,5429,333,116,Western Ave & Winnebago Ave,160,Campbell Ave & North Ave,Subscriber,Female,1980
+17537139,######,######,5646,738,258,Logan Blvd & Elston Ave,290,Kedzie Ave & Palmer Ct,Subscriber,Male,1994
+17537145,######,######,3806,197,74,Kingsbury St & Erie St,133,Kingsbury St & Kinzie St,Subscriber,Male,1978
+17537148,######,######,4267,260,507,Humboldt Blvd & Armitage Ave,123,California Ave & Milwaukee Ave,Subscriber,Male,1986
+17537149,######,######,5285,161,59,Wabash Ave & Roosevelt Rd,321,Wabash Ave & 9th St,Subscriber,Male,1978
+17537150,######,######,3855,484,286,Franklin St & Quincy St,198,Green St & Madison St,Subscriber,Male,1969
+17537151,######,######,1336,203,183,Damen Ave & Thomas St (Augusta Blvd),374,Western Ave & Walton St,Subscriber,Male,1992
+17537152,######,######,6088,258,180,Ritchie Ct & Banks St,268,Lake Shore Dr & North Blvd,Subscriber,Female,1994
+17537153,######,######,6158,"4,405.00",77,Clinton St & Madison St,71,Morgan St & Lake St,Customer,,
+17537154,######,######,1798,305,94,Clark St & Armitage Ave,118,Sedgwick St & North Ave,Subscriber,Male,1994
+17537155,######,######,2928,181,626,Delano Ct & Roosevelt Rd,394,Clark St & 9th St (AMLI),Subscriber,Male,1987
+17537156,######,######,4640,358,280,Morgan St & 31st St,279,Halsted St & 35th St (*),Subscriber,Male,1992
+17537157,######,######,1936,"1,405.00",106,State St & Pearson St,176,Clark St & Elm St,Subscriber,Male,1994
+17537158,######,######,1715,933,24,Fairbanks Ct & Grand Ave,283,LaSalle St & Jackson Blvd,Subscriber,Male,1963
+17537159,######,######,5967,240,338,Calumet Ave & 18th St,72,Wabash Ave & 16th St,Subscriber,Male,1975
+17537160,######,######,6215,260,112,Green St & Randolph St,80,Aberdeen St & Monroe St,Subscriber,Male,1978
+17537162,######,######,3386,"1,261.00",626,Delano Ct & Roosevelt Rd,74,Kingsbury St & Erie St,Subscriber,Male,1992
+17537163,######,######,3713,813,198,Green St & Madison St,137,Morgan Ave & 14th Pl,Subscriber,Male,1969
+17537165,######,######,3149,398,423,University Ave & 57th St,322,Kimbark Ave & 53rd St,Subscriber,Male,1982

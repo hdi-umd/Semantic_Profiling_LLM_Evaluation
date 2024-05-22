@@ -1,0 +1,412 @@
+[
+    {
+        "query": "could you buy a player with his market value higher than a transfer fee ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "list center -backs by what their transfer_fee was .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which player was the oldest that was transferred ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "do you feel that midfield players have a lower market value than front court players ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is the normal distribuition satisfied by the length of the movies ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "sort the movies by length .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how long is the run time of average r -rated movies ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me the numbers of movies that were released in 2017 .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there an average run time for movies ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is the running time of movies recently longer than it used to be ?",
+        "Low-level visualization task": [
+            "compare",
+            "trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "keyword"
+        ]
+    },
+    {
+        "query": "does any movies not have a description ?",
+        "Low-level visualization task": [
+            "find anomalies"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "at what point was data added to the table for netflix ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the percentage of the white population in blount county , alabama ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me the sales distribution of type 4046 in 2015",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "using the three types of avocado 's sales ratio , provide the groups of regions",
+        "Low-level visualization task": [
+            "Cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "provide the distribution of the sales in 2015 of type 4046 .",
+        "Low-level visualization task": [
+            "Characterize Distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "how are postgraduate student numbers distributed every year ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "state the average income of postgraduate students in each country .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "keyword"
+        ]
+    },
+    {
+        "query": "in each year , what is the distribution of the number of postgraduates ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do you know which videos have more than 100 tags ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "filter all the videos published before yesterday .",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "which videos are missing thumbnail links ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which video has the most tags ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "give me a list of videos , ordered by the number of likes , that are on the channel \" eminemvevo \"",
+        "Low-level visualization task": [
+            "sort",
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the average transfer_fee for players who transferred to the premier league ?",
+        "Low-level visualization task": [
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the distribution of the leagues who paid for transferred players in 2010 ?",
+        "Low-level visualization task": [
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "are you aware of any clustering of the seasons in which players were transferred to the premier league ?",
+        "Low-level visualization task": [
+            "clustering"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "name movies released in 2017 .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do movie tags and duration have a connection ?",
+        "Low-level visualization task": [
+            "correlate"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "determine if the running time of movies has increased in recent years .",
+        "Low-level visualization task": [
+            "Trend"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the dates that netflix released movies .",
+        "Low-level visualization task": [
+            "retrieve value",
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what percentage of the blount county , alabama population is white ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "sort all the counties in connecticut by the percentages of the hispanic population .",
+        "Low-level visualization task": [
+            "sort"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "tell me which county has the greatest number of female residents .",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "calculate the average black population for each state .",
+        "Low-level visualization task": [
+            "compute derived value",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what are the groups of regions according to three types of avocados sales ratio ?",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "determine in what year the income of undergraduate students was higher ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "could you tell me if there is any correlation between the number of undergraduate and postgraduate students ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "what is the number of postgraduate students for each year ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "plush - bad unboxing fan mail belongs to which specific channel ?",
+        "Low-level visualization task": [
+            "filter"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "show me the video with the highest number of tags",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "in the videos by \" eminemvevo \" , what are the average number of comments made ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "compute derived value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword",
+            "inferred"
+        ]
+    },
+    {
+        "query": "indicate the number of likes that \" plush - bad unboxing fan mail \" receives .",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "what is the number if likes from the \" plush - bad unboxing fan mail \" video ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    }
+]

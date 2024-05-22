@@ -1,0 +1,3380 @@
+[
+    {
+        "key": "Relationship between IMDB Rating and Rotten Tomatoes Rating",
+        "Mixtral_response": {
+            "query": "Relationship between IMDB Rating and Rotten Tomatoes Rating",
+            "Relevant data columns": [
+                "Rotten Tomatoes Rating",
+                "IMDB Rating"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['Rotten Tomatoes Rating', 'IMDB Rating']]",
+            "Data transformation operation": [
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Which creative type had the most movies?",
+        "Mixtral_response": {
+            "query": "Which creative type had the most movies?",
+            "Relevant data columns": [
+                "Creative Type"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "creative_type_counts = df['Creative Type'].value_counts()",
+            "Data transformation operation": [
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "For each genre and rating, what is the total world-wide gross earnings?",
+        "Mixtral_response": {
+            "query": "For each genre and rating, what is the total world-wide gross earnings?",
+            "Relevant data columns": [
+                "Major Genre",
+                "Content Rating",
+                "Worldwide Gross"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to consider multiple ratings within a genre separately.",
+            "Ambiguity resolution": "Group by both genre and rating, then aggregate worldwide gross earnings.",
+            "/Data transformations": "genre_rating_gross = df.groupby(['Major Genre', 'Content Rating'])['Worldwide Gross'].sum()",
+            "@Data transformation operation": [
+                "groupby",
+                "summarize"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Miscellaneous Column": ""
+        }
+    },
+    {
+        "key": "Help me see outliers in IMDB and Rotten Tomatoes ratings",
+        "Mixtral_response": {
+            "query": "Help me see outliers in IMDB and Rotten Tomatoes ratings",
+            "Relevant data columns": [
+                "Rotten Tomatoes Rating",
+                "IMDB Rating"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "identify outlier"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "import numpy as np; q1 = df['Rotten Tomatoes Rating'].quantile(0.25); q3 = df['Rotten Tomatoes Rating'].quantile(0.75); iqr = q3 - q1; lower_bound_rt = q1 - 1.5*iqr; upper_bound_rt = q3 + 1.5*iqr; \"q1_imdb = df['IMDB Rating'].quantile(0.25); q3_imdb = df['IMDB Rating'].quantile(0.75); iqr_imdb = q3_imdb - q1_imdb; lower_bound_imdb = q1_imdb - 1.5*iqr_imdb; upper_bound_imdb = q3_imdb + 1.5*iqr_imdb;",
+            "Data transformation operation": [
+                "calculate quantiles",
+                "calculate IQR",
+                "calculate bounds"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "gross across genres regarding content rating",
+        "Mixtral_response": {
+            "query": "gross across genres regarding content rating",
+            "Relevant data columns": [
+                "Content Rating",
+                "Major Genre",
+                "Worldwide Gross"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation",
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether the focus is on average grossing or total grossing across genres.",
+            "Ambiguity resolution": "Calculate both average and total grossing across genres by content rating.",
+            "/Data transformations": "genre_gross = df.groupby(['Content Rating', 'Major Genre'])['Worldwide Gross'].agg(['sum', mean'])",
+            "@Data transformation operation": [
+                "groupby",
+                "aggregate"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Miscellaneous Column": ""
+        }
+    },
+    {
+        "key": "relation between rotten tomatoes rating and IMDB rating",
+        "Mixtral_response": {
+            "query": "relation between rotten tomatoes rating and IMDB rating",
+            "Relevant data columns": [
+                "Rotten Tomatoes Rating",
+                "IMDB Rating"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['Rotten Tomatoes Rating', 'IMDB Rating']].corr()",
+            "Data transformation operation": [
+                "calculate correlation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Miscellaneous": ""
+        }
+    },
+    {
+        "key": "Cumulative gross for each content rating, by major genre",
+        "Mixtral_response": {
+            "query": "Cumulative gross for each content rating, by major genre",
+            "Relevant data columns": [
+                "Content Rating",
+                "Major Genre",
+                "Worldwide Gross"
+            ],
+            "/Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.groupby(['Content Rating', 'Major Genre'])['Worldwide Gross'].sum()",
+            "@Data transformation operation": [
+                "groupby",
+                "sum"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Relation between worldwide gross and production budget for each major genre",
+        "Mixtral_response": {
+            "query": "Relation between worldwide gross and production budget for each major genre",
+            "Relevant data columns": [
+                "Worldwide Gross",
+                "Production Budget",
+                "Major Genre"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "relationship"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.pivot_table(index='Major Genre', values=['Worldwide Gross', 'Production Budget'])",
+            "Data transformation operation": [
+                "pivot_table"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Relationship of Rotten Tomatoes rating to IMDB rating.",
+        "Mixtral_response": {
+            "query": "Relationship of Rotten Tomatoes rating to IMDB rating.",
+            "Relevant data columns": [
+                "Rotten Tomatoes Rating",
+                "IMDB Rating"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['Rotten Tomatoes Rating', 'IMDB Rating']].corr()",
+            "Data transformation operation": [
+                "correlation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Which cylinder cars have the highest fuel economy?",
+        "Mixtral_response": {
+            "query": "Which cylinder cars have the highest fuel economy?",
+            "Relevant data columns": [
+                "cylinders",
+                "mpg"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "find extreme"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "result_df = df.loc[:, ['cylinders', mpg']].groupby('cylinders')['mpg'].max()",
+            "Data transformation operation": [
+                "groupby",
+                "aggregate"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Which countries have the most cars in this dataset?",
+        "Mixtral_response": {
+            "query": "Which countries have the most cars in this dataset?",
+            "Relevant data columns": [
+                "country"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieve value",
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to count the number of rows for each country or perform any other aggregation.",
+            "Ambiguity resolution": "Count the number of rows for each country.",
+            "Data transformations": "df_country_count = df.groupby('country')['mpg'].count().reset_index(name='count')",
+            "Data transformation operation": [
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "How do the horsepowers of the cars from different regions change with years?",
+        "Mixtral_response": {
+            "query": "How do the horsepowers of the cars from different regions change with years?",
+            "Relevant data columns": [
+                "hp",
+                "year",
+                "country"
+            ],
+            "data_column_classification": [
+                "keyword",
+                "keyword",
+                "inferred"
+            ],
+            "low_level_visualization_task": [
+                "correlation"
+            ],
+            "low_level_visualization_task_classification": [
+                "inferred"
+            ],
+            "visualization_goal": [
+                "exploratory"
+            ],
+            "ambiguity_in_the_query": "It's unclear whether the horsepower changes over time within each region or overall.",
+            "ambiguity_resolution": "Separate the horsepower by region and plot their trends against year.",
+            "data_transformations": "region_hp_trends = df.groupby(['country', 'year'])['hp'].mean()",
+            "data_transformation_operation": [
+                "groupby",
+                "aggregate"
+            ],
+            "new_column_name": "",
+            "derivation_specification": "",
+            "missing_data_column": ""
+        }
+    },
+    {
+        "key": "The distribution of the number of cylinders of cars based on different origins.",
+        "Mixtral_response": {
+            "query": "The distribution of the number of cylinders of cars based on different origins.",
+            "Relevant data columns": [
+                "cylinders",
+                "country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether the distribution should be shown separately for each origin or combined",
+            "Ambiguity resolution": "Separate distributions by origin",
+            "@Data transformations": "df_grouped = df.groupby('country')['cylinders'].value_counts().reset_index(name='counts'); df_pivot = df_grouped.pivot(index='cylinders', columns='country', values='counts')",
+            "/Data transformation operation": [
+                "groupby",
+                "pivot"
+            ],
+            "/New Column Name": "",
+            "/Derivation Specification": "",
+            "/Missing Data Column": ""
+        }
+    },
+    {
+        "key": "how does displacement relate to mpg for individual models, partitioned by country",
+        "Mixtral_response": {
+            "query": "how does displacement relate to mpg for individual models, partitioned by country",
+            "Relevant data columns": [
+                "cubicinches",
+                "mpg",
+                "country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "relationship",
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to aggregate the data by country before examining the relation between displacement and mpg.",
+            "Ambiguity resolution": "No aggregation needed since we want to see relationships at individual model level",
+            "/Data transformations": "df[['cubicinches', mpg', 'country']].copy()",
+            "@Data transformation operation": [
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "how does weight relate to acceleration for car models, small multiples by origin",
+        "Mixtral_response": {
+            "query": "how does weight relate to acceleration for car models, small multiples by origin",
+            "Relevant data columns": [
+                "weightlbs",
+                "timeto60",
+                "country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation",
+                "relationship",
+                "small multiple"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred",
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "The phrase small multiples' implies faceting but it's unclear whether separate charts are needed for each region/country or one chart showing differences between regions/countries.",
+            "Ambiguity resolution": "Create facets by origin, plot relationships within each facet",
+            "/Data transformations": "import matplotlib.pyplot as plt; import seaborn as sns; sns.set(style='whitegrid'); g = sns.FacetGrid(df, col='country', col_wrap=3); g.map(plt.scatter, 'weightlbs', 'timeto60')",
+            "@Data transformation operation": [
+                "facet grid",
+                "scatterplot"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "how is acceleration related to horsepower",
+        "Mixtral_response": {
+            "query": "how is acceleration related to horsepower",
+            "Relevant data columns": [
+                "timeto60",
+                "hp"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "relationship"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['timeto60', 'hp']]",
+            "Data transformation operation": [
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "What is the distribution of weight across all cars?",
+        "Mixtral_response": {
+            "query": "What is the distribution of weight across all cars?",
+            "Relevant data columns": [
+                "weightlbs"
+            ],
+            "data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['weightlbs']].describe()",
+            "Data transformation operation": [
+                "summary statistics"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "How has AVG (Horsepower) evolved over time? | Segregate it by the car origin.",
+        "Mixtral_response": {
+            "query": "How has AVG (Horsepower) evolved over time? | Segregate it by the car origin.",
+            "Relevant data columns": [
+                "hp",
+                "year",
+                "country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "trend",
+                "segregation"
+            ],
+            "Low-level visualization task classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It is unclear whether the average horsepower should be taken for individual cars or overall across all models from a particular region",
+            "Ambiguity resolution": "Take average horsepower across all models from a particular region",
+            "Data transformations": "df_grouped = df.groupby(['year', 'country'])['hp'].mean().reset_index()",
+            "Data transformation operation": [
+                "groupby",
+                "aggregate mean"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "How many cars are from each region?",
+        "Mixtral_response": {
+            "query": "How many cars are from each region?",
+            "Relevant data columns": [
+                "country"
+            ],
+            "/Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "region_counts = df['country'].value_counts()",
+            "Data transformation operation": [
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "For each region, how does a car's MPG vary with displacement?",
+        "Mixtral_response": {
+            "query": "For each region, how does a car's MPG vary with displacement?",
+            "Relevant data columns": [
+                "mpg",
+                "cubicinches",
+                "country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "relationship"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether we need to consider other factors such as horsepower when analyzing the variation of MPG with displacement.",
+            "Ambiguity resolution": "Focus solely on the relationship between MPG and displacement by region.",
+            "Data transformations": "df_grouped = df.groupby('country')[['mpg', 'cubicinches']].corr()",
+            "Data transformation operation": [
+                "groupby",
+                "correlation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "How has horsepower changed over time in each region?",
+        "Mixtral_response": {
+            "query": "How has horsepower changed over time in each region?",
+            "Relevant data columns": [
+                "hp",
+                "year",
+                "country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "trend"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df_grouped = df.groupby(['country', 'year'])['hp'].mean()",
+            "Data transformation operation": [
+                "groupby",
+                "aggregate"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "What is the average profit for each state?",
+        "Mixtral_response": {
+            "query": "What is the average profit for each state?",
+            "Relevant data columns": [
+                "State",
+                "Profit"
+            ],
+            "data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "low-level visualization task": [
+                "aggregation"
+            ],
+            "low-level visualization task classification": [
+                "keyword"
+            ],
+            "visualization goal": [
+                "targeted"
+            ],
+            "ambiguity in the query": "",
+            "ambiguity resolution": "",
+            "data transformations": "state_profit_avg = df.groupby('State')['Profit'].mean()",
+            "data transformation operation": [
+                "groupby",
+                "mean"
+            ],
+            "new column name": "",
+            "derivation specification": "",
+            "missing data column": ""
+        }
+    },
+    {
+        "key": "What is the sales forecast for each date?",
+        "Mixtral_response": {
+            "query": "What is the sales forecast for each date?",
+            "Relevant data columns": [
+                "Order Date",
+                "Sales Forecast"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieve value",
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It is unclear whether we need to aggregate sales forecasts by day or show individual orders.",
+            "Ambiguity resolution": "Aggregate sales forecasts by order date.",
+            "Data transformations": "df.groupby('Order Date')['Sales Forecast'].sum()",
+            "Data transformation operation": [
+                "groupby",
+                "sum"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Density of sales across regions and their profitability",
+        "Mixtral_response": {
+            "query": "Density of sales across regions and their profitability",
+            "Relevant data columns": [
+                "Region",
+                "Sales",
+                "Profit"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution",
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether density refers to geographical distribution or statistical density",
+            "Ambiguity resolution": "Assume density refers to statistical density of sales and profit across regions",
+            "Data transformations": "df_region_sales_profit = df[['Region', 'Sales', 'Profit']].copy(); df_region_sales_profit['Sales_Density'] = df_region_sales_profit.groupby('Region')['Sales'].transform(lambda x: x / x.sum()); df_region_sales_profit['Profitability'] = df_region_sales_profit['Profit'] / df_region_sales_profit['Sales'];",
+            "Data transformation operation": [
+                "groupby",
+                "transform",
+                "calculate"
+            ],
+            "New Column Name": [
+                "Sales_Density",
+                "Profitability"
+            ],
+            "Derivation Specification": "'Sales_Density' = regional sales / total sales in region, 'Profitability' = profit / sales",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "What is the average profit of different segments on the ship modes of transport",
+        "Mixtral_response": {
+            "query": "What is the average profit of different segments on the ship modes of transport",
+            "Relevant data columns": [
+                "Profit",
+                "Segment",
+                "Ship Mode"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregate"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df_grouped = df.groupby(['Segment', 'Ship Mode'])['Profit'].mean()",
+            "Data transformation operation": [
+                "groupby",
+                "average"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Can you create a graph showing sales and profit by region?",
+        "Mixtral_response": {
+            "query": "Can you create a graph showing sales and profit by region?",
+            "Relevant data columns": [
+                "Region",
+                "Sales",
+                "Profit"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "relationship",
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "region_sales_profit = df.groupby('Region')[['Sales', 'Profit']].sum()",
+            "Data transformation operation": [
+                "groupby",
+                "sum"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Where are storms most common depending on the time of year?",
+        "Mixtral_response": {
+            "query": "Where are storms most common depending on the time of year?",
+            "Relevant data columns": [
+                "month",
+                "lat",
+                "long"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "relationship",
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether we need to consider other factors like category/status of storms.",
+            "Ambiguity resolution": "Focus on overall distribution of storms without considering their categories/status",
+            "Data transformations": "storms_per_month = df.groupby('month')['status'].count()",
+            "Data transformation operation": [
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Are there more storms in recent years?",
+        "Mixtral_response": {
+            "query": "Are there more storms in recent years?",
+            "Relevant data columns": [
+                "year",
+                "name",
+                "status"
+            ],
+            "Data column classification": [
+                "keyword",
+                "infered",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation",
+                "trend"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether recent years' refers to a specific time period or the latest available data.",
+            "Ambiguity resolution": "Assume recent years' means the most recent years in the dataset.",
+            "Data transformations": "df_yearly_counts = df.groupby('year')['name'].count()",
+            "Data transformation operation": [
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "What month has the strongest hurricanes",
+        "Mixtral_response": {
+            "query": "What month has the strongest hurricanes",
+            "Relevant data columns": [
+                "month",
+                "category",
+                "wind"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The strength of hurricane is subjective and could refer to either wind speed or another factor.",
+            "Ambiguity resolution": "Use wind speed as the measure of hurricane strength",
+            "/Data transformations": "df.groupby('month')['wind'].max()",
+            "@Data transformation operation": [
+                "groupby",
+                "aggregate max"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Miscellaneous Data Columns": ""
+        }
+    },
+    {
+        "key": "How has wind speed changed over time",
+        "Mixtral_response": {
+            "query": "How has wind speed changed over time",
+            "Relevant data columns": [
+                "wind",
+                "year",
+                "month",
+                "day",
+                "hour"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "trend"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether we want overall trends, or daily/monthly/yearly changes.",
+            "Ambiguity resolution": "Assuming overall trend across entire timeframe is desired",
+            "Data transformations": "df[['hour', 'day', month', 'year', 'wind']].resample('D')['wind'].mean()",
+            "Data transformation operation": [
+                "resample",
+                "mean"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Which hurricane lasted the longest",
+        "Mixtral_response": {
+            "query": "Which hurricane lasted the longest",
+            "Relevant data columns": [
+                "name",
+                "year",
+                "month",
+                "day",
+                "hour"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "inferred",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "duration calculation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to consider only storms with certain categories (like tropical storm) or all types.",
+            "Ambiguity resolution": "Consider all types of hurricanes/storms",
+            "Data transformations": "df[['name','year','month','day','hour']].groupby('name')['hour'].apply(lambda x : max(x)-min(x))",
+            "Data transformation operation": [
+                "groupby",
+                "aggregate"
+            ],
+            "New Column Name": "storm_duration",
+            "Derivation Specification": "((df.groupby('name')['hour'].max() - df.groupby('name')['hour'].min()).astype(int)",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "What is the relationship between level of education and crime rate?",
+        "Mixtral_response": {
+            "query": "What is the relationship between level of education and crime rate?",
+            "Relevant data columns": [
+                "education",
+                "police",
+                "intent"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "infered"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It is unclear whether we need to consider only certain types of crimes.",
+            "Ambiguity resolution": "Consider overall crime rates regardless of type.",
+            "Data transformations": "df[['Education', 'Police']].corr()",
+            "Data transformation operation": [
+                "correlation calculation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Are there any correlations between crime types and geographic location?",
+        "Mixtral_response": {
+            "query": "Are there any correlations between crime types and geographic location?",
+            "Relevant data columns": [
+                "incident_characteristics",
+                "latitude",
+                "longitude"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "crime_data = df[['incident_characteristics', 'latitude', 'longitude']].dropna()",
+            "Data transformation operation": [
+                "filter",
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "What is the distribution for non-violent crimes based on age?",
+        "Mixtral_response": {
+            "query": "What is the distribution for non-violent crimes based on age?",
+            "Relevant data columns": [
+                "incident_age",
+                "incident_characteristics"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "The term 'non-violent' crime is ambiguous and could refer to various types of incidents.",
+            "Ambiguity resolution": "Assume non-violent crimes exclude homicides, suicides, and undetermined intents.",
+            "Data transformations": "filtered_data = data[(data['incident_characteristics']!='Homicide') & (data['incident_characteristics']!='Suicide')] ; grouped_data = filtered_data.groupby('incident_age')['incident_id'].count()",
+            "Data transformation operation": [
+                "filter",
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "How many incidents of gun violence result in death? (I.e. what proportion are fatal vs. non-fatal?)",
+        "Mixtral_response": {
+            "query": "How many incidents of gun violence result in death? (I.e. what proportion are fatal vs. non-fatal?)",
+            "Relevant data columns": [
+                "incident_id",
+                "date",
+                "state",
+                "city_or_county",
+                "address",
+                "n_killed",
+                "n_injured"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "fatal_incidents = df[(df['n_killed']>0)]; non_fatal_incidents = df[(df['n_injured']>0)&(df['n_killed']==0)]",
+            "Data transformation operation": [
+                "filter",
+                "logical operation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "Are males or females more likely to die of gun violence?",
+        "Mixtral_response": {
+            "query": "Are males or females more likely to die of gun violence?",
+            "Relevant data columns": [
+                "sex",
+                "intent"
+            ],
+            "data column classification": [
+                "inferred",
+                "inferred"
+            ],
+            "low-level visualization task": [
+                "relationship",
+                "comparision"
+            ],
+            "low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "data transformations": "df.groupby('police')['sex'].value_counts()",
+            "data transformation operation": [
+                "groupby",
+                "value counts"
+            ],
+            "new column name": "",
+            "derivation specification": "",
+            "missing data column": ""
+        }
+    },
+    {
+        "key": "show me the distribution of births across all districts in 2017 .",
+        "Mixtral_response": {
+            "query": "show me the distribution of births across all districts in 2017.",
+            "Relevant data columns": [
+                "District Name",
+                "Number",
+                "Year"
+            ],
+            "Data column classification": [
+                "inferred",
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df_2017 = df[df['Year']==2017]; district_births = df_2017[['District Name', 'Number']].copy()",
+            "Data transformation operation": [
+                "filter",
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "retrieve the neighborhood with more than 100 female births in ciutat vella in 2013 .",
+        "Mixtral_response": {
+            "query": "retrieve the neighborhood with more than 100 female births in ciutat vella in 2013",
+            "Relevant data columns": [
+                "District Name",
+                "Neighborhood Name",
+                "Gender",
+                "Number",
+                "Year"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword",
+                "data value mention",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "filter",
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The query mentions 2013 but the dataset only has 2017 data.",
+            "Ambiguity resolution": "Assume the query wants data from any available year since 2013 data is not present",
+            "Data transformations": "df_female_ciutat_vella_2017 = df[(df['Year']==2017)&(df['District Name']=='Ciutat Vella')&(df['Gender']=='Girls')] ; result_df = df_female_ciutat_vella_2017[df_female_ciutat_vella_2017['Number']>100][['Neighborhood Name', 'Number']]",
+            "Data transformation operation": [
+                "filter",
+                "compare",
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "barcelona 's districts , please list each .",
+        "Mixtral_response": {
+            "query": "barcelona's districts, please list each.",
+            "Relevant data columns": [
+                "District Code",
+                "District Name"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "list elements"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "districts_list = df[['District Code', 'District Name']].drop_duplicates()",
+            "Data transformation operation": [
+                "select",
+                "distinct"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "show me the most recent version of androids \" discover color \" .",
+        "Mixtral_response": {
+            "query": "show me the most recent version of androids \"discover color\"",
+            "Relevant data columns": [
+                "Android Ver"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieval"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It is unclear whether 'Discover Color' refers to a specific app or feature.",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.loc[df['Android Ver'] == df['Android Ver'].max()]",
+            "Data transformation operation": [
+                "sort",
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "give me a list of all the free business apps that have received rating that were higher than a 4.5 .",
+        "Mixtral_response": {
+            "query": "give me a list of all the free business apps that have received rating that were higher than a 4.5.",
+            "Relevant data columns": [
+                "Category",
+                "Rating",
+                "Price",
+                "Type"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword",
+                "inferenced"
+            ],
+            "Low-level visualization task": [
+                "filter"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "free_business_apps = df[(df['Category']=='BUSINESS')&(df['Price']=='Free')&(df['Rating']>4.5)]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what 's the price distribution in beauty apps ?",
+        "Mixtral_response": {
+            "query": "what's the price distribution in beauty apps?",
+            "Relevant data columns": [
+                "Price",
+                "Category",
+                "Genres"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether only free or paid Beauty Apps should be considered.",
+            "Ambiguity resolution": "Consider both free and paid Beauty Apps.",
+            "Data transformations": "beauty_apps_df = df[(df['Category']=='BEAUTY') | (df['Genres']==\"Beauty\")] ; beauty_price_distribution = beauty_apps_df['Price'].value_counts()",
+            "Data transformation operation": [
+                "filter",
+                "groupby",
+                "value counts"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what is the app with the most abnormal pattern ?",
+        "Mixtral_response": {
+            "query": "what is the app with the most abnormal pattern?",
+            "Relevant data columns": [
+                "App",
+                "Rating",
+                "Reviews",
+                "Installs"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "anomaly detection"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear what constitutes an 'abnormal' pattern.",
+            "Ambiguity resolution": "Define anomaly as significant deviation from mean or median rating/reviews/installs",
+            "Data transformations": "from scipy import stats; anomalies = df[(np.abs(stats.zscore(df[['Rating', 'Reviews', 'Installs']])) > 3).any(axis=1)]",
+            "Data transformation operation": [
+                "z-score calculation",
+                "filtering"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "according to population , what is the rank of each of region ?",
+        "Mixtral_response": {
+            "query": "according to population, what is the rank of each of region?",
+            "Relevant data columns": [
+                "Population",
+                "Region"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "ranking"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "ranked_regions = df.sort_values(by='Population', ascending=False).reset_index(drop=True)",
+            "Data transformation operation": [
+                "sort",
+                "reset index"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what is the number of hospitals located in manyara ?",
+        "Mixtral_response": {
+            "query": "what is the number of hospitals located in Manyara?",
+            "Relevant data columns": [
+                "Region",
+                "Hospital"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.loc[df['Region']=='Manyara', ['Hospital']].values[0]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what is the number of clinics that are in mara ?",
+        "Mixtral_response": {
+            "query": "what is the number of clinics that are in Mara?",
+            "Relevant data columns": [
+                "Region",
+                "Clinic"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "retrieval"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "Mara region is missing from the given dataset",
+            "Ambiguity resolution": "The answer cannot be determined without including the Mara region in the dataset.",
+            "Data transformations": "None since the required information is not available in the dataset",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": "Mara region's data"
+        }
+    },
+    {
+        "key": "enter the regions from this table .",
+        "Mixtral_response": {
+            "query": "enter the regions from this table.",
+            "Relevant data columns": [
+                "Region"
+            ],
+            "Data column classification": [
+                "data value mention"
+            ],
+            "Low-level visualization task": [],
+            "Low-level visualization task classification": [],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['Region']]",
+            "Data transformation operation": [
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "the population range needs to be discovered .",
+        "Mixtral_response": {
+            "query": "the population range needs to be discovered.",
+            "Relevant data columns": [
+                "Population"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "range",
+                "discover"
+            ],
+            "Low-level visualization task classification": [
+                "keyword",
+                "inferenced"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to consider the entire range of populations or focus on certain segments/percentiles.",
+            "Ambiguity resolution": "Determine the range by calculating percentiles/min-max values.",
+            "Data transformations": "df.describe()['Population']",
+            "Data transformation operation": [
+                "summary statistic"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "can you list all the results in the table about the movie \" about schmidt ? \"",
+        "Mixtral_response": {
+            "query": "List all the results in the table about the movie \"About Schmidt\"?",
+            "Relevant data columns": [
+                "nominee film"
+            ],
+            "Data column classification": [
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.loc[df['nominee film']=='About Schmidt']",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "tell me who won the best performance by an actor in a motion picture - drama award at the 60th ceremony .",
+        "Mixtral_response": {
+            "query": "tell me who won the best performance by an actor in a motion picture - drama award at the 60th ceremony.",
+            "Relevant data columns": [
+                "category",
+                "nominee film",
+                "win",
+                "ceremony"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "keyword",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "retrieval"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The question asks about the winner of the 'best performance by an actor' but the given dataset does not contain information about actors, only films",
+            "Ambiguity resolution": "Assume the query actually means to ask about winners in general categories, rather than specifically the 'actor' one",
+            "Data transformations": "result_df = df[(df['ceremony']==60)&(df['category']==\"Best Motion Picture - Drama\")&(df['win']==True)]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "i would like to review the dispersement of the amount of nominations .",
+        "Mixtral_response": {
+            "query": "i would like to review the dispersement of the amount of nominations.",
+            "Relevant data columns": [
+                "nominee",
+                "category",
+                "year_film",
+                "ceremony"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether you want to see distribution by categories, ceremonies, films, or overall total nominations",
+            "Ambiguity resolution": "Count number of nominees for each unique combination of category and ceremony, then plot the distribution",
+            "Data transformations": "nominations_per_category_ceremony = df.groupby(['category', 'ceremony']).size()",
+            "Data transformation operation": [
+                "groupby",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what was the number of candidates that were nominated for best performance by an actor in a motion picture -drama at he 60th ceremony ?",
+        "Mixtral_response": {
+            "query": "what was the number of candidates that were nominated for best performance by an actor in a motion picture -drama at he 60th ceremony?",
+            "Relevant data columns": [
+                "category",
+                "ceremony",
+                "nominee"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "retrieve count"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The question asks about nominees for best performance by an actor but the data does not contain information about actors. It only contains information about films.",
+            "Ambiguity resolution": "Assume the question refers to the total number of nominations in the drama category at the 60th ceremony",
+            "Data transformations": "df[(df['ceremony']==60)&(df['category']=='Best Motion Picture - Drama')]['nominee'].count()",
+            "Data transformation operation": [
+                "filter",
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "can you tell me what movie won best original score in a motion picture in 1997 ?",
+        "Mixtral_response": {
+            "query": "can you tell me what movie won best original score in a motion picture in 1997?",
+            "Relevant data columns": [
+                "category",
+                "year_award",
+                "nominee film",
+                "win"
+            ],
+            "Data column classification": [
+                "keyword",
+                "data value mention",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieval"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "result = df[(df['year_award']==1997)&(df['category']=='Best Original Score')] ",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "find all the types of genetic diseases with greater than 1,000 patients .",
+        "Mixtral_response": {
+            "query": "find all the types of genetic diseases with greater than 1,000 patients ",
+            "Relevant data columns": [
+                "ALBINO",
+                "AUTISM",
+                "DEAF-MUTE",
+                "DEAF-BLIND",
+                "MENTALLY IMPAIRED",
+                "PHYSICAL IMPAIRED",
+                "VISUALLY IMPAIRED"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "filter",
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether only one type of disease needs to exceed 1,000 patients or any combination of them.",
+            "Ambiguity resolution": "Check each type separately",
+            "Data transformations": "result_df = df[(df[['ALBINO','AUTISM','DEAF-MUTE','DEAF-BLIND','MENTALLY IMPAIRED','PHYSICAL IMPAIRED','VISUALLY IMPAIRED']] > 1000).any(axis=1)]",
+            "Data transformation operation": [
+                "filter",
+                "compare"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "does this data represent outliers in the number of patients ?",
+        "Mixtral_response": {
+            "query": "does this data represent outliers in the number of patients?",
+            "Relevant data columns": [
+                "REGION",
+                "ALBINO",
+                "AUTISM"
+            ],
+            "Data column classification": [
+                "inferred",
+                "number of patients"
+            ],
+            "Low-level visualization task": [
+                "identification of anomalies/outliers"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "The term 'outlier' could imply different statistical methods such as Z-score method, Modified Z-score method, Interquartile Range(IQR), Density-Based Spatial Clustering of Applications with Noise(DBSCAN)",
+            "Ambiguity resolution": "",
+            "Data transformations": "from scipy import stats; z_scores = np.abs(stats.zscore(df)); threshold = 3; outliers = abs(z_scores) > threshold",
+            "Data transformation operation": [
+                "calculate z-scores",
+                "thresholding"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "take out the regions with a number of patients larger than 500 .",
+        "Mixtral_response": {
+            "query": "take out the regions with a number of patients larger than 500.",
+            "Relevant data columns": [
+                "REGION",
+                "ALBINO",
+                "AUTISM"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "filter"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "filtered_regions = df[(df[['ALBINO', 'AUTISM', 'DEAF-MUTE', 'DEAF-BLIND', 'MENTALLY IMPAIRED', 'PHYSICAL IMPAIRED', 'VISUALLY IMPAIRED']] > 500).any(axis=1)]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "is there an obvious clustering ?",
+        "Mixtral_response": {
+            "query": "is there an obvious clustering?",
+            "Relevant data columns": [
+                "REGION",
+                "ALBINO",
+                "AUTISM"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "clustering"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear what type of clustering is being referred to (e.g., hierarchical, k-means), and whether any pre-processing steps need to be taken.",
+            "Ambiguity resolution": "",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "the games are sorted by experts by their date",
+        "Mixtral_response": {
+            "query": "",
+            "Relevant data columns": [
+                "date game",
+                "player name",
+                "goals"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "sort"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "could you show me the list sorted by study time ( longest to shortest ) .",
+        "Mixtral_response": {
+            "query": "could you show me the list sorted by study time ( longest to shortest ) ",
+            "Relevant data columns": [
+                "studytime"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "sort",
+                "rank"
+            ],
+            "Low-level visualization task classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.sort_values(by='studytime', ascending=False)",
+            "Data transformation operation": [
+                "sort"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "can you tell me which students have fathers that are teachers ?",
+        "Mixtral_response": {
+            "query": "which students have fathers that are teachers?",
+            "Relevant data columns": [
+                "Fjob",
+                "famrel"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "filter"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "filtered_df = df[(df['Fjob']=='teacher') & (df['famrel']!='no')] ",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "retrieve the students with fathers who work as teachers .",
+        "Mixtral_response": {
+            "query": "retrieve the students with fathers who work as teachers.",
+            "Relevant data columns": [
+                "Fjob",
+                "guardian"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "retrieve value",
+                "filter"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df = df[(df['Fjob']=='teacher') & (df['guardian']=='father')]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "is there a correlation between happiness scores and other attributes ?",
+        "Mixtral_response": {
+            "query": "is there a correlation between happiness scores and other attributes?",
+            "Relevant data columns": [
+                "Happiness Score",
+                "Economy (GDP per Capita)",
+                "Family",
+                "Health (Life Expectancy)",
+                "Freedom",
+                "Trust (Government Corruption)",
+                "Generosity",
+                "Dystopia Residual"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferenced",
+                "inferenced",
+                "inferenced",
+                "inferenced",
+                "inferenced",
+                "inferenced",
+                "inferenced"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to consider individual correlations or multiple correlations at once.",
+            "Ambiguity resolution": "Compute pairwise correlations among variables and then analyze the results.",
+            "Data transformations": "corr_matrix = df[['Happiness Score', 'Economy (GDP per Capita)', 'Family', 'Health (Life Expectancy)', 'Freedom', 'Trust (Government Corruption)', 'Generosity', 'Dystopia Residual']].corr()",
+            "Data transformation operation": [
+                "compute correlation matrix"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "show me any clustering there may be in the gdp that has a happiness score of larger than 5 .",
+        "Mixtral_response": {
+            "query": "show me any clustering there may be in the gdp that has a happiness score of larger than 5.",
+            "Relevant data columns": [
+                "Happiness Score",
+                "Economy (GDP per Capita)",
+                "Region"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "clustering"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "The concept of clustering is vague and requires further clarification",
+            "Ambiguity resolution": "Perform density-based clustering on GDP per capita values where Happiness Score > 5",
+            "Data transformations": "filtered_df = df[(df['Happiness Score']>5)]; filtered_df[['Economy (GDP per Capita)','Region']].apply(lambda x: x.astype(float))",
+            "Data transformation operation": [
+                "filter",
+                "cast_to_float"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "within the last year have any countries experienced a sudden decrease in happiness score ?",
+        "Mixtral_response": {
+            "query": "within the last year have any countries experienced a sudden decrease in happiness score?",
+            "Relevant data columns": [
+                "Happiness Score",
+                "Country",
+                "Region"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "find anomaly"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear what constitutes a sudden decrease' and whether the focus is on absolute change or relative change.",
+            "Ambiguity resolution": "Use a threshold-based approach to detect anomalies; Calculate percentage changes from previous year",
+            "Data transformations": "last_year_data = df.sort_values(by='Happiness Score', ascending=False).drop_duplicates(subset='Country', keep='first')[['Country', 'Happiness Score]]; prev_year_data = df.sort_values(by='Happiness Score', ascending=True).drop_duplicates(subset='Country', keep='last')[['Country', 'Happiness Score']; diff_scores = pd.merge(last_year_data, prev_year_data, on='Country')['Happiness Score_x'] - ['Happiness Score_y']; pct_change = (diff_scores / ['Happiness Score_y']) * 100;",
+            "Data transformation operation": [
+                "sort",
+                "drop duplicates",
+                "merge",
+                "calculate difference",
+                "calculate percentage change"
+            ],
+            "New Column Name": "pct_happiness_decrease",
+            "Derivation Specification": "(happiness_score_current_year - happiness_score_prev_year) / happiness_score_prev_year * 100",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "can you tell me in what range will the number of countries in each region fall ?",
+        "Mixtral_response": {
+            "query": "can you tell me in what range will the number of countries in each region fall?",
+            "Relevant data columns": [
+                "Region"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "region_counts = df['Region'].value_counts()",
+            "Data transformation operation": [
+                "count"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "show a list of similarly rated books .",
+        "Mixtral_response": {
+            "query": "show a list of similarly rated books.",
+            "Relevant data columns": [
+                "averageRating",
+                "title"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieval"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It is unclear what rating threshold defines similarity.",
+            "Ambiguity resolution": "Define a range around the target book's rating to determine similar ratings",
+            "Data transformations": "similar_books = df[(df['averageRating'] >= target_rating - 0.5) & (df['averageRating'] <= target_rating + 0.5)]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "dark horse comic has how many books ?",
+        "Mixtral_response": {
+            "query": "dark horse comic has how many books?",
+            "Relevant data columns": [
+                "title",
+                "publisher"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "retrieval"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It is unclear whether Dark Horse Comic refers to a specific author/publisher or just any book from Dark Horse Comics.",
+            "Ambiguity resolution": "Assume Dark Horse Comic refers to the publisher named 'Dark Horse Comics'. Filter by publisher.",
+            "Data transformations": "filtered_df = df[df['publisher']=='Dark Horse Comics']; count_books = filtered_df.shape[0]",
+            "Data transformation operation": [
+                "filter",
+                "shape"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "put the readings in order according to their pm 10 values .",
+        "Mixtral_response": {
+            "query": "put the readings in order according to their pm 10 values",
+            "Relevant data columns": [
+                "PM10 Value",
+                "Station"
+            ],
+            "Data column classification": [
+                "keyword",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "sort",
+                "ranking"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.sort_values(by='PM10 Value')",
+            "Data transformation operation": [
+                "sort"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "give me the count of missing readings in this table .",
+        "Mixtral_response": {
+            "query": "",
+            "Relevant data columns": [
+                "Station",
+                "Air Quality",
+                "O3 Value",
+                "NO2 Value",
+                "PM10 Value"
+            ],
+            "Data column classification": [
+                "inferred",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "identify patterns"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.count() - df.isnull().sum()",
+            "Data transformation operation": [
+                "count",
+                "isnull",
+                "sum"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "show me the data attribute that has the most na values , for example the hardest data points to collect",
+        "Mixtral_response": {
+            "query": "",
+            "Relevant data columns": [
+                "O3 Hour",
+                "NO2 Hour",
+                "PM10 Hour"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [],
+            "Low-level visualization task classification": [],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "describe the change in air quality over one day . describe the change in each air pollutant .",
+        "Mixtral_response": {
+            "query": "describe the change in air quality over one day. describe the change in each air pollutant.",
+            "Relevant data columns": [
+                "Generated",
+                "O3 Value",
+                "NO2 Value",
+                "PM10 Value",
+                "Air Quality"
+            ],
+            "data column classification": [
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "trend",
+                "relationship"
+            ],
+            "low-level visualization task classification": [
+                "inferenced",
+                "inferenced"
+            ],
+            "visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether we need to consider all stations separately or aggregate them somehow",
+            "Ambiguity resolution": "Aggregate readings from multiple stations into daily averages",
+            "Data transformations": "daily_avg_o3 = df.resample('D', on='Generated')['O3 Value'].mean();daily_avg_no2 = df.resample('D', on='Generated')['NO2 Value'].mean();daily_avg_pm10 = df.resample('D', on='Generated')['PM10 Value'].mean();air_quality_trends = df.groupby('Generated')['Air Quality'].value_counts().unstack()",
+            "Data transformation operation": [
+                "resample",
+                "groupby",
+                "value counts",
+                "unstack"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "could you search all available values for pm10 quality .",
+        "Mixtral_response": {
+            "query": "could you search all available values for pm10 quality.",
+            "Relevant data columns": [
+                "PM10 Quality"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "pm10_quality_values = df['PM10 Quality'].dropna().unique()",
+            "Data transformation operation": [
+                "filter",
+                "unique"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "across the monitored region , what is the distribution of records for good air quality ?",
+        "Mixtral_response": {
+            "query": "across the monitored region, what is the distribution of records for good air quality?",
+            "Relevant data columns": [
+                "Air Quality",
+                "Station"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "good_air_quality_records = df[df['Air Quality']=='Good']",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "for the center forward position , what was the highest market value for the 2011 -2012 season ?",
+        "Mixtral_response": {
+            "query": "for the center forward position, what was the highest market value for the 2011 -2012 season?",
+            "Relevant data columns": [
+                "Position",
+                "Market_value",
+                "Season"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "find extremum"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "center_forward_players = df[(df['Position']=='Centre-Forward') & (df['Season']==\"2010-2011\")]; max_market_value_player = center_forward_players.loc=center_forward_players['Market_value'].idxmax()",
+            "Data transformation operation": [
+                "filter",
+                "groupby",
+                "idxmax"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what percentage of the blount county , alabama population is white ?",
+        "Mixtral_response": {
+            "query": "what percentage of the blount county, alabama population is white?",
+            "Relevant data columns": [
+                "White",
+                "County",
+                "State"
+            ],
+            "Data column classification": [
+                "keyword",
+                "data value mention",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.loc[(df['County']==\"Blount County\") & (df['State']==\"Alabama\"), ['White']]['White'].iloc[0]",
+            "Data transformation operation": [
+                "filter",
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "sort all the counties in connecticut by the percentages of the hispanic population .",
+        "Mixtral_response": {
+            "query": "sort all the counties in Connecticut by the percentages of the Hispanic population.",
+            "Relevant data columns": [
+                "County",
+                "State",
+                "Hispanic"
+            ],
+            "Data column classification": [
+                "inferred",
+                "inferred",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "rank",
+                "sort"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear why only Connecticut counties were specified when the data includes other states",
+            "Ambiguity resolution": "Filter out non-Connecticut counties from the data",
+            "/Data transformations": "connecticut_counties = df[df['State']=='Connecticut']; sorted_connecticut_counties = connecticut_counties.sort_values(by='Hispanic', ascending=False)",
+            "<Data transformation operation": [
+                "filter",
+                "sort"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "can you tell me the sales distribution of type 4046 in 2015",
+        "Mixtral_response": {
+            "query": "can you tell me the sales distribution of type 4046 in 2015",
+            "Relevant data columns": [
+                "type",
+                "year",
+                "Total Volume"
+            ],
+            "data column classification": [
+                "keyword",
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether the user wants to see the overall volume distribution or compare it with other types.",
+            "Ambiguity resolution": "Assuming they want to visualize the total volume distribution for type 4046 in 2015.",
+            "Data transformations": "filtered_df = df[(df['type']==4046) & (df['year']==2015)]; filtered_df[['Total Volume']].describe()",
+            "Data transformation operation": [
+                "filter",
+                "select",
+                "summary statistic calculation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "state the average income of postgraduate students in each country .",
+        "Mixtral_response": {
+            "query": "state the average income of postgraduate students in each country.",
+            "Relevant data columns": [
+                "Postgraduate Income",
+                "Country"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregate"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df_grouped = df.groupby('Country')['Postgraduate Income'].mean()",
+            "Data transformation operation": [
+                "groupby",
+                "mean"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "arrange the students by grade and furnish me with a list .",
+        "Mixtral_response": {
+            "query": "arrange the students by grade and furnish me with a list",
+            "Relevant data columns": [
+                "Grade",
+                "Student"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "ranking",
+                "sort"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df.sort_values(by='Grade')",
+            "Data transformation operation": [
+                "sort"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what is the distribution of the total points of the students ?",
+        "Mixtral_response": {
+            "query": "what is the distribution of the total points of the students?",
+            "Relevant data columns": [
+                "Total Points"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['Total Points']]",
+            "Data transformation operation": [
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "was the same midterm exam given to velma paul and glynis caine ?",
+        "Mixtral_response": {
+            "query": "was the same midterm exam given to velma paul and glynis caine?",
+            "Relevant data columns": [
+                "First Name",
+                "Last Name",
+                "Mid-term exams"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "data value mention",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "retrieve value",
+                "compare"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The person 'glynis caine' does not exist in the provided dataset.",
+            "Ambiguity resolution": "Assume the correct full name is available in the dataset",
+            "Data transformations": "None needed since we're only checking if two students had the same mid-term exam scores",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": "glynis caine (does not exist in the dataset)"
+        }
+    },
+    {
+        "key": "provide the total sum of all the separated , divorced , and widowed people in lindi .",
+        "Mixtral_response": {
+            "query": "provide the total sum of all the separated, divorced, and widowed people in Lindi",
+            "Relevant data columns": [
+                "Regions",
+                "Separated",
+                "Divorced",
+                "Widowed"
+            ],
+            "Data column classification": [
+                "inferred",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "Lindi region is missing from the given dataset.",
+            "Ambiguity resolution": "Since Lindi is not present in the dataset, we cannot provide the exact count. However, we can guide the user to either add the required data or clarify which region they meant instead.",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": "Lindi"
+        }
+    },
+    {
+        "key": "can you tell me how mara attributes are distributed ?",
+        "Mixtral_response": {
+            "query": "can you tell me how Mara attributes are distributed?",
+            "Relevant data columns": [
+                "Regions"
+            ],
+            "Data column classification": [
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's ambiguous whether Mara refers to a specific region or attribute distribution in general.",
+            "Ambiguity resolution": "Assume Mara is one of the regions in the dataset.",
+            "Data transformations": "mara_data = df.loc[df['Regions']=='Mara']",
+            "<Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "is there similarities between gdp per capita and suicide rates ?",
+        "Mixtral_response": {
+            "query": "is there similarities between gdp per capita and suicide rates?",
+            "Relevant data columns": [
+                "gdp_per_capita ($)",
+                "suicides/100k pop"
+            ],
+            "Data column classification": [
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "df[['gdp_per_capita ($)', suicides/100k pop']].corr()",
+            "Data transformation operation": [
+                "calculate correlation"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "were there any countries with abnormally low suicide rates",
+        "Mixtral_response": {
+            "query": "were there any countries with abnormally low suicide rates",
+            "Relevant data columns": [
+                "country",
+                "suicides_no",
+                "population",
+                "suicides/100k pop"
+            ],
+            "Data column classification": [
+                "inferred",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "anomaly detection"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "The term 'abnormally' could mean different things depending on the statistical method used.",
+            "Ambiguity resolution": "Use standard deviation from the mean to detect anomalies",
+            "Data transformations": "df['z_score_suicide_rate'] = ((df['suicides/100k pop'] - df['suicides/100k pop'].mean())/df['suicides/100k pop'].std()); abnormal_rates = df[(np.abs(df['z_score_suicide_rate']) > 2)]",
+            "Data transformation operation": [
+                "calculate z-score",
+                "filter"
+            ],
+            "New Column Name": "z_score_suicide_rate",
+            "Derivation Specification": "(x - mu)/sigma where x is the suicides/100k pop', mu is the mean of suicides/100k pop', sigma is the std dev of suicides/100k pop'",
+            "Mising Data Column": ""
+        }
+    },
+    {
+        "key": "would there be any clustering of countries in terms of suicide rates",
+        "Mixtral_response": {
+            "query": "would there be any clustering of countries in terms of suicide rates",
+            "Relevant data columns": [
+                "country",
+                "suicides_no",
+                "population",
+                "suicides/100k pop"
+            ],
+            "Data column classification": [
+                "inferred",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "clustering",
+                "correlation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It is unclear whether we need to consider only certain demographics like age groups or sexes while analyzing the clustering.",
+            "Ambiguity resolution": "Consider overall suicide rate for each country without demographic filters",
+            "Data transformations": "df_country_level_suicide_rate = df.groupby('country')['suicides/100k pop'].mean().reset_index()",
+            "Data transformation operation": [
+                "groupby",
+                "calculate mean"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "for the gdp of china , has it gone up or down over the last decade ?",
+        "Mixtral_response": {
+            "query": "for the gdp of china, has it gone up or down over the last decade?",
+            "Relevant data columns": [
+                "country",
+                "year",
+                "gdp_for_year ($)"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "trend"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The term 'last decade' could refer to any period of ten consecutive years, but without more information about when exactly this question is being asked.",
+            "Ambiguity resolution": "Assuming the current date is known, determine the range of years from ten years ago until now",
+            "Data transformations": "china_gdp_data = df[(df['country']=='China') & ((df['year']>=(datetime.now().year - 10))&(df['year']<=datetime.now().year))] ; china_gdp_trend = china_gdp_data.sort_values(by='year')['gdp_for_year ($)']",
+            "Data transformation operation": [
+                "filter",
+                "sort"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "has there been an increase or decrease in the gdp of china over the last 10 years",
+        "Mixtral_response": {
+            "query": "has there been an increase or decrease in the gdp of china over the last 10 years",
+            "Relevant data columns": [
+                "country",
+                "year",
+                "gdp_for_year ($)"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "inferred",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "correlation",
+                "trend"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether we need to consider only China or any other countries too.",
+            "Ambiguity resolution": "",
+            "<Data transformations": "china_gdp_data = df[(df['country']=='China') & ((df['year']>= max(df['year']) - 10) & (df['year']<= max(df['year'])))]",
+            "<Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "can you provide a list of school names in geita ?",
+        "Mixtral_response": {
+            "query": "can you provide a list of school names in geita?",
+            "Relevant data columns": [
+                "NAME",
+                "REGION"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "data value mention"
+            ],
+            "Low-level visualization task": [
+                "retrieve value"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "filtered_schools = df[(df['REGION']=='GEITA')] ['NAME']",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "what group of nations of have the most games ?",
+        "Mixtral_response": {
+            "query": "what group of nations of have the most games?",
+            "Relevant data columns": [
+                "country"
+            ],
+            "Data column classification": [
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "aggregation"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "It's unclear whether 'group of nations' refers to individual countries or a collection of countries.",
+            "Ambiguity resolution": "Assume 'group of nations' means individual countries and count the number of games played by each country.",
+            "Data transformations": "df_country_counts = df.value_counts('country')",
+            "Data transformation operation": [
+                "value counts"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "how can the population of ashley be illustrated to show distribution across five years ?",
+        "Mixtral_response": {
+            "query": "how can the population of ashley be illustrated to show distribution across five years?",
+            "Relevant data columns": [
+                "County",
+                "July 1, 2000 Population",
+                "July 1, 2001 Population",
+                "July 1, 2002 Population"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "keyword",
+                "keyword",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferenced"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "ashley_data = df.loc[df['County']=='Ashley'][['July 1, 2000 Population','July 1, 2001 Population','July 1, 2002 Population']].T",
+            "Data transformation operation": [
+                "filter",
+                "transpose"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "give me the average population rating for ashley in the year 2000 .",
+        "Mixtral_response": {
+            "query": "give me the average population rating for ashley in the year 2000 ",
+            "Relevant data columns": [
+                "County",
+                "July 1, 2000 Population"
+            ],
+            "Data column classification": [
+                "data value mention",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "average"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "ashley_population_2000 = df.loc[df['County']==\"Ashley\", ['July 1, 2000 Population']].values[0]",
+            "Data transformation operation": [
+                "filter",
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "show me a university that has more than 30 faculties and more than 50 teachers ?",
+        "Mixtral_response": {
+            "query": "show me a university that has more than 30 faculties and more than 50 teachers?",
+            "Relevant data columns": [
+                "Name",
+                "Num"
+            ],
+            "Data column classification": [
+                "inferred",
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "filter",
+                "conditional selection"
+            ],
+            "Low-level visualization task classification": [
+                "inferred",
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The terms faculty and teacher are ambiguous since they do not match any exact column names.",
+            "Ambiguity resolution": "Assume faculty refers to the 'Type' column and teacher refers to the 'Tuition' column",
+            "Data transformations": "df[(df['Num']>30)&(df['Tuition']>50)]",
+            "Data transformation operation": [
+                "filter"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": "faculties"
+        }
+    },
+    {
+        "key": "show me the gdp ranking of european countries .",
+        "Mixtral_response": {
+            "query": "show me the gdp ranking of european countries.",
+            "Relevant data columns": [],
+            "Data column classification": [],
+            "Low-level visualization task": [
+                "ranking"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The original dataset does not contain European countries' GDP information.",
+            "Ambiguity resolution": "",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": "European Countries' GDP Information"
+        }
+    },
+    {
+        "key": "to cluster the states in the us , i wish to use middle income .",
+        "Mixtral_response": {
+            "query": "to cluster the states in the US, I wish to use middle income.",
+            "Relevant data columns": [
+                "Median Income 2007",
+                "State"
+            ],
+            "Data column classification": [
+                "keyword",
+                "inferred"
+            ],
+            "Low-level visualization task": [
+                "clustering"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "It's unclear whether other variables such as life expectancy or smoking habits will also be considered during clustering.",
+            "Ambiguity resolution": "Only consider median income when performing clustering.",
+            "Data transformations": "df[['State', 'Median Income 2007']].copy()",
+            "Data transformation operation": [
+                "select"
+            ],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "do all the countries in africa have a lower average pci than all the countries in europe ?",
+        "Mixtral_response": {
+            "query": "do all the countries in africa have a lower average pci than all the countries in europe?",
+            "Relevant data columns": [
+                "Median Income 2007",
+                "State"
+            ],
+            "Data column classification": [
+                "keyword",
+                "not relevant but needed for filtering"
+            ],
+            "Low-level visualization task": [
+                "comparison"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The term 'countries' does not match any column header. It's unclear whether we need to consider only certain types of entities.",
+            "Ambiguity resolution": "Assume states' refer to geographic regions within continents rather than independent nations",
+            "Data transformations": "african_states = df.loc[df['State'].str.contains('Africa|Algeria|Angola|Benin|Botswana|Burkina Faso|Burundi|Cameroon|Cape Verde|Central African Republic|Chad|Comoros|Congo|DRC|Djibouti|Egypt|Equatorial Guinea|Eritrea|Ethiopia|Gabon|Gambia|Ghana|Guinea|Guinea-Bissau|Kenya|Lesotho|Liberia|Libya|Mali|Mauritania|Mauritius|Morocco|Mozambique|Namibia|Niger|Rwanda|Sao Tome and Principe|Senegal|Seychelles|Sierra Leone|Somalia|South Africa|South Sudan|Sudan|Swaziland|Tanzania|Togo|Tunisia|Uganda|Zambia|Zimbabwe')] ; european_states = df.loc[df['State'].str.contains('Austria|Belgium|Bulgaria|Croatia|Cyprus|Czech Republic|Denmark|Estonia|Finland|France|Germany|Greece|Hungary|Iceland|Italy|Latvia|Liechtenstein|Lithuania|Luxembourg|Malta|Monaco|Montenegro|Netherlands|North Macedonia|Norway|Poland|Portugal|Romania|Russia|San Marino|Serbia|Slovakia|Slovenia|Spain|Sweden|Switzerland|Turkey|UK|Vatican City')] ; african_pci_avg = african_states['Median Income 2007'].mean() ;"
+        }
+    },
+    {
+        "key": "what are the minimum and maximum populations of the chinese provinces ?",
+        "Mixtral_response": {
+            "query": "what are the minimum and maximum populations of the chinese provinces?",
+            "Relevant data columns": [
+                "Population"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "find extreme"
+            ],
+            "Low-level visualization task classification": [
+                "keyword"
+            ],
+            "Visualization goal": [
+                "targeted"
+            ],
+            "Ambiguity in the query": "The data does not contain Chinese provinces but US states.",
+            "Ambiguity resolution": "",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    },
+    {
+        "key": "is there a typical film lengths group ?",
+        "Mixtral_response": {
+            "query": "is there a typical film lengths group?",
+            "Relevant data columns": [],
+            "Data column classification": [],
+            "Ambiguity in the query": "The term 'typical' is ambiguous and could refer to mean, median or mode. Also, 'film length' is missing from the given dataset.",
+            "Ambiguity resolution": "",
+            "Data transformations": "",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": "Film Length",
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ]
+        }
+    },
+    {
+        "key": "the chart teaches them the horsepower range .",
+        "Mixtral_response": {
+            "query": "the chart teaches them the horsepower range",
+            "Relevant data columns": [
+                "horsepower"
+            ],
+            "Data column classification": [
+                "keyword"
+            ],
+            "Low-level visualization task": [
+                "distribution"
+            ],
+            "Low-level visualization task classification": [
+                "inferred"
+            ],
+            "Visualization goal": [
+                "exploratory"
+            ],
+            "Ambiguity in the query": "",
+            "Ambiguity resolution": "",
+            "Data transformations": "None needed since the original dataframe already has the required information.",
+            "Data transformation operation": [],
+            "New Column Name": "",
+            "Derivation Specification": "",
+            "Missing Data Column": ""
+        }
+    }
+]

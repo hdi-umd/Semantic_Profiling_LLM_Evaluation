@@ -1,0 +1,154 @@
+[
+    {
+        "query": "is the male to female ratio more imbalanced in the last decade in russia ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "is the speed of economic development relative to the population of each country ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "show me the gdp ranking of european countries .",
+        "Low-level visualization task": [
+            "sort",
+            "rank"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "to cluster the states in the us , i wish to use middle income .",
+        "Low-level visualization task": [
+            "cluster"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do all the countries in africa have a lower average pci than all the countries in europe ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "could you tell me the continental location of the poorest ( lowest income ) country ?",
+        "Low-level visualization task": [
+            "retrieve value",
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "when looking at the average income in european countries , what is the variance ?",
+        "Low-level visualization task": [
+            "summarize",
+            "characterize distribution"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "what are the minimum and maximum populations of the chinese provinces ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "do countries with high populations wish to slow down population growth ?",
+        "Low-level visualization task": [
+            "compare"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "can you tell me the state which may have the largest average population in the next year ?",
+        "Low-level visualization task": [
+            "find extremum",
+            "summarize"
+        ],
+        "Low-level visualization task classification": [
+            "inferred",
+            "inferred"
+        ]
+    },
+    {
+        "query": "are the students who are younger more likely to use wechat ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "which movie is the highest -grossing ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "can you tell me if there is a correlation between revenue and the release year ?",
+        "Low-level visualization task": [
+            "correlation"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "is there a typical film lengths group ?",
+        "Low-level visualization task": [
+            "find extremum"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    },
+    {
+        "query": "how much revenue did titanic earn ?",
+        "Low-level visualization task": [
+            "retrieve value"
+        ],
+        "Low-level visualization task classification": [
+            "keyword"
+        ]
+    },
+    {
+        "query": "the chart teaches them the horsepower range .",
+        "Low-level visualization task": [
+            "determine range"
+        ],
+        "Low-level visualization task classification": [
+            "inferred"
+        ]
+    }
+]
