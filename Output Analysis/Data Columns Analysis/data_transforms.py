@@ -11,7 +11,7 @@ def run_single_transform(q, caller="gt"):
             return run_transform_gunviolence(q, caller)
         
         if q['code']=="": return 'data transforms is empty'
-        path = "../datasets/"+q["dataset"]
+        path = "../../datasets/"+q["dataset"]
         code = reformat_code(q["code"],4)
         return_df = regex_extractor(reformat_code(q["code"], 0))
 
@@ -21,7 +21,7 @@ def run_single_transform(q, caller="gt"):
             if i in code:
                 qu = q["query"]
                 # print("banned import ", e)
-                file = open(f"./results/final/{caller}_unexecuted_codes_path.txt", "a")
+                file = open(f"./results/{caller}_unexecuted_codes_path.txt", "a")
                 file.write(f"unable to execute {caller} code for query '{qu}'. Error: {i} import found;' \n")
                 file.close()
                 return "Error running code"
@@ -53,7 +53,7 @@ res=transform("{}")
     except Exception as e:
         qu = q["query"]
         # print("error running query: ", e)
-        file = open(f"./results/final/{caller}_unexecuted_codes_path.txt", "a")
+        file = open(f"./results/{caller}_unexecuted_codes_path.txt", "a")
         file.write(f"unable to execute {caller} code for query '{qu}'. Error:{e};' \n")
         file.close()
         return "Error running code"
@@ -72,18 +72,19 @@ def run_transform_gunviolence(q, caller="gt"):
             if i in code:
                 qu = q["query"]
                 # print("banned import ", e)
-                file = open(f"./results/final/{caller}_unexecuted_codes_path.txt", "a")
+                file = open(f"./results/{caller}_unexecuted_codes_path.txt", "a")
                 file.write(f"unable to execute {caller} code for query '{qu}'. Error: {i} import found;' \n")
                 file.close()
                 return "Error running code"
+        #TODO: Ensure zip file is uncompressed to make sure code actually runs
         script = """ 
 import pandas as pd
 import datetime, re
 import numpy as np
 def transform():
-    df1=pd.read_csv("../datasets/gun violence datasets/data.world_gun_death_in_america.csv", thousands=',')
-    df2=pd.read_csv("../datasets/gun violence datasets/firearm_deaths_usafacts.csv", thousands=',')
-    df3=pd.read_csv("../datasets/gun violence datasets/gun-violence-data_01-2013_03-2018.csv", thousands=',')
+    df1=pd.read_csv("../../datasets/gun violence datasets/data.world_gun_death_in_america.csv", thousands=',')
+    df2=pd.read_csv("../../datasets/gun violence datasets/firearm_deaths_usafacts.csv", thousands=',')
+    df3=pd.read_csv("../../datasets/gun violence datasets/gun-violence-data_01-2013_03-2018.csv", thousands=',')
     df = pd.concat([df1, df2, df3], axis=1)
     
 {}
@@ -107,7 +108,7 @@ res=transform()
     except Exception as e:
         qu = q["query"]
         # print(e)
-        file = open(f"./results/final/{caller}_unexecuted_codes_path.txt", "a")
+        file = open(f"./results/{caller}_unexecuted_codes_path.txt", "a")
         file.write(f"unable to execute {caller} code for query '{qu}'. Error:{e};' \n")
         file.close()
         return "Error running code"    

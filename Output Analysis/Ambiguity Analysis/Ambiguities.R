@@ -1,4 +1,4 @@
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #import libaries
 library(car)
@@ -15,11 +15,13 @@ library(nlme)
 library(lme4)
 library(scales)
 library(report)
+library(ggpattern)
 
-gpt_df <- read_csv("../results/gpt_ambiguity_results.csv")
-gemini_df <- read_csv("../results/gemini_ambiguity_results.csv")
-llama_df <- read_csv("../results/llama_ambiguity_results.csv")
-mistral_df <- read_csv("../results/mixtral_ambiguity_results.csv")
+
+gpt_df <- read_csv("./results/gpt_ambiguity_results.csv")
+gemini_df <- read_csv("./results/gemini_ambiguity_results.csv")
+llama_df <- read_csv("./results/llama_ambiguity_results.csv")
+mistral_df <- read_csv("./results/mixtral_ambiguity_results.csv")
 
 names(mistral_df)[names(mistral_df) == 'mixtral_query'] <- 'query'
 names(gemini_df)[names(gemini_df) == 'gemini_query'] <- 'query'
@@ -93,25 +95,27 @@ rdc_df%>%
 
 
 #plot porportion of overlapping vs non overlapping ambiguities for each llm
-rdc_df%>%
+vis_df <- rdc_df%>%
   mutate(
-    agreements = ifelse(!is.na(`positive match`), "overlaps with gt", 
-                        ifelse(!is.na(`llm match`), "llm only", 
-                               ifelse(!is.na(`gt match`), "gt only", 
+    agreements = ifelse(!is.na(`positive match`), "LLM + HM", 
+                        ifelse(!is.na(`llm match`), "LLM Only", 
+                               ifelse(!is.na(`gt match`), "HM Only", 
                                       NA
                               )
                       )
     )
   )%>%
   filter(!is.na(agreements))%>%
-  mutate(agreements = fct_relevel(agreements,c("overlaps with gt","gt only","llm only")))%>%
+  mutate(agreements = fct_relevel(agreements,c("LLM + HM","HM Only","LLM Only")))%>%
   group_by(llm, agreements)%>%
-  summarize(counts=n())%>%
+  summarize(counts=n())
+  
+vis_df %>% 
   ggplot(aes(fill=agreements, y=llm, x=counts)) + 
   geom_bar(position="fill", stat="identity")+
   scale_x_continuous(labels = percent)+
   scale_fill_manual(
-    labels = c("LLM + HM", "HM Only", "LLM Only"), 
+    # labels = c("LLM + HM", "HM Only", "LLM Only"), 
     values = c("#E59D23", "#8B8500", "#006B60")
   )+
   theme_minimal()+
@@ -126,6 +130,43 @@ rdc_df%>%
         title = "Overlapping Uncertainty Annotations")+
   guides(fill=guide_legend(title = "", title.position = "left"))
 
+
+vis_df%>%
+  ggplot(aes(y=llm, x=counts)) + 
+  geom_bar_pattern(
+    aes(
+      pattern_fill = agreements,
+      pattern = agreements
+      # fill= agreements
+    ),  
+    position = "fill",
+    stat="identity",
+    colour  = 'black',
+    fill = "white",
+    pattern_density = 0.5,
+    pattern_key_scale_factor = 0.2
+    # pattern_colour  = 'darkgrey'
+  )+
+  scale_x_continuous(labels = percent)+
+  scale_pattern_fill_manual(
+    # labels = c("LLM + HM", "HM Only", "LLM Only"),
+    values = c("LLM + HM"="#E59D23", "HM Only"="#8B8500", "LLM Only"="#006B60")
+  )+
+  # scale_fill_manual(
+  #   # labels = c("LLM + HM", "HM Only", "LLM Only"),
+  #   values = c("#E59D23", "#8B8500", "#006B60"),
+  #   guide= "none"
+  # )+
+  theme_minimal()+
+  theme(
+    aspect.ratio = 1/4, legend.position = c(.5,-.45),
+    # panel.background = element_blank(),axis.title.x=element_blank(),
+    plot.title = element_text(hjust=0.3),
+    text = element_text(size=20),
+    legend.direction = "horizontal",
+    legend.title=element_blank()
+  )+
+  labs( x="% of responses", y="", title ="LLM and Human Visual Task Annotations")
 
 rdc_df%>%
   filter(!is.na(`ambiguity similarity match`) & !is.na(`resolution similarity match`))%>%

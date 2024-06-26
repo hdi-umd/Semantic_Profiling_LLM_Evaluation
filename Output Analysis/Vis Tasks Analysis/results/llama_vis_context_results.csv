@@ -1,480 +1,480 @@
 llama_query,llama_positive matches,llama_llm only matches,llama_gt only matches,llama_correct task inferences,llama_missed task inferences,llama_positive matches count,llama_llm only matches count,llama_gt only matches count,llama_correct task inferences count,llama_missed task inferences count
-"in terms of the readings, group the similar timestamps for the sants",[],"{'Retrieve Value', 'Cluster'}","['similarity', ' filter', 'similarity', ' filter']",[],[],0,4,4,0,0
-"for o3, what is the distribution value",['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-"in the whole table, show me the best record of pm10",[],{'Find Extremum'},['retrieve value'],[],[],0,1,1,0,0
-"based on their pollution, group the locations together that are similar",['Cluster'],{'Similarity'},['cluster'],[],[],1,1,1,0,0
-please look at the o3 data and find the minimum number,[],"{'Retrieve Value', 'Find Minimum'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-in what manner are good air quality records dispersed throughout the monitored region,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-are there any outliers in pm10 readings from a temporal perspective,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-work out the quality of o3,[],{'Characterize Distribution'},['retrieve value'],[],[],0,1,1,0,0
-put the readings in order according to their pm 10 values,['Sort'],set(),[],[],[],1,0,0,0,0
-is distribution for pm10 value anything other than normal,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-show me a day with extremely bad air quality,[],{'Find Anomalies'},['filter'],[],[],0,1,1,0,0
-what days had really bad air quality,[],{'Find Anomalies'},['filter'],[],[],0,1,1,0,0
-give me the count of missing readings in this table,[],"{'Compute Derived Value', 'Find Anomalies'}","['retrieve value', 'retrieve value']",[],[],0,2,2,0,0
-"show me the data attribute that has the most na values, for example the hardest data points to collect",[],{'find pattern'},['filter'],[],[],0,1,1,0,0
-describe the change in air quality over one day describe the change in each air pollutant,['Trend'],{'Characterize Distribution'},['trend'],['trend'],['trend'],1,1,1,1,1
-could you search all available values for pm10 quality,['Retrieve Value'],set(),[],[],[],1,0,0,0,0
-are the o3 value and the pm10 value dependent on each other,[],{'correlate'},['Dependency'],[],[],0,1,1,0,0
-"across the monitored region, what is the distribution of records for good air quality",[],{'Characterize Distribution'},"['distribution', ' summarize', ' filter']",[],[],0,3,3,0,0
-what months are hurricanes most common,[],{'Characterize Distribution'},['find extremum'],[],[],0,1,1,0,0
-where are storms most common depending on the time of year,[],"{'Characterize Distribution', 'Trend'}","['compare', 'compare']",[],[],0,2,2,0,0
-are there more storms in recent years,[],{'Trend'},['characterize distribution'],[],[],0,1,1,0,0
-what does the distribution of the storms look like,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-what is the most frequent status over the year,[],{'Characterize Distribution'},['find extremum'],[],[],0,1,1,0,0
-"what is the main factor depending on different status (wind, time, pressure, or etc)",[],"{'relationship', 'correlation'}","['dependency', 'dependency']",[],[],0,2,2,0,0
-what was the name of the earliest storm,['Retrieve Value'],set(),[],[],[],1,0,0,0,0
-how many hurricanes,[],{'summarize'},"['compute derived value', ' filter']",[],[],0,2,2,0,0
-what is the name of the largest storm,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-what storm produced the greatest air pressure,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-how many storms are named caroline,['Retrieve Value'],set(),[],['retrieve value'],['retrieve value'],1,0,0,1,1
-what storm produced the least air pressure,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-what storm had the greatest diameter of tropical storm strength winds,[],{'Find Maximum'},"['find extremum', ' filter']",[],[],0,2,2,0,0
-what storm had the greatest diameter of hurricane strength winds,[],{'Find Maximum'},"['find extremum', ' filter']",[],[],0,2,2,0,0
-"how many storms occur per year, on average",['Compute Derived Value'],{'Summarize'},['compute derived value'],[],[],1,1,1,0,0
-"on average, what is the first date that a tropical cyclone (tropical depression, tropical storm, or hurricane) forms on every year",['Compute Derived Value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-is there a correlation between wind speed and air pressure,['correlate'],set(),[],[],[],1,0,0,0,0
-is there a correlation between the duration of the storm and wind speed,['correlate'],set(),[],[],[],1,0,0,0,0
-where have all hurricanes been recorded on the globe where are they more common,['Characterize Distribution'],"{'Dependency', 'Find Anomalies'}","['characterize distribution', ' filter', 'characterize distribution', ' filter']",['characterize distribution'],['characterize distribution'],1,4,4,1,1
-what lat/long locations are most likely to experience hurricanes,['characterize distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-what are lengths/timings of hurricane seasons in different regions of the world,[],{'Characterize Distribution'},"['compute derived value', ' compare']",[],[],0,2,2,0,0
-what is the average storm length,['Compute Derived Value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-what is the average time that it takes to go from depression to storm,['Compute Derived Value'],set(),[],[],[],1,0,0,0,0
-"what is the relationship, if any, between wind and pressure",['correlate'],set(),[],[],[],1,0,0,0,0
-how does wind change over the course of each hurricane,['Trend'],set(),[],['trend'],['trend'],1,0,0,1,1
-average tropical storm diameter,['Compute Derived Value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-what is the relationship between storm day and hu_diameter,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-are there any repeat names of storms,[],{'Find Duplicate Values'},['summarize'],[],[],0,1,1,0,0
-what month has the strongest hurricanes,['Find Extremum'],{'Characterize Distribution'},"['find extremum', ' filter']",['find extremum'],['find extremum'],1,2,2,1,1
-how has wind speed changed over time,['Trend'],set(),[],[],[],1,0,0,0,0
-what is the maximum pressure of a certain hurricane,[],{'Find Maximum'},"['find extremum', ' summarize', ' filter']",[],[],0,3,3,0,0
-relationship between position and the strength of the hurricane,['Dependency'],{'Correlate'},"['dependency', ' filter']",[],[],1,2,2,0,0
-average time for each hurricane status,['compute derived value'],{'summarize'},"['compute derived value', ' compare']",['compute derived value'],['compute derived value'],1,2,2,1,1
-which hurricane lasted the longest,[],{'Compute Derived Value'},"['compare', ' filter']",[],[],0,2,2,0,0
-can you tell me the sales distribution of type 4046 in 2015,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-what are the groups of regions according to three types of avocados sales ratio,['cluster'],set(),[],['cluster'],['cluster'],1,0,0,1,1
-"using the three types of avocado's sales ratio, provide the groups of regions",['cluster'],{'summarize'},['cluster'],['cluster'],['cluster'],1,1,1,1,1
-provide the distribution of the sales in 2015 of type 4046,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-the oldest user was born in what year,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-indicate all the travels taking more than 1000 minutes,[],{'filter'},['characterize distribution'],[],[],0,1,1,0,0
-"show me a list of the tripe that take longer than 1,000 minutes",['retrieve value'],{'filter'},['retrieve value'],['retrieve value'],['retrieve value'],1,1,1,1,1
-tell me the distribution of travel times between wells st & elm st and lake shore dr & ohio st,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-show me the relationship between age and travel time,['correlate'],set(),[],[],[],1,0,0,0,0
-do you know of any trip that would take longer than 1000 minutes,[],{'Filter'},['characterize distribution'],[],[],0,1,1,0,0
-show me a list of neighborhoods with the number of male births from least to most,"['sort', 'retrieve value']",set(),['retrieve value'],[],[],2,1,1,0,0
-show me the distribution of births across all districts in 2017,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-let me know if there are groups of neighborhoods with similar birth gender ratios,[],"{'similarity', 'cluster'}","['compares', ' culstering', 'compares', ' culstering']",[],[],0,4,4,0,0
-retrieve the neighborhood with more than 100 female births in ciutat vella in 2013,['filter'],"{'find extremum', 'compute derived value'}","['retrieve value', 'retrieve value', ' filter', 'retrieve value', ' filter']",[],[],1,5,5,0,0
-which neighborhood in ciutat vella has more than 100 females born in the year 2013,"['Filter', 'Retrieve Value']",set(),['retrieve value'],['retrieve value'],['retrieve value'],2,1,1,1,1
-"barcelona's districts, please list each",[],{'Retreive Value'},"['retrieve value', ' filter']",[],[],0,2,2,0,0
-what is the distribution of all births in all districts between 2013 and 2017,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-what neighborhood had 56 boys born in 2017,"['Filter', 'Retrieve Value']",set(),['retrieve value'],['retrieve value'],['retrieve value'],2,1,1,1,1
-is there a correlation between acceleration and horsepower,['correlate'],set(),[],[],[],1,0,0,0,0
-how many heavy cars are in the dataset,[],{'Filter'},['compute derived value'],[],[],0,1,1,0,0
-are there any american 5 cylinder cars,['Filter'],set(),[],[],[],1,0,0,0,0
-how does displacement relate to fuel economy for cars from europe v usa,[],"{'compare', 'correlate'}","['dependency', ' filter', 'dependency', ' filter']",[],[],0,4,4,0,0
-which cylinder cars have the highest fuel economy,[],"{'Find Extremum', 'Filter'}","['dependency', 'dependency']",[],[],0,2,2,0,0
-which countries have the most cars in this dataset,[],{'summarize'},"['compare', ' find extremum']",[],[],0,2,2,0,0
-which countries have the highest acceleration for cars of different cylinders,['compare'],"{'compute derived value', 'sort', 'filter'}","['compare', 'compare', 'compare']",['compare'],['compare'],1,3,3,1,1
-how do the horsepowers of the cars from different regions change with years,['Trend'],set(),[],[],[],1,0,0,0,0
-the distribution of the number of cylinders of cars based on different origins,[],{'Characterize Distribution'},"['distribution', ' compare']",[],[],0,2,2,0,0
-what is the correlation between displacement and mpg of cars with different origins,['correlate'],set(),[],[],[],1,0,0,0,0
-count the number of cars based on their origins,[],"{'summarize', ' retrieve value'}","['compare', 'compare']",[],[],0,2,2,0,0
-what is the correlation between horsepower and acceleration,['correlate'],set(),[],[],[],1,0,0,0,0
-is there a correlation between cars' horsepower and acceleration,['correlate'],set(),[],[],[],1,0,0,0,0
-"how does displacement relate to mpg for individual models, partitioned by country",[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-"how does weight relate to acceleration for car models, small multiples by origin",['dependency'],{'correlate'},['dependency'],[],[],1,1,1,0,0
-how does horsepower relate to acceleration for individual car models,['correlate'],set(),[],[],[],1,0,0,0,0
-"compare the number of models in usa, japan and europe",['compare'],set(),[],[],[],1,0,0,0,0
-does higher horsepower mean lower acceleration,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-how many cylinders do cars manufactured in different countries have,[],{'Characterize Distribution'},['compare'],[],[],0,1,1,0,0
-compare car cylinder count against acceleration across countries,['compare'],{'correlate'},['compare'],[],[],1,1,1,0,0
-how many cars do each country manufacture,[],{'summarize'},['characterize distribution'],[],[],0,1,1,0,0
-what's the mileage for cars based on the number of cylinders present,[],{'correlate'},['characterize distribution'],[],[],0,1,1,0,0
-does higher cylinder count mean mean lower mileage,['Correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-how does mileage relate to cylinder count,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-what is the average mpg for different cylinders,['Characterize Distribution'],{'Compute Derived Value'},['characterize distribution'],['characterize distribution'],['characterize distribution'],1,1,1,1,1
-what is the relation between horsepower and acceleration,['correlate'],set(),[],[],[],1,0,0,0,0
-how weight varies each year,[],{'Trend'},['characterize distribution'],[],[],0,1,1,0,0
-how is acceleration related to horsepower,['correlate'],set(),[],[],[],1,0,0,0,0
-how has horsepower changed over time by country,['Trend'],set(),[],[],[],1,0,0,0,0
-have cars gotten lighter over time,['Trend'],set(),[],[],[],1,0,0,0,0
-how many models are proudced by each country,[],"{'Compute Derived Value', 'Compare', 'Summarize'}","['Characterize Distribution', 'Characterize Distribution', 'Characterize Distribution']",[],[],0,3,3,0,0
-what is the average weight of cars over time,['Trend'],{'Compute Derived Value'},['trend'],['trend'],['trend'],1,1,1,1,1
-what is the distribution of weight across all cars,[],{'Characterize Distribution'},['Characterize Distribution'],[],[],0,1,1,0,0
-how much do various cars weigh,[],{'Retrieval'},['Characterize Distribution'],[],[],0,1,1,0,0
-what is the range of weights for all cars,[],{'determine range'},['Determine Range'],[],[],0,1,1,0,0
-where do the cars originate from,[],{'Retrieve Value'},['Characterize Distribution'],[],[],0,1,1,0,0
-how has avg (horsepower) evolved over time | segregate it by the car origin,['Trend'],{'Summarize'},"['trend', ' compare']",['trend'],['trend'],1,2,2,1,1
-compare avg (acceleration) with cylinders | segregate the cylinders by their origin,[],"{'Filter', 'Correlate', 'Summarize'}","['compare', 'compare', 'compare']",[],[],0,3,3,0,0
-how does avg (weight) evolve over the years,['Trend'],set(),[],[],[],1,0,0,0,0
-how does the acceleration of cars from different countries vary by the number of cylinders,[],"{'correlate', 'dependency'}","['compare', 'compare']",[],[],0,2,2,0,0
-how does acceleration vary by weight for cars from different regions,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-what is the average mpg for cars with different cylinders,[],"{'Characterize Distribution', 'Compute Derived Value'}","['dependency', 'dependency']",[],[],0,2,2,0,0
-how does mpg vary by the number of cylinders in a car,[],{'correlate'},['Characterize Distribution'],[],[],0,1,1,0,0
-how does acceleration change with horsepower,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-how does acceleration behave compared to horsepower,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-how many cars are from each region,[],{'summarize'},['characterize distribution'],[],[],0,1,1,0,0
-"how does mpg compare to displacement, broken out by region",['compare'],{'correlate'},['compare'],[],[],1,1,1,0,0
-"for each region, how does a car's mpg vary with displacement",[],"{'correlate', 'dependency'}","['compare', 'compare']",[],[],0,2,2,0,0
-how has horsepower changed over time in each region,['Trend'],set(),[],[],[],1,0,0,0,0
-what is the breakdown of cars by the number of cylinders in each region,['characterize distribution'],{'cluster'},['characterize distribution'],['characterize distribution'],['characterize distribution'],1,1,1,1,1
-how many cars have various numbers of cylinders in each region,[],"{'summarize', 'dependency'}","['compute derived value', 'compute derived value']",[],[],0,2,2,0,0
-what is the average weight of cars by model year,[],{'Compute Derived Value'},['characterize distribution'],[],[],0,1,1,0,0
-how has the average weight of cars changed over the years,['Trend'],set(),[],[],[],1,0,0,0,0
-how can the population of ashley be illustrated to show distribution across five years,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-"how likely is it that, if i was born in 2000, i was born in a county with no less than 20,000 people",['Filter'],"{'Compute Derived Value', 'Summarize'}","['dependency', 'dependency', ' filter', 'dependency', ' filter']",[],[],1,5,5,0,0
-give me the average population rating for ashley in the year 2000,[],"{'Retrieve Value', 'Compute Derived Value'}","['summarize', 'summarize']",[],[],0,2,2,0,0
-identify the county that has the least population each year,[],"{'Find Minimum', 'Filter'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-what is the average population in 2000,[],{'Compute Derived Value'},['summarize'],[],[],0,1,1,0,0
-is there a regional concentration trend in gdp development,[],"{'Trend', 'Cluster'}","['Trend', 'Trend']",[],[],0,2,2,0,0
-how are gdp and mteu correlated,['correlate'],set(),[],[],[],1,0,0,0,0
-is there an outlier within the value distribution of albinism that causes the result to be skewed,[],"{'Characterize Distribution', 'Find Anomalies'}","['Find Anomalies', 'Find Anomalies']",[],[],0,2,2,0,0
-"find all the types of genetic diseases with greater than 1,000 patients",[],"{'Find Extremum', 'Filter'}","['retrieve value', 'retrieve value']",[],[],0,2,2,0,0
-tell me the maximum and minimum number of patients with autism across all regions,[],{'Find Extremum'},[' Find Extremum'],[],[],0,1,1,0,0
-what is the spatial and temporal correlation of albinism,['correlate'],set(),[],[],[],1,0,0,0,0
-does this data represent outliers in the number of patients,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-take out the regions with a number of patients larger than 500,['Filter'],set(),['compute derived value'],[],[],1,1,1,0,0
-"looking at the number of people in all regions with a visual impairment, what is the median",[],{'Compute Derived Value'},['characterize distribution'],[],[],0,1,1,0,0
-does the value distribution of albinism look skewed,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-is there an obvious clustering,['cluster'],set(),[],[],[],1,0,0,0,0
-kindly rate the regions on the basis of the number of patients,"['sort', 'summarize']",set(),['sort'],['sort'],['sort'],2,1,1,1,1
-give me the movie that received the most nominations,[],"{'summarize', 'compute derived value'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-"out of the winners for best performance by an actor in a motion picture- musical or comedy from 2003 to 2020, the most abnormal age belongs to which actor",[],{'Find Anomalies'},[''],[],[],0,1,1,0,0
-can you organize the results of the table by sorting the list according to the age of the stars,['Sort'],set(),[],[],[],1,0,0,0,0
-can you list all the results in the table about the movie ' about  ',[],{'Retrieve Value'},['filter'],[],[],0,1,1,0,0
-what was the gender of all actors among all the final winners in the 60th ceremony,['Filter'],{'Compute Derived Value'},"['characterize distribution', 'characterize distribution', ' filter']",[],[],1,3,3,0,0
-tell me who won the best performance by an actor in a motion picture- drama award at the 60th ceremony,"['Filter', 'Retrieve Value']",set(),['retrieve value'],['retrieve value'],['retrieve value'],2,1,1,1,1
-can you list all the results in the table about the movie ' about schmidt ',[],{'Retrieve Value'},['filter'],[],[],0,1,1,0,0
-i would like to review the dispersement of the amount of nominations,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-"in the 60th ceremony, the award for best performance by an actor in a motion picture was won by whom",['Retrieve Value'],set(),[],[],[],1,0,0,0,0
-which actor was nominated for the most awards,[],"{'Find Extremum', 'Compute Derived Value'}","['retrieve value', 'retrieve value']",[],[],0,2,2,0,0
-can the actors nationality impact the outcome,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-what was the number of candidates that were nominated for best performance by an actor in a motion picture-drama at he 60th ceremony,['Filter'],{'Compute Derived Value'},"['retrieve value', 'retrieve value', ' filter']",[],[],1,3,3,0,0
-what is the total number of movies released in the year 1998,[],{'compute derived value'},"['summarize', ' filter']",[],[],0,2,2,0,0
-can you tell me what movie won best original score in a motion picture in 1997,['Retrieve Value'],set(),[],['retrieve value'],['retrieve value'],1,0,0,1,1
-what is the correlation between the nomination and the age of a star,['correlate'],set(),[],[],[],1,0,0,0,0
-tell me the distribution for the book ratings,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-can you rearrange the table by book rating in descending order,['Sort'],set(),[],[],[],1,0,0,0,0
-what books have low ratings that seem suspect,['filter'],"{'find anomalies', 'characterize distribution'}","['filter', 'filter']",['filter'],['filter'],1,2,2,1,1
-tell me the book ratings distribution,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-which author has worked with dark horse comics most frequently,[],{'Compute Derived Value'},"['find extremum', ' filter']",[],[],0,2,2,0,0
-please go and get all of the books written in english,['Filter'],{'Retrieve Value'},['filter'],['filter'],['filter'],1,1,1,1,1
-are there outliers in the book ratings,[],{'Find Anomalies'},['Find Anomalies'],[],[],0,1,1,0,0
-"of fiction books, which are written in english",['filter'],set(),['retrieve value'],[],[],1,1,1,0,0
-how many books have been released by dark horse comics,[],{'summarize'},['filter'],[],[],0,1,1,0,0
-what is the most expensive book and who published it,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-show a list of similarly rated books,[],"{'Retreive Value', 'Filter', 'Compare'}","['similarity', 'similarity', 'similarity']",[],[],0,3,3,0,0
-produce a list of book titles published during the current year,['retrieve value'],{'filter'},['retrieve value'],['retrieve value'],['retrieve value'],1,1,1,1,1
-dark horse comic has how many books,['Retrieve Value'],set(),[],[],[],1,0,0,0,0
-what is the total number of categories,[],{'compute derived value'},['summarize'],[],[],0,1,1,0,0
-what's the size of ' kids paint free- drawing fun ',['retrieve value'],set(),[],['retrieve value'],['retrieve value'],1,0,0,1,1
-does a app exist that is much different than the others,[],{'Find Anomalies'},['Find Anomalies'],['find anomalies'],['find anomalies'],0,1,1,1,1
-what is the total amount of genres,['summarize'],set(),[],['summarize'],['summarize'],1,0,0,1,1
-what is the title of the biggest app,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-what apps have a perfect rating and a lot of reviews,['filter'],{'characterize distribution'},['filter'],['filter'],['filter'],1,1,1,1,1
-see if you can locate the most recent gaming app,"['Filter', 'Find Extremum']",set(),['find extremum'],[],[],2,1,1,0,0
-tell me free or paid apps have a higher mean rating,[],"{'Compute Derived Value', 'Compare'}","['filter', 'filter']",[],[],0,2,2,0,0
-which genres are included in the dataset,[],{'Characterize Distribution'},['summarize'],[],[],0,1,1,0,0
-which apps have support for versions of android lower than 40,['Filter'],set(),['retrieve value'],[],[],1,1,1,0,0
-describe shape of the distribution for the number of installations,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-show me the app that costs the most,['Find Extremum'],set(),[],[],[],1,0,0,0,0
-is there a relationship between the android version of an app and its installations,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-show me the most recent version of androids ' discover color ',['Find Extremum'],{'Retrieve Value'},['find extremum'],['find extremum'],['find extremum'],1,1,1,1,1
-"when taking different android versions into account, does that have any impact on installation",[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-give me a list of all the free business apps that have received rating that were higher than a 45,['filter'],"{'summarize', 'compute derived value', 'sort'}","['retrieve value', 'retrieve value', ' filter', 'retrieve value', ' filter', 'retrieve value', ' filter']",[],[],1,7,7,0,0
-can you tell me the attribute 'rating ' be affected 'installation,[],{'correlation'},['characterize distribution'],[],[],0,1,1,0,0
-what's the price distribution in beauty apps,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-"which app has a rating that doesn 't follow a trend between installations, rating and number of reviews",['Find Anomalies'],set(),[],['find anomalies'],['find anomalies'],1,0,0,1,1
-what is the app with the most abnormal pattern,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-are there an unusually high number of reviews for any of the apps,['Find Anomalies'],set(),[],['find anomalies'],['find anomalies'],1,0,0,1,1
-what is the distribution of the number based on shape of installations,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-is there an effect on price caused by the app's genre,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-is there a correlation between apps with more installations and higher ratings,['correlate'],set(),[],[],[],1,0,0,0,0
-"tell me the most pricey apps by release date, recent to oldest",['Sort'],"{'Compute Derived Value', 'Filter'}","['sort', 'sort']",['sort'],['sort'],1,2,2,1,1
-find out any app that is distinctive from the rest,['Find Anomalies'],set(),[],['find anomalies'],['find anomalies'],1,0,0,1,1
-list the top 10 gaming apps sorted from highest to lowest installations,"['sort', 'filter']",{'retrieve value'},"['sort', 'sort', ' filter']",[],[],2,3,3,0,0
-can you tell me the price distribution of all the beauty apps,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-name any apps that can support any version of android lower than 40,['Filter'],set(),['retrieve value'],[],[],1,1,1,0,0
-what differences are there among the students who acquired more than 270 points between 2010-2019,['filter'],{'characterize distribution'},"['compare', 'compare', ' filter']",[],[],1,3,3,0,0
-tell me all of the categories of grade types,[],"{'Retreive Value', 'Characterize Distribution'}","['summarize', 'summarize']",[],[],0,2,2,0,0
-use the midterm exam and final exam as the 2nd and 1st keywords respectively in order to assign a rank to every one of the students,['Sort'],{'Rank'},['sort'],[],[],1,1,1,0,0
-what did the majority of students receive as a grade,[],{'summarize'},['characterize distribution'],[],[],0,1,1,0,0
-use the final exam as the first keyword and midterm exam as the second keyword to rank all the students,['Sort'],{'Compare'},['sort'],[],[],1,1,1,0,0
-"show me the scope, among all the students, of the cw2 score",['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-"in cw1, how many students achieved the feat of 100%, or full marks",['Filter'],set(),[],['filter'],['filter'],1,0,0,1,1
-rank the grades from highest to lowest according to the average score,['Sort'],{'Summarize'},['sort'],['sort'],['sort'],1,1,1,1,1
-can you tell me the median score of the cw1 class,['compute derived value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-do you know the median score of all students in cw1,[],{'Characterize Distribution'},['compute derived value '],[],[],0,1,1,0,0
-how many students received an a,['Filter'],set(),[],['filter'],['filter'],1,0,0,1,1
-select all cw1 scores not less than 80%,['Filter'],set(),[],[],[],1,0,0,0,0
-arrange the students by grade and furnish me with a list,['sort'],{'summarize'},['sort'],[],[],1,1,1,0,0
-what is the distribution of the total points of the students,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-was the same midterm exam given to velma paul and glynis caine,[],{'compare'},['retrieve value'],[],[],0,1,1,0,0
-what is the relationship between level of education and crime rate,[],{'correlation'},['dependency'],[],[],0,1,1,0,0
-what is the most frequent place of violent crime,['characterize distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-are there any correlations between crime types and geographic location,['correlate'],set(),[],[],[],1,0,0,0,0
-what is the distribution for non-violent crimes based on age,['characterize distribution'],{'filter'},['characterize distribution'],[],[],1,1,1,0,0
-are there any correlations in violent or non-violent crimes based on congressional district and year,[],{'correlation'},['correlate'],[],[],0,1,1,0,0
-is there a somewhat even distribution between the year and congressional district,['distribution'],"{'correlation', 'dependency'}","['characterize distribution', 'characterize distribution']",[],[],1,2,2,0,0
-what city has the highest crime rate,[],{'Retrieving Value'},['compare'],[],[],0,1,1,0,0
-what’s the frequency of gun violence incidents with multiple victims,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-how many gun violence incidents are there each year,[],{'Retrieve Value'},['characterize distribution'],[],[],0,1,1,0,0
-are there any significant correlations between any 2 variables in the dataset,[],{'correlation'},['correlate'],[],[],0,1,1,0,0
-how many incidents of gun violence result in death (ie what proportion are fatal vs non-fatal),[],{'aggregation'},['summarize'],[],[],0,1,1,0,0
-what鈥檚 the frequency of gun violence incidents with multiple victims,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-are males or females more likely to die of gun violence,[],{'characterize distribution'},['compare'],[],[],0,1,1,0,0
-is one sex more likely to perpetrate gun violence,['Compare'],set(),[],['compare'],['compare'],1,0,0,1,1
-how have homicide rates increased over time,['Trend'],set(),[],[],[],1,0,0,0,0
-what type of gun violence has seen the most growth over the years,['Trend'],set(),['compare'],[],[],1,1,1,0,0
-are most gun death because of suicide,[],{'proportion'},"['compare', ' filter']",[],[],0,2,2,0,0
-did most gun violence happen inside home,[],"{'find proportion', 'characterize distribution'}","['compare', ' filter', 'compare', ' filter']",[],[],0,4,4,0,0
-what is the correlation between education levels and suicide rates,[],{'correlation'},"['correlate', ' filter']",[],[],0,2,2,0,0
-which state/year has the most gun deaths,[],"{'extreme value', 'retrieval'}","['compare', 'compare']",[],[],0,2,2,0,0
-"according to population, what is the rank of each of region",['Sort'],set(),[],[],[],1,0,0,0,0
-what is the number of hospitals located in manyara,['Retrieve Value'],set(),[],[],[],1,0,0,0,0
-which 10 regions have the most health centers,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-look up regions that names start with the letter a,['Filter'],set(),[],[],[],1,0,0,0,0
-make a list of the number of total hfs in descending order,['sort'],{'retrieve value'},['sort'],[],[],1,1,1,0,0
-what is the average count of hospitals,[],{'compute derived value'},['characterize distribution'],[],[],0,1,1,0,0
-what is the number of clinics that are in mara,[],{'Retrieve Value'},"['Filter', ' filter']",[],[],0,2,2,0,0
-what's the distribution of the entire hfs,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-which region has the lowest population ratio of hf,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-enter the regions from this table,['Retrieve Value'],set(),[],['retrieve value'],['retrieve value'],1,0,0,1,1
-look for the region that has the most people living in it,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-remove any regions with a population ratio of hf lower than 15,['Filter'],set(),[],[],[],1,0,0,0,0
-the population range needs to be discovered,['Determine Range'],set(),[],[],[],1,0,0,0,0
-do any regions have their population ratio over 20 hf,['Filter'],{'Find Extremum'},['filter'],['filter'],['filter'],1,1,1,1,1
-"when the score difference is more than 5, please list the extreme matches to this",['Filter'],{'Find Anomalies'},"['filter', ' find extremum']",[],[],1,2,2,0,0
-please indicate the friendly tournament matches in which the home team beat the away team,['filter'],{'compute derived value'},['filter'],['filter'],['filter'],1,1,1,1,1
-tell me all the tournament matches that the home team won against the away team,['filter'],{'compute derived value'},['filter'],['filter'],['filter'],1,1,1,1,1
-which group of nations won the most games,[],{'summarize'},['compare'],[],[],0,1,1,0,0
-"based on the number of matches, can you tell me what the distribution of cities is",['characterize distribution'],set(),[],[],[],1,0,0,0,0
-what group of nations of have the most games,[],"{'summarize', 'compute derived value'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-what countries have won a similar number of games,['cluster'],{'similarity'},['cluster'],['cluster'],['cluster'],1,1,1,1,1
-what is the propensity of the number of vehicles in japan and korea from the year 2000 to 2010,[],{'Trend'},[''],[],[],0,1,1,0,0
-does life expectancy have any relation with the percentage of smokers,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-is the male to female ratio more imbalanced in the last decade in russia,[],{'Compare'},[''],[],[],0,1,1,0,0
-is the speed of economic development relative to the population of each country,[],{'correlate'},[''],[],[],0,1,1,0,0
-show me the gdp ranking of european countries,[],"{'Retrieve Value', 'Sort', 'Compare'}","['', '', '']",[],[],0,3,3,0,0
-"to cluster the states in the us, i wish to use middle income",['Cluster'],set(),[],[],[],1,0,0,0,0
-do all the countries in africa have a lower average pci than all the countries in europe,[],{'Compare'},[''],[],[],0,1,1,0,0
-could you tell me the continental location of the poorest ( lowest income ) country,[],{'Find Minimum'},['retrieve value'],[],[],0,1,1,0,0
-"when looking at the average income in european countries, what is the variance",[],{'compute derived value'},['characterize distribution'],[],[],0,1,1,0,0
-what are the minimum and maximum populations of the chinese provinces,['Find Extremum'],set(),[],[],[],1,0,0,0,0
-what is the average height of the floors of these buildings,[],{'Compute Derived Value'},['characterize distribution'],[],[],0,1,1,0,0
-compare the number of tall buildings in hong kong with taiwan,['Compare'],set(),[],[],[],1,0,0,0,0
-compare the number of tall buildings in hong kong with taiwan,['Compare'],set(),[],[],[],1,0,0,0,0
-what location has the highest number of tall buildings,['Find Extremum'],{'Compute Derived Value'},['find extremum '],['find extremum'],['find extremum'],1,1,1,1,1
-"provide the total sum of all the separated, divorced, and widowed people in lindi",['Compute Derived Value'],{'Summarize'},"['compute derived value', ' filter']",['compute derived value'],['compute derived value'],1,2,2,1,1
-does simiyu have a similar structure of peope as that of katavi,['similarity'],set(),[],[],[],1,0,0,0,0
-can you tell me how mara attributes are distributed,[],{'Characterize Distribution'},"['distribution', ' filter']",[],[],0,2,2,0,0
-is the total attribute of one area equal to the sum of the other attributes in any area,['Compare'],{'Compute Derived Value'},['compare'],['compare'],['compare'],1,1,1,1,1
-relationship between imdb rating and rotten tomatoes rating,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-what's the production budget for movies in different years,['Characterize Distribution'],{'Compute Derived Value'},['characterize distribution'],[],[],1,1,1,0,0
-movie gross and budget relationship based on genre,[],"{'correlate', 'characterize distribution'}","['dependency', 'dependency']",[],[],0,2,2,0,0
-show me imdb rating versus rotten tomatoes rating,[],{'Compare'},['correlate'],[],[],0,1,1,0,0
-what creative type of movie had the highest production budget for each content rating,[],"{'Find Extremum', 'Compute Derived Value'}","['characterize distribution', 'characterize distribution']",[],[],0,2,2,0,0
-what is the relationship between production budget and worldwide gross for each major genre,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-what is the relationship between release year and average production budget,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-what major genre had the highest average worldwide gross,['Find Extremum'],{'Compute Derived Value'},['find extremum'],['find extremum'],['find extremum'],1,1,1,1,1
-what major genre had the lowest average worldwide gross,['Find Extremum'],{'Compute Derived Value'},['find extremum'],['find extremum'],['find extremum'],1,1,1,1,1
-how much did average worldwide gross vary by major genre,[],"{'Characterize Distribution', 'Compute Derived Value'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-how many movies are there are of each creative type,['characterize distribution'],{'summarize'},['characterize distribution'],['characterize distribution'],['characterize distribution'],1,1,1,1,1
-which creative type had the most movies,[],"{'Compute Derived Value', 'Summarize'}","['characterize distribution', 'characterize distribution']",[],[],0,2,2,0,0
-which creative type had the fewest movies,[],"{'Compute Derived Value', 'Summarize'}","['characterize distribution', 'characterize distribution']",[],[],0,2,2,0,0
-what is the total worldwide gross for each major genre across time,['summarize'],{'compute derived value'},['summarize'],['summarize'],['summarize'],1,1,1,1,1
-is there a relationship between production budget and worldwide gross for each content rating,['correlate'],set(),[],[],[],1,0,0,0,0
-what is the distribution of running times for each movie,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-is there a relationship between imdb rating and rotten tomatoes rating,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-movie run time distribution,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-how production budget changes over release years,['Trend'],set(),[],[],[],1,0,0,0,0
-what was the average production budget of movies by year,[],{'Compute Derived Value'},['trend'],[],[],0,1,1,0,0
-"what's the average production budget of the different rated movies, separated by creative type",[],"{'Compute Derived Value', 'Summarize'}","['compare', 'compare']",[],[],0,2,2,0,0
-which genre movie makes most worldwide gross,[],"{'Retrieve Value', 'Find Maximum'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-are imdb rating and rotten tomatoes rating related,['correlate'],set(),[],[],[],1,0,0,0,0
-what is the worldwide gross distribution per genre,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-what's the breakdown of production budget by creative type per content rating,[],{'Characterize Distribution'},['compare'],[],[],0,1,1,0,0
-how does rotten tomatoes rating change as imdb rating,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-what is the total worldwide gross earned by each major genre and content rating,[],"{'summarize', 'compute derived value'}","['compare', 'compare']",[],[],0,2,2,0,0
-"for each genre and rating, what is the total world-wide gross earnings",[],"{'Compute Derived Value', 'Summarize'}","['compare', 'compare']",[],[],0,2,2,0,0
-how much did each type of movie earn in across the whole world,[],{'summarize'},['compare'],[],[],0,1,1,0,0
-how much money did movies of each genre and rating make,[],"{'summarize', 'characterize distribution'}","['compare', 'compare']",[],[],0,2,2,0,0
-"what was the average budget for each content rating and creative type, as multiple column charts",['Compare'],"{'Characterize Distribution', 'Compute Derived Value'}","['compare', 'compare']",['compare'],['compare'],1,2,2,1,1
-what is the average production budget in each year,[],{'Compute Derived Value'},['characterize distribution'],[],[],0,1,1,0,0
-compare imdb rating to rotten tomatoes rating,['compare'],set(),[],[],[],1,0,0,0,0
-which creative types have the most movies,[],"{'Compute Derived Value', 'Summarize'}","['characterize distribution', 'characterize distribution']",[],[],0,2,2,0,0
-"on average, how much was earned by movies of each genre",[],{'Compute Derived Value'},"['compare', ' characterize distribution']",[],[],0,2,2,0,0
-how many movies are of each length,['characterize distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-help me see outliers in imdb and rotten tomatoes ratings,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-what was the average worldwide gross of movies by genre,[],{'summarize'},['characterize distribution'],[],[],0,1,1,0,0
-how much did major genres gross in total,[],"{'summarize', 'compute derived value'}","['compare', 'compare']",[],[],0,2,2,0,0
-gross across genres regarding content rating,['Compare'],{'Characterize Distribution'},['compare'],['compare'],['compare'],1,1,1,1,1
-what's the distribution of running times by movie,['characterize distribution'],set(),[],[],[],1,0,0,0,0
-how many movies are there in 20 minute bins of running time,['characterize distribution'],{'summarize'},['characterize distribution'],['characterize distribution'],['characterize distribution'],1,1,1,1,1
-how many movies are there for each creative type,['characterize distribution'],{'summarize'},['characterize distribution'],['characterize distribution'],['characterize distribution'],1,1,1,1,1
-show me the variation in the amount ordered by different entities in different orders,[],"{'characterize distribution', 'sort'}","['', '']",[],[],0,2,2,0,0
-worldwide gross for each genre for each year 1995 to now,['compare'],"{'summarize', 'compute derived value', 'characterize distribution'}","['filter', ' compare', 'filter', ' compare', 'filter', ' compare', 'filter']",[],[],1,7,7,0,0
-"cumulative gross for each content rating, by major genre",[],"{'summarize', 'correlate'}","['compare', 'compare']",[],[],0,2,2,0,0
-relation between worldwide gross and production budget for each major genre,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-which position has the highest average of playing time,[],{'compute derived value'},['find extremum'],[],[],0,1,1,0,0
-name movies released in 2017,[],{'Retrieve Value'},['filter'],[],[],0,1,1,0,0
-is the normal distribuition satisfied by the length of the movies,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-sort the movies by length,['Sort'],set(),[],[],[],1,0,0,0,0
-how long is the run time of average r-rated movies,[],{'compute derived value'},"['characterize distribution', ' filter']",[],[],0,2,2,0,0
-give me the numbers of movies that were released in 2017,[],{'Retrieve Value'},"['compute derived value', ' filter']",[],[],0,2,2,0,0
-is there an average run time for movies,[],{'calculate mean'},['characterize distribution'],[],[],0,1,1,0,0
-is the running time of movies recently longer than it used to be,['Trend'],set(),[],['trend'],['trend'],1,0,0,1,1
-do movie tags and duration have a connection,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-determine if the running time of movies has increased in recent years,['Trend'],set(),[],['trend'],['trend'],1,0,0,1,1
-show me the dates that netflix released movies,[],{'Retrieve Value'},"['characterize distribution', ' filter']",[],[],0,2,2,0,0
-does any movies not have a description,[],{'existence check'},['summarize'],[],[],0,1,1,0,0
-at what point was data added to the table for netflix,['retrieve value'],set(),[],[],[],1,0,0,0,0
-"what is the percentage of the white population in blount county, alabama",['Compute Derived Value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-"what percentage of the blount county, alabama population is white",['Compute Derived Value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-sort all the counties in connecticut by the percentages of the hispanic population,['Sort'],{'Filter'},['sort'],['sort'],['sort'],1,1,1,1,1
-tell me which county has the greatest number of female residents,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-calculate the average black population for each state,['Compute Derived Value'],{'Summarize'},['compute derived value'],['compute derived value'],['compute derived value'],1,1,1,1,1
-i want to see the distribution of the school rankings in geita in 2006,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-do the pass rate and the ownership of schools have any correlation,['correlate'],set(),[],[],[],1,0,0,0,0
-create a list of schools showing the descending order by change_p,['sort'],{'summarize'},['sort'],['sort'],['sort'],1,1,1,1,1
-can you provide a list of school names in geita,['filter'],set(),['retrieve value'],[],[],1,1,1,0,0
-determine if there are any schools in neighboring regions that have similar avg_m,[],{'Find Similarity'},['similarity'],[],[],0,1,1,0,0
-list the values of kwema modern pr school's change_p in all the years,[],{'Retreive Value'},['retrieve value'],[],[],0,1,1,0,0
-what schools have similar avg_m in the neighboring region,['Similarity'],set(),[],[],[],1,0,0,0,0
-which of these school have a pass rate of over 90,['Filter'],set(),['compare'],[],[],1,1,1,0,0
-they want to know what tactic is most effective during football,[],{'correlate'},['compare'],[],[],0,1,1,0,0
-were you aware of the most recent news,[],{'retrieve value'},[''],[],[],0,1,1,0,0
-the clubs should be arranged by their shooting attempts,[],{'Sort'},['compare'],[],[],0,1,1,0,0
-what was the total amount of goals scored in the game that liverpool played in,['compute derived value'],set(),[],['compute derived value'],['compute derived value'],1,0,0,1,1
-the games are sorted by experts by their date,[],set(),[],[],[],0,0,0,0,0
-rank these clubs by their shooting attempts,[],{'Sort'},['rank'],[],[],0,1,1,0,0
-are the students who are younger more likely to use wechat,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-can lower study times among students cause greater failure rates in class,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-can you name an unusual reason for choosing this school,[],{'Find Anomalies'},['characterize distribution'],[],[],0,1,1,0,0
-could you show me the list sorted by study time ( longest to shortest ),['Sort'],set(),[],[],[],1,0,0,0,0
-find the distribution by age,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-can you tell me which students have fathers that are teachers,['Filter'],set(),[],['filter'],['filter'],1,0,0,1,1
-retrieve the students with fathers who work as teachers,[],{'Retrieval'},['filter'],[],[],0,1,1,0,0
-tell me the youngest students in the dataset,['Find Extremum'],{'Retreive Value'},['find extremum'],['find extremum'],['find extremum'],1,1,1,1,1
-tell me the types of jobs the student's mothers have,[],{'retrieve value'},['characterize distribution'],[],[],0,1,1,0,0
-i 'm wondering would the travel time decrease for students if they spent more time studying,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-would more time spent on studying reduce travel time for students,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-do countries with high populations wish to slow down population growth,['correlate'],set(),[],['correlate'],['correlate'],1,0,0,1,1
-can you tell me the state which may have the largest average population in the next year,[],"{'summarize', 'compute derived value'}","['compare', 'compare']",[],[],0,2,2,0,0
-can you see any abnormalities in the suicide rates,['Find Anomalies'],set(),[],['find anomalies'],['find anomalies'],1,0,0,1,1
-name the country with the lowest suicide rate,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-do you know the average number of suicides in europe,[],{'Retrieve Value'},['compute derived data'],[],[],0,1,1,0,0
-are there any countries with anomalously low suicides rates,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-is there similarities between gdp per capita and suicide rates,['similarity'],{'correlate'},['similarity'],[],[],1,1,1,0,0
-were there any countries with abnormally low suicide rates,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-"with the suicide larger than 100, determine the ages in albania",[],"{'filter', 'retrieve value'}","['characterize distribution', 'characterize distribution']",[],[],0,2,2,0,0
-the country with the lowest suicide rate is,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-what is the distribution rate of suicide,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-what is the total number of all suicides in 1999,['Filter'],{'Compute Derived Value'},"['characterize distribution', 'characterize distribution', ' filter']",[],[],1,3,3,0,0
-would there be any clustering of countries in terms of suicide rates,['Cluster'],set(),[],[],[],1,0,0,0,0
-create a list showing the ages of people who committed suicide in albania,['Retrieve Value'],set(),[],['retrieve value'],['retrieve value'],1,0,0,1,1
-"for the gdp of china, has it gone up or down over the last decade",['Trend'],set(),[],[],[],1,0,0,0,0
-"of all countries, how is the gdp distribution",['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-has there been an increase or decrease in the gdp of china over the last 10 years,['Trend'],set(),[],[],[],1,0,0,0,0
-how much is the average of profit of each state,[],"{'Characterize Distribution', 'Compute Derived Value'}","['compare', 'compare']",[],[],0,2,2,0,0
-how do the company earn in each state,[],"{'summarize', 'dependency'}","['compare', 'compare']",[],[],0,2,2,0,0
-what were the total sales for each date in each category,[],{'summarize'},['compare'],[],[],0,1,1,0,0
-how much was sold each day for each category,[],"{'Characterize Distribution', 'Compute Derived Value'}","['compare', 'compare']",[],[],0,2,2,0,0
-what is the average profit for each state,[],{'Compute Derived Value'},['compare'],[],[],0,1,1,0,0
-what is the relationship between profit and sales,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-what is the average profit of each ship mode divided by segment,['compare'],"{'summarize', 'compute derived value'}","['compare', 'compare']",['compare'],['compare'],1,2,2,1,1
-what is the sales forecast for each date,[],{'Compute Derived Value'},['compare'],[],[],0,1,1,0,0
-how many orders were placed for each order quantity,[],{'summarize'},['characterize distribution'],[],[],0,1,1,0,0
-what is the relationship between sales and profit for each region,[],{'correlate'},['dependency'],[],[],0,1,1,0,0
-how many orders were placed for each sub-category,[],{'summarize'},['characterize distribution'],[],[],0,1,1,0,0
-"what is the total profit for each region, based on ship status",[],{'summarize'},['compare'],[],[],0,1,1,0,0
-what is the sales trend of the different product categories,['Trend'],set(),[],[],[],1,0,0,0,0
-how many products have 3 or more quantity ordered,[],{'summarize'},['compare'],[],[],0,1,1,0,0
-how many products are ordered in single quantity,[],{'summarize'},['compare'],[],[],0,1,1,0,0
-density of sales across regions and their profitability,[],"{'summarize', 'characterize distribution'}","['compare', 'compare']",[],[],0,2,2,0,0
-what are the profits across different states,[],{'summarize'},['compare'],[],[],0,1,1,0,0
-what product category has more orders placed,['compare'],{'summarize'},['compare'],['compare'],['compare'],1,1,1,1,1
-sales forecast between jan 2016 and july 2017,[],"{'summarize', 'trend', 'characterize distribution'}","['retrieve value', ' filter', 'retrieve value', ' filter', 'retrieve value', ' filter']",[],[],0,6,6,0,0
-i want to know how many orders there are by the quantity of the order,[],"{'summarize', 'characterize distribution'}","['compute derived value', 'compute derived value']",[],[],0,2,2,0,0
-what is our profit based on shipping mode by customer segment,[],"{'summarize', 'correlate'}","['compare', 'compare']",[],[],0,2,2,0,0
-what is the sales vs profit ratio of the four regions,[],"{'compute derived value', 'correlate'}","['compare', 'compare']",[],[],0,2,2,0,0
-what is the average profit of each state,[],{'Compute Derived Value'},['compare'],[],[],0,1,1,0,0
-what is the sales vs profit ratio of all the zones,['Compare'],{'Compute Derived Value'},['compare'],['compare'],['compare'],1,1,1,1,1
-what is the average profit of different segments on the ship modes of transport,[],"{'Characterize Distribution', 'Compute Derived Value'}","['compare', 'compare']",[],[],0,2,2,0,0
-how much is the profit for sales for each,[],"{'Compute Derived Value', 'Summarize'}","['compare', 'compare']",[],[],0,2,2,0,0
-what is the correlation between sales and profit by region,['correlate'],set(),[],[],[],1,0,0,0,0
-can you create a graph showing sales and profit by region,['compare'],{'summarize'},['compare'],['compare'],['compare'],1,1,1,1,1
-"from all of the universities in london, list the one who has the most faculties",[],{'Find Extremum'},['filter'],[],[],0,1,1,0,0
-show me a university that has more than 30 faculties and more than 50 teachers,['Filter'],set(),[],[],[],1,0,0,0,0
-universities with similar number of teachers,['Similarity'],{'Cluster'},['similarity'],[],[],1,1,1,0,0
-"from all of the universities in london, list the one who has the most faculties",[],{'Find Extremum'},['filter'],[],[],0,1,1,0,0
-the universities cover which locations,[],{'Retrieve Value'},['characterize distribution'],[],[],0,1,1,0,0
-what is the teacher distribution of new york universities,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-would teachers in harvard be considered outliers if the university was in new york,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-what is the number of divisions in harvard university,[],{'Retrieve Value'},['filter'],[],[],0,1,1,0,0
-which movie is the highest-grossing,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-do you feel that midfield players have a lower market value than front court players,['compare'],set(),[],['compare'],['compare'],1,0,0,1,1
-can you tell me if there is a correlation between revenue and the release year,['Correlate'],set(),[],[],[],1,0,0,0,0
-is there a typical film lengths group,[],{'Characterize Distribution'},[''],[],[],0,1,1,0,0
-in the premier league how are the transferred players ages distributed,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-tell me a reason why top backcourt players have a higher market value than the top frontcourt player,[],{'compare'},['filter'],[],[],0,1,1,0,0
-which player had an abnormal transfer_fee,['Find Anomalies'],set(),[],[],[],1,0,0,0,0
-how old was david when he was transferred in 2010,['retrieve value'],set(),[],[],[],1,0,0,0,0
-"what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010鈥毭劽011",[],{'Retrieve Value'},"['filter', ' filter']",[],[],0,2,2,0,0
-"for the center forward position, what was the highest market value for the 2011-2012 season",[],{'Find Maximum'},"['find extremum', ' filter']",[],[],0,2,2,0,0
-tell me the numbers of the transferred players in different leagues in the 2010-2011 season,[],"{'Characterize Distribution', 'Summarize'}","['compare', ' filter', 'compare', ' filter']",[],[],0,4,4,0,0
-"what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010‚äì2011",[],{'Retrieve Value'},"['filter', ' filter']",[],[],0,2,2,0,0
-could you buy a player with his market value higher than a transfer fee,[],{'Compare'},['filter'],[],[],0,1,1,0,0
-what is the average transfer_fee for players who transferred to the premier league,[],{'Compute Derived Value'},"['characterize distribution', ' filter']",[],[],0,2,2,0,0
-list center-backs by what their transfer_fee was,['Retrieve Value'],{'Sort'},"['retrieve value', ' filter']",[],[],1,2,2,0,0
-which player was the oldest that was transferred,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-what is the distribution of the leagues who paid for transferred players in 2010,['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-are you aware of any clustering of the seasons in which players were transferred to the premier league,['cluster'],set(),[],[],[],1,0,0,0,0
-"if you were to average it out, how upbeat would you say the songs are",[],{'compute derived value'},['characterize distribution'],[],[],0,1,1,0,0
-describe the popularity of the loudest song,[],"{'Retrieval', 'Characterize Distribution'}","['retrieve value', 'retrieve value']",[],[],0,2,2,0,0
-can you help me find some popular songs,[],{'Filter'},['sort'],[],[],0,1,1,0,0
-"in terms of length, how long is ' beautiful people '",['retrieve value'],set(),[],['retrieve value'],['retrieve value'],1,0,0,1,1
-tell me which genres were mentioned,[],{'retrieve unique values'},['summarize'],[],[],0,1,1,0,0
-what songs of the pop genrea has sam smith released,['Filter'],set(),['compare'],[],[],1,1,1,0,0
-are there singers who span multiple genres,[],"{'cluster', 'characterize distribution'}","['retrieve value', 'retrieve value']",[],[],0,2,2,0,0
-determine in what year the income of undergraduate students was higher,[],{'Find Maximum'},"['compare', ' trend']",[],[],0,2,2,0,0
-how are postgraduate student numbers distributed every year,['characterize distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-could you tell me if there is any correlation between the number of undergraduate and postgraduate students,['correlate'],set(),[],[],[],1,0,0,0,0
-state the average income of postgraduate students in each country,[],"{'Compute Derived Value', 'Summarize'}","['compare', 'compare']",[],[],0,2,2,0,0
-what is the number of postgraduate students for each year,[],{'Retrieval'},['characterize distribution'],[],[],0,1,1,0,0
-"in each year, what is the distribution of the number of postgraduates",['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-the chart teaches them the horsepower range,[],{'distribution'},['determine range'],[],[],0,1,1,0,0
-name me a country that's happiness score does not coincide with the region it belongs to,[],"{'filter', 'compare'}","['dependency', 'dependency']",[],[],0,2,2,0,0
-tell me the country with the lowest trust score,[],{'Find Minimum'},['find extremum'],[],[],0,1,1,0,0
-is there a correlation between happiness scores and other attributes,['correlate'],set(),[],[],[],1,0,0,0,0
-"what countries, other than finland, have higher happiness scores and lower gdp",['compare'],{'filter'},['compare'],['compare'],['compare'],1,1,1,1,1
-can you tell me the area in the previous decade that increased rapidly in the happiness score,[],{'Find Trend'},['trend'],[],[],0,1,1,0,0
-"can you tell me, in terms of economy, what is the range across all countries",['Determine Range'],set(),[],[],[],1,0,0,0,0
-show me any clustering there may be in the gdp that has a happiness score of larger than 5,['Cluster'],set(),[],[],[],1,0,0,0,0
-within the last year have any countries experienced a sudden decrease in happiness score,[],{'Find Anomalies'},['trend'],[],[],0,1,1,0,0
-can you tell me the range of happiness score in western europe,['determine range'],set(),[],[],[],1,0,0,0,0
-"out of all the countries, which ones have a happiness score higher then finland",['filter'],set(),[],['filter'],['filter'],1,0,0,1,1
-can you tell me in what range will the number of countries in each region fall,[],{'determine range'},['characterize distribution'],[],[],0,1,1,0,0
-please identify the parameters of the happiness score in western europe,['characterize distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-show all the countries with happiness scores higher than 5,['filter'],set(),[],['filter'],['filter'],1,0,0,1,1
-name the continent that contains the greatest number of countries that are top 10 on the happiness index,[],{'cluster'},['find extremum'],[],[],0,1,1,0,0
-do any countries have happiness scores that don 't match with their gdp,[],{'correlate'},['characterize distribution'],[],[],0,1,1,0,0
-"of all the countries trust score, which country has the lowest",['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-name the country that scores the least on trust,[],"{'Retrieve Value', 'Find Minimum'}","['find extremum', 'find extremum']",[],[],0,2,2,0,0
-what is the range across all the countries in terms of economy,[],{'Determine Range'},['find extremum'],[],[],0,1,1,0,0
-"organize the countries based on happiness score, with the score limit on each group being 10",['characterize distribution'],{'sort'},['characterize distribution'],['characterize distribution'],['characterize distribution'],1,1,1,1,1
-show me the distribution of the health score as it is presented in different regions,['Characterize Distribution'],set(),[],[],[],1,0,0,0,0
-tell me the average gdp of countries in western europe,[],{'compute derived value'},"['characterize distribution', ' filter']",[],[],0,2,2,0,0
-organize the countries by their region,['sort'],{'cluster'},['sort'],[],[],1,1,1,0,0
-"for all the regions, can you show me the pattern of the happiness score",[],{'Characterize Distribution'},['cluster'],[],[],0,1,1,0,0
-what are all the countries that have a happiness score similar to fineland 5 is an acceptable error score,[],{'retrieval by similarity'},"['filter', ' similarity']",[],[],0,2,2,0,0
-what is the range of economy across all the countries,['Determine Range'],set(),[],[],[],1,0,0,0,0
-rank countries high to low by their family score,['sort'],{'retrieve value'},['sort'],['sort'],['sort'],1,1,1,1,1
-can we conclude that higher happiness comes from higher freedom,[],{'correlation'},['correlate'],[],[],0,1,1,0,0
-what dimension of the happiness index has the maximum fluctuation,[],{'Find Extremum'},"['summarize', ' compare']",[],[],0,2,2,0,0
-retrieve the country that has had a sudden decrease in happiness score within a year,[],"{'Compare', 'Trend', 'Find Anomalies'}","['filter', 'filter', 'filter']",[],[],0,3,3,0,0
-"across all regions, what is the happiness score pattern",['Characterize Distribution'],set(),[],['characterize distribution'],['characterize distribution'],1,0,0,1,1
-the health score is highest in which country,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-the highest health score is held by which country,['Find Extremum'],set(),[],['find extremum'],['find extremum'],1,0,0,1,1
-please help me identify the least common age,[],"{'Characterize Distribution', 'Find Anomalies'}","['Find Anomalies', 'Find Anomalies']",['find anomalies'],['find anomalies'],0,2,2,1,1
+"in terms of the readings, group the similar timestamps for the sants",set(),"{'Retrieve Value', 'Cluster'}","{' filter', 'similarity'}",[],[],0,2,2,0,0
+"for o3, what is the distribution value",{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+"in the whole table, show me the best record of pm10",set(),{'Find Extremum'},{'retrieve value'},[],[],0,1,1,0,0
+"based on their pollution, group the locations together that are similar",{'Cluster'},{'Similarity'},{'cluster'},[],[],1,1,1,0,0
+please look at the o3 data and find the minimum number,set(),"{'Retrieve Value', 'Find Minimum'}",{'find extremum'},[],[],0,1,1,0,0
+in what manner are good air quality records dispersed throughout the monitored region,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+are there any outliers in pm10 readings from a temporal perspective,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+work out the quality of o3,set(),{'Characterize Distribution'},{'retrieve value'},[],[],0,1,1,0,0
+put the readings in order according to their pm 10 values,{'Sort'},set(),set(),[],[],1,0,0,0,0
+is distribution for pm10 value anything other than normal,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+show me a day with extremely bad air quality,set(),{'Find Anomalies'},{'filter'},[],[],0,1,1,0,0
+what days had really bad air quality,set(),{'Find Anomalies'},{'filter'},[],[],0,1,1,0,0
+give me the count of missing readings in this table,set(),"{'Find Anomalies', 'Compute Derived Value'}",{'retrieve value'},[],[],0,1,1,0,0
+"show me the data attribute that has the most na values, for example the hardest data points to collect",set(),{'find pattern'},{'filter'},[],[],0,1,1,0,0
+describe the change in air quality over one day describe the change in each air pollutant,{'Trend'},{'Characterize Distribution'},{'trend'},['trend'],['trend'],1,1,1,1,1
+could you search all available values for pm10 quality,{'Retrieve Value'},set(),set(),[],[],1,0,0,0,0
+are the o3 value and the pm10 value dependent on each other,set(),{'correlate'},{'Dependency'},[],[],0,1,1,0,0
+"across the monitored region, what is the distribution of records for good air quality",set(),{'Characterize Distribution'},"{' filter', ' summarize', 'distribution'}",[],[],0,3,3,0,0
+what months are hurricanes most common,set(),{'Characterize Distribution'},{'find extremum'},[],[],0,1,1,0,0
+where are storms most common depending on the time of year,set(),"{'Characterize Distribution', 'Trend'}",{'compare'},[],[],0,1,1,0,0
+are there more storms in recent years,set(),{'Trend'},{'characterize distribution'},[],[],0,1,1,0,0
+what does the distribution of the storms look like,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+what is the most frequent status over the year,set(),{'Characterize Distribution'},{'find extremum'},[],[],0,1,1,0,0
+"what is the main factor depending on different status (wind, time, pressure, or etc)",set(),"{'correlation', 'relationship'}",{'dependency'},[],[],0,1,1,0,0
+what was the name of the earliest storm,{'Retrieve Value'},set(),set(),[],[],1,0,0,0,0
+how many hurricanes,set(),{'summarize'},"{'compute derived value', ' filter'}",[],[],0,2,2,0,0
+what is the name of the largest storm,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+what storm produced the greatest air pressure,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+how many storms are named caroline,{'Retrieve Value'},set(),set(),['retrieve value'],['retrieve value'],1,0,0,1,1
+what storm produced the least air pressure,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+what storm had the greatest diameter of tropical storm strength winds,set(),{'Find Maximum'},"{' filter', 'find extremum'}",[],[],0,2,2,0,0
+what storm had the greatest diameter of hurricane strength winds,set(),{'Find Maximum'},"{' filter', 'find extremum'}",[],[],0,2,2,0,0
+"how many storms occur per year, on average",{'Compute Derived Value'},{'Summarize'},{'compute derived value'},[],[],1,1,1,0,0
+"on average, what is the first date that a tropical cyclone (tropical depression, tropical storm, or hurricane) forms on every year",{'Compute Derived Value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+is there a correlation between wind speed and air pressure,{'correlate'},set(),set(),[],[],1,0,0,0,0
+is there a correlation between the duration of the storm and wind speed,{'correlate'},set(),set(),[],[],1,0,0,0,0
+where have all hurricanes been recorded on the globe where are they more common,{'Characterize Distribution'},"{'Find Anomalies', 'Dependency'}","{' filter', 'characterize distribution'}",['characterize distribution'],['characterize distribution'],1,2,2,1,1
+what lat/long locations are most likely to experience hurricanes,{'characterize distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+what are lengths/timings of hurricane seasons in different regions of the world,set(),{'Characterize Distribution'},"{'compute derived value', ' compare'}",[],[],0,2,2,0,0
+what is the average storm length,{'Compute Derived Value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+what is the average time that it takes to go from depression to storm,{'Compute Derived Value'},set(),set(),[],[],1,0,0,0,0
+"what is the relationship, if any, between wind and pressure",{'correlate'},set(),set(),[],[],1,0,0,0,0
+how does wind change over the course of each hurricane,{'Trend'},set(),set(),['trend'],['trend'],1,0,0,1,1
+average tropical storm diameter,{'Compute Derived Value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+what is the relationship between storm day and hu_diameter,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+are there any repeat names of storms,set(),{'Find Duplicate Values'},{'summarize'},[],[],0,1,1,0,0
+what month has the strongest hurricanes,{'Find Extremum'},{'Characterize Distribution'},"{' filter', 'find extremum'}",['find extremum'],['find extremum'],1,2,2,1,1
+how has wind speed changed over time,{'Trend'},set(),set(),[],[],1,0,0,0,0
+what is the maximum pressure of a certain hurricane,set(),{'Find Maximum'},"{' summarize', 'find extremum', ' filter'}",[],[],0,3,3,0,0
+relationship between position and the strength of the hurricane,{'Dependency'},{'Correlate'},"{' filter', 'dependency'}",[],[],1,2,2,0,0
+average time for each hurricane status,{'compute derived value'},{'summarize'},"{'compute derived value', ' compare'}",['compute derived value'],['compute derived value'],1,2,2,1,1
+which hurricane lasted the longest,set(),{'Compute Derived Value'},"{' filter', 'compare'}",[],[],0,2,2,0,0
+can you tell me the sales distribution of type 4046 in 2015,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+what are the groups of regions according to three types of avocados sales ratio,{'cluster'},set(),set(),['cluster'],['cluster'],1,0,0,1,1
+"using the three types of avocado's sales ratio, provide the groups of regions",{'cluster'},{'summarize'},{'cluster'},['cluster'],['cluster'],1,1,1,1,1
+provide the distribution of the sales in 2015 of type 4046,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+the oldest user was born in what year,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+indicate all the travels taking more than 1000 minutes,set(),{'filter'},{'characterize distribution'},[],[],0,1,1,0,0
+"show me a list of the tripe that take longer than 1,000 minutes",{'retrieve value'},{'filter'},{'retrieve value'},['retrieve value'],['retrieve value'],1,1,1,1,1
+tell me the distribution of travel times between wells st & elm st and lake shore dr & ohio st,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+show me the relationship between age and travel time,{'correlate'},set(),set(),[],[],1,0,0,0,0
+do you know of any trip that would take longer than 1000 minutes,set(),{'Filter'},{'characterize distribution'},[],[],0,1,1,0,0
+show me a list of neighborhoods with the number of male births from least to most,"{'retrieve value', 'sort'}",set(),{'retrieve value'},[],[],2,1,1,0,0
+show me the distribution of births across all districts in 2017,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+let me know if there are groups of neighborhoods with similar birth gender ratios,set(),"{'similarity', 'cluster'}","{'compares', ' culstering'}",[],[],0,2,2,0,0
+retrieve the neighborhood with more than 100 female births in ciutat vella in 2013,{'filter'},"{'compute derived value', 'find extremum'}","{' filter', 'retrieve value'}",[],[],1,2,2,0,0
+which neighborhood in ciutat vella has more than 100 females born in the year 2013,"{'Retrieve Value', 'Filter'}",set(),{'retrieve value'},['retrieve value'],['retrieve value'],2,1,1,1,1
+"barcelona's districts, please list each",set(),{'Retreive Value'},"{' filter', 'retrieve value'}",[],[],0,2,2,0,0
+what is the distribution of all births in all districts between 2013 and 2017,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+what neighborhood had 56 boys born in 2017,"{'Retrieve Value', 'Filter'}",set(),{'retrieve value'},['retrieve value'],['retrieve value'],2,1,1,1,1
+is there a correlation between acceleration and horsepower,{'correlate'},set(),set(),[],[],1,0,0,0,0
+how many heavy cars are in the dataset,set(),{'Filter'},{'compute derived value'},[],[],0,1,1,0,0
+are there any american 5 cylinder cars,{'Filter'},set(),set(),[],[],1,0,0,0,0
+how does displacement relate to fuel economy for cars from europe v usa,set(),"{'correlate', 'compare'}","{' filter', 'dependency'}",[],[],0,2,2,0,0
+which cylinder cars have the highest fuel economy,set(),"{'Find Extremum', 'Filter'}",{'dependency'},[],[],0,1,1,0,0
+which countries have the most cars in this dataset,set(),{'summarize'},"{' find extremum', 'compare'}",[],[],0,2,2,0,0
+which countries have the highest acceleration for cars of different cylinders,{'compare'},"{'compute derived value', 'filter', 'sort'}",{'compare'},['compare'],['compare'],1,1,1,1,1
+how do the horsepowers of the cars from different regions change with years,{'Trend'},set(),set(),[],[],1,0,0,0,0
+the distribution of the number of cylinders of cars based on different origins,set(),{'Characterize Distribution'},"{' compare', 'distribution'}",[],[],0,2,2,0,0
+what is the correlation between displacement and mpg of cars with different origins,{'correlate'},set(),set(),[],[],1,0,0,0,0
+count the number of cars based on their origins,set(),"{'summarize', ' retrieve value'}",{'compare'},[],[],0,1,1,0,0
+what is the correlation between horsepower and acceleration,{'correlate'},set(),set(),[],[],1,0,0,0,0
+is there a correlation between cars' horsepower and acceleration,{'correlate'},set(),set(),[],[],1,0,0,0,0
+"how does displacement relate to mpg for individual models, partitioned by country",set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+"how does weight relate to acceleration for car models, small multiples by origin",{'dependency'},{'correlate'},{'dependency'},[],[],1,1,1,0,0
+how does horsepower relate to acceleration for individual car models,{'correlate'},set(),set(),[],[],1,0,0,0,0
+"compare the number of models in usa, japan and europe",{'compare'},set(),set(),[],[],1,0,0,0,0
+does higher horsepower mean lower acceleration,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+how many cylinders do cars manufactured in different countries have,set(),{'Characterize Distribution'},{'compare'},[],[],0,1,1,0,0
+compare car cylinder count against acceleration across countries,{'compare'},{'correlate'},{'compare'},[],[],1,1,1,0,0
+how many cars do each country manufacture,set(),{'summarize'},{'characterize distribution'},[],[],0,1,1,0,0
+what's the mileage for cars based on the number of cylinders present,set(),{'correlate'},{'characterize distribution'},[],[],0,1,1,0,0
+does higher cylinder count mean mean lower mileage,{'Correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+how does mileage relate to cylinder count,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+what is the average mpg for different cylinders,{'Characterize Distribution'},{'Compute Derived Value'},{'characterize distribution'},['characterize distribution'],['characterize distribution'],1,1,1,1,1
+what is the relation between horsepower and acceleration,{'correlate'},set(),set(),[],[],1,0,0,0,0
+how weight varies each year,set(),{'Trend'},{'characterize distribution'},[],[],0,1,1,0,0
+how is acceleration related to horsepower,{'correlate'},set(),set(),[],[],1,0,0,0,0
+how has horsepower changed over time by country,{'Trend'},set(),set(),[],[],1,0,0,0,0
+have cars gotten lighter over time,{'Trend'},set(),set(),[],[],1,0,0,0,0
+how many models are proudced by each country,set(),"{'Compute Derived Value', 'Summarize', 'Compare'}",{'Characterize Distribution'},[],[],0,1,1,0,0
+what is the average weight of cars over time,{'Trend'},{'Compute Derived Value'},{'trend'},['trend'],['trend'],1,1,1,1,1
+what is the distribution of weight across all cars,set(),{'Characterize Distribution'},{'Characterize Distribution'},[],[],0,1,1,0,0
+how much do various cars weigh,set(),{'Retrieval'},{'Characterize Distribution'},[],[],0,1,1,0,0
+what is the range of weights for all cars,set(),{'determine range'},{'Determine Range'},[],[],0,1,1,0,0
+where do the cars originate from,set(),{'Retrieve Value'},{'Characterize Distribution'},[],[],0,1,1,0,0
+how has avg (horsepower) evolved over time | segregate it by the car origin,{'Trend'},{'Summarize'},"{' compare', 'trend'}",['trend'],['trend'],1,2,2,1,1
+compare avg (acceleration) with cylinders | segregate the cylinders by their origin,set(),"{'Summarize', 'Correlate', 'Filter'}",{'compare'},[],[],0,1,1,0,0
+how does avg (weight) evolve over the years,{'Trend'},set(),set(),[],[],1,0,0,0,0
+how does the acceleration of cars from different countries vary by the number of cylinders,set(),"{'correlate', 'dependency'}",{'compare'},[],[],0,1,1,0,0
+how does acceleration vary by weight for cars from different regions,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+what is the average mpg for cars with different cylinders,set(),"{'Characterize Distribution', 'Compute Derived Value'}",{'dependency'},[],[],0,1,1,0,0
+how does mpg vary by the number of cylinders in a car,set(),{'correlate'},{'Characterize Distribution'},[],[],0,1,1,0,0
+how does acceleration change with horsepower,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+how does acceleration behave compared to horsepower,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+how many cars are from each region,set(),{'summarize'},{'characterize distribution'},[],[],0,1,1,0,0
+"how does mpg compare to displacement, broken out by region",{'compare'},{'correlate'},{'compare'},[],[],1,1,1,0,0
+"for each region, how does a car's mpg vary with displacement",set(),"{'correlate', 'dependency'}",{'compare'},[],[],0,1,1,0,0
+how has horsepower changed over time in each region,{'Trend'},set(),set(),[],[],1,0,0,0,0
+what is the breakdown of cars by the number of cylinders in each region,{'characterize distribution'},{'cluster'},{'characterize distribution'},['characterize distribution'],['characterize distribution'],1,1,1,1,1
+how many cars have various numbers of cylinders in each region,set(),"{'summarize', 'dependency'}",{'compute derived value'},[],[],0,1,1,0,0
+what is the average weight of cars by model year,set(),{'Compute Derived Value'},{'characterize distribution'},[],[],0,1,1,0,0
+how has the average weight of cars changed over the years,{'Trend'},set(),set(),[],[],1,0,0,0,0
+how can the population of ashley be illustrated to show distribution across five years,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+"how likely is it that, if i was born in 2000, i was born in a county with no less than 20,000 people",{'Filter'},"{'Summarize', 'Compute Derived Value'}","{' filter', 'dependency'}",[],[],1,2,2,0,0
+give me the average population rating for ashley in the year 2000,set(),"{'Retrieve Value', 'Compute Derived Value'}",{'summarize'},[],[],0,1,1,0,0
+identify the county that has the least population each year,set(),"{'Find Minimum', 'Filter'}",{'find extremum'},[],[],0,1,1,0,0
+what is the average population in 2000,set(),{'Compute Derived Value'},{'summarize'},[],[],0,1,1,0,0
+is there a regional concentration trend in gdp development,set(),"{'Cluster', 'Trend'}",{'Trend'},[],[],0,1,1,0,0
+how are gdp and mteu correlated,{'correlate'},set(),set(),[],[],1,0,0,0,0
+is there an outlier within the value distribution of albinism that causes the result to be skewed,set(),"{'Find Anomalies', 'Characterize Distribution'}",{'Find Anomalies'},[],[],0,1,1,0,0
+"find all the types of genetic diseases with greater than 1,000 patients",set(),"{'Find Extremum', 'Filter'}",{'retrieve value'},[],[],0,1,1,0,0
+tell me the maximum and minimum number of patients with autism across all regions,set(),{'Find Extremum'},{' Find Extremum'},[],[],0,1,1,0,0
+what is the spatial and temporal correlation of albinism,{'correlate'},set(),set(),[],[],1,0,0,0,0
+does this data represent outliers in the number of patients,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+take out the regions with a number of patients larger than 500,{'Filter'},set(),{'compute derived value'},[],[],1,1,1,0,0
+"looking at the number of people in all regions with a visual impairment, what is the median",set(),{'Compute Derived Value'},{'characterize distribution'},[],[],0,1,1,0,0
+does the value distribution of albinism look skewed,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+is there an obvious clustering,{'cluster'},set(),set(),[],[],1,0,0,0,0
+kindly rate the regions on the basis of the number of patients,"{'summarize', 'sort'}",set(),{'sort'},['sort'],['sort'],2,1,1,1,1
+give me the movie that received the most nominations,set(),"{'compute derived value', 'summarize'}",{'find extremum'},[],[],0,1,1,0,0
+"out of the winners for best performance by an actor in a motion picture- musical or comedy from 2003 to 2020, the most abnormal age belongs to which actor",set(),{'Find Anomalies'},{''},[],[],0,1,1,0,0
+can you organize the results of the table by sorting the list according to the age of the stars,{'Sort'},set(),set(),[],[],1,0,0,0,0
+can you list all the results in the table about the movie ' about  ',set(),{'Retrieve Value'},{'filter'},[],[],0,1,1,0,0
+what was the gender of all actors among all the final winners in the 60th ceremony,{'Filter'},{'Compute Derived Value'},"{' filter', 'characterize distribution'}",[],[],1,2,2,0,0
+tell me who won the best performance by an actor in a motion picture- drama award at the 60th ceremony,"{'Retrieve Value', 'Filter'}",set(),{'retrieve value'},['retrieve value'],['retrieve value'],2,1,1,1,1
+can you list all the results in the table about the movie ' about schmidt ',set(),{'Retrieve Value'},{'filter'},[],[],0,1,1,0,0
+i would like to review the dispersement of the amount of nominations,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+"in the 60th ceremony, the award for best performance by an actor in a motion picture was won by whom",{'Retrieve Value'},set(),set(),[],[],1,0,0,0,0
+which actor was nominated for the most awards,set(),"{'Compute Derived Value', 'Find Extremum'}",{'retrieve value'},[],[],0,1,1,0,0
+can the actors nationality impact the outcome,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+what was the number of candidates that were nominated for best performance by an actor in a motion picture-drama at he 60th ceremony,{'Filter'},{'Compute Derived Value'},"{' filter', 'retrieve value'}",[],[],1,2,2,0,0
+what is the total number of movies released in the year 1998,set(),{'compute derived value'},"{'summarize', ' filter'}",[],[],0,2,2,0,0
+can you tell me what movie won best original score in a motion picture in 1997,{'Retrieve Value'},set(),set(),['retrieve value'],['retrieve value'],1,0,0,1,1
+what is the correlation between the nomination and the age of a star,{'correlate'},set(),set(),[],[],1,0,0,0,0
+tell me the distribution for the book ratings,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+can you rearrange the table by book rating in descending order,{'Sort'},set(),set(),[],[],1,0,0,0,0
+what books have low ratings that seem suspect,{'filter'},"{'characterize distribution', 'find anomalies'}",{'filter'},['filter'],['filter'],1,1,1,1,1
+tell me the book ratings distribution,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+which author has worked with dark horse comics most frequently,set(),{'Compute Derived Value'},"{' filter', 'find extremum'}",[],[],0,2,2,0,0
+please go and get all of the books written in english,{'Filter'},{'Retrieve Value'},{'filter'},['filter'],['filter'],1,1,1,1,1
+are there outliers in the book ratings,set(),{'Find Anomalies'},{'Find Anomalies'},[],[],0,1,1,0,0
+"of fiction books, which are written in english",{'filter'},set(),{'retrieve value'},[],[],1,1,1,0,0
+how many books have been released by dark horse comics,set(),{'summarize'},{'filter'},[],[],0,1,1,0,0
+what is the most expensive book and who published it,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+show a list of similarly rated books,set(),"{'Retreive Value', 'Compare', 'Filter'}",{'similarity'},[],[],0,1,1,0,0
+produce a list of book titles published during the current year,{'retrieve value'},{'filter'},{'retrieve value'},['retrieve value'],['retrieve value'],1,1,1,1,1
+dark horse comic has how many books,{'Retrieve Value'},set(),set(),[],[],1,0,0,0,0
+what is the total number of categories,set(),{'compute derived value'},{'summarize'},[],[],0,1,1,0,0
+what's the size of ' kids paint free- drawing fun ',{'retrieve value'},set(),set(),['retrieve value'],['retrieve value'],1,0,0,1,1
+does a app exist that is much different than the others,set(),{'Find Anomalies'},{'Find Anomalies'},['find anomalies'],['find anomalies'],0,1,1,1,1
+what is the total amount of genres,{'summarize'},set(),set(),['summarize'],['summarize'],1,0,0,1,1
+what is the title of the biggest app,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+what apps have a perfect rating and a lot of reviews,{'filter'},{'characterize distribution'},{'filter'},['filter'],['filter'],1,1,1,1,1
+see if you can locate the most recent gaming app,"{'Find Extremum', 'Filter'}",set(),{'find extremum'},[],[],2,1,1,0,0
+tell me free or paid apps have a higher mean rating,set(),"{'Compute Derived Value', 'Compare'}",{'filter'},[],[],0,1,1,0,0
+which genres are included in the dataset,set(),{'Characterize Distribution'},{'summarize'},[],[],0,1,1,0,0
+which apps have support for versions of android lower than 40,{'Filter'},set(),{'retrieve value'},[],[],1,1,1,0,0
+describe shape of the distribution for the number of installations,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+show me the app that costs the most,{'Find Extremum'},set(),set(),[],[],1,0,0,0,0
+is there a relationship between the android version of an app and its installations,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+show me the most recent version of androids ' discover color ',{'Find Extremum'},{'Retrieve Value'},{'find extremum'},['find extremum'],['find extremum'],1,1,1,1,1
+"when taking different android versions into account, does that have any impact on installation",set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+give me a list of all the free business apps that have received rating that were higher than a 45,{'filter'},"{'compute derived value', 'summarize', 'sort'}","{' filter', 'retrieve value'}",[],[],1,2,2,0,0
+can you tell me the attribute 'rating ' be affected 'installation,set(),{'correlation'},{'characterize distribution'},[],[],0,1,1,0,0
+what's the price distribution in beauty apps,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+"which app has a rating that doesn 't follow a trend between installations, rating and number of reviews",{'Find Anomalies'},set(),set(),['find anomalies'],['find anomalies'],1,0,0,1,1
+what is the app with the most abnormal pattern,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+are there an unusually high number of reviews for any of the apps,{'Find Anomalies'},set(),set(),['find anomalies'],['find anomalies'],1,0,0,1,1
+what is the distribution of the number based on shape of installations,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+is there an effect on price caused by the app's genre,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+is there a correlation between apps with more installations and higher ratings,{'correlate'},set(),set(),[],[],1,0,0,0,0
+"tell me the most pricey apps by release date, recent to oldest",{'Sort'},"{'Compute Derived Value', 'Filter'}",{'sort'},['sort'],['sort'],1,1,1,1,1
+find out any app that is distinctive from the rest,{'Find Anomalies'},set(),set(),['find anomalies'],['find anomalies'],1,0,0,1,1
+list the top 10 gaming apps sorted from highest to lowest installations,"{'filter', 'sort'}",{'retrieve value'},"{' filter', 'sort'}",[],[],2,2,2,0,0
+can you tell me the price distribution of all the beauty apps,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+name any apps that can support any version of android lower than 40,{'Filter'},set(),{'retrieve value'},[],[],1,1,1,0,0
+what differences are there among the students who acquired more than 270 points between 2010-2019,{'filter'},{'characterize distribution'},"{' filter', 'compare'}",[],[],1,2,2,0,0
+tell me all of the categories of grade types,set(),"{'Characterize Distribution', 'Retreive Value'}",{'summarize'},[],[],0,1,1,0,0
+use the midterm exam and final exam as the 2nd and 1st keywords respectively in order to assign a rank to every one of the students,{'Sort'},{'Rank'},{'sort'},[],[],1,1,1,0,0
+what did the majority of students receive as a grade,set(),{'summarize'},{'characterize distribution'},[],[],0,1,1,0,0
+use the final exam as the first keyword and midterm exam as the second keyword to rank all the students,{'Sort'},{'Compare'},{'sort'},[],[],1,1,1,0,0
+"show me the scope, among all the students, of the cw2 score",{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+"in cw1, how many students achieved the feat of 100%, or full marks",{'Filter'},set(),set(),['filter'],['filter'],1,0,0,1,1
+rank the grades from highest to lowest according to the average score,{'Sort'},{'Summarize'},{'sort'},['sort'],['sort'],1,1,1,1,1
+can you tell me the median score of the cw1 class,{'compute derived value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+do you know the median score of all students in cw1,set(),{'Characterize Distribution'},{'compute derived value '},[],[],0,1,1,0,0
+how many students received an a,{'Filter'},set(),set(),['filter'],['filter'],1,0,0,1,1
+select all cw1 scores not less than 80%,{'Filter'},set(),set(),[],[],1,0,0,0,0
+arrange the students by grade and furnish me with a list,{'sort'},{'summarize'},{'sort'},[],[],1,1,1,0,0
+what is the distribution of the total points of the students,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+was the same midterm exam given to velma paul and glynis caine,set(),{'compare'},{'retrieve value'},[],[],0,1,1,0,0
+what is the relationship between level of education and crime rate,set(),{'correlation'},{'dependency'},[],[],0,1,1,0,0
+what is the most frequent place of violent crime,{'characterize distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+are there any correlations between crime types and geographic location,{'correlate'},set(),set(),[],[],1,0,0,0,0
+what is the distribution for non-violent crimes based on age,{'characterize distribution'},{'filter'},{'characterize distribution'},[],[],1,1,1,0,0
+are there any correlations in violent or non-violent crimes based on congressional district and year,set(),{'correlation'},{'correlate'},[],[],0,1,1,0,0
+is there a somewhat even distribution between the year and congressional district,{'distribution'},"{'correlation', 'dependency'}",{'characterize distribution'},[],[],1,1,1,0,0
+what city has the highest crime rate,set(),{'Retrieving Value'},{'compare'},[],[],0,1,1,0,0
+what’s the frequency of gun violence incidents with multiple victims,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+how many gun violence incidents are there each year,set(),{'Retrieve Value'},{'characterize distribution'},[],[],0,1,1,0,0
+are there any significant correlations between any 2 variables in the dataset,set(),{'correlation'},{'correlate'},[],[],0,1,1,0,0
+how many incidents of gun violence result in death (ie what proportion are fatal vs non-fatal),set(),{'aggregation'},{'summarize'},[],[],0,1,1,0,0
+what鈥檚 the frequency of gun violence incidents with multiple victims,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+are males or females more likely to die of gun violence,set(),{'characterize distribution'},{'compare'},[],[],0,1,1,0,0
+is one sex more likely to perpetrate gun violence,{'Compare'},set(),set(),['compare'],['compare'],1,0,0,1,1
+how have homicide rates increased over time,{'Trend'},set(),set(),[],[],1,0,0,0,0
+what type of gun violence has seen the most growth over the years,{'Trend'},set(),{'compare'},[],[],1,1,1,0,0
+are most gun death because of suicide,set(),{'proportion'},"{' filter', 'compare'}",[],[],0,2,2,0,0
+did most gun violence happen inside home,set(),"{'find proportion', 'characterize distribution'}","{' filter', 'compare'}",[],[],0,2,2,0,0
+what is the correlation between education levels and suicide rates,set(),{'correlation'},"{' filter', 'correlate'}",[],[],0,2,2,0,0
+which state/year has the most gun deaths,set(),"{'extreme value', 'retrieval'}",{'compare'},[],[],0,1,1,0,0
+"according to population, what is the rank of each of region",{'Sort'},set(),set(),[],[],1,0,0,0,0
+what is the number of hospitals located in manyara,{'Retrieve Value'},set(),set(),[],[],1,0,0,0,0
+which 10 regions have the most health centers,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+look up regions that names start with the letter a,{'Filter'},set(),set(),[],[],1,0,0,0,0
+make a list of the number of total hfs in descending order,{'sort'},{'retrieve value'},{'sort'},[],[],1,1,1,0,0
+what is the average count of hospitals,set(),{'compute derived value'},{'characterize distribution'},[],[],0,1,1,0,0
+what is the number of clinics that are in mara,set(),{'Retrieve Value'},"{' filter', 'Filter'}",[],[],0,2,2,0,0
+what's the distribution of the entire hfs,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+which region has the lowest population ratio of hf,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+enter the regions from this table,{'Retrieve Value'},set(),set(),['retrieve value'],['retrieve value'],1,0,0,1,1
+look for the region that has the most people living in it,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+remove any regions with a population ratio of hf lower than 15,{'Filter'},set(),set(),[],[],1,0,0,0,0
+the population range needs to be discovered,{'Determine Range'},set(),set(),[],[],1,0,0,0,0
+do any regions have their population ratio over 20 hf,{'Filter'},{'Find Extremum'},{'filter'},['filter'],['filter'],1,1,1,1,1
+"when the score difference is more than 5, please list the extreme matches to this",{'Filter'},{'Find Anomalies'},"{' find extremum', 'filter'}",[],[],1,2,2,0,0
+please indicate the friendly tournament matches in which the home team beat the away team,{'filter'},{'compute derived value'},{'filter'},['filter'],['filter'],1,1,1,1,1
+tell me all the tournament matches that the home team won against the away team,{'filter'},{'compute derived value'},{'filter'},['filter'],['filter'],1,1,1,1,1
+which group of nations won the most games,set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+"based on the number of matches, can you tell me what the distribution of cities is",{'characterize distribution'},set(),set(),[],[],1,0,0,0,0
+what group of nations of have the most games,set(),"{'compute derived value', 'summarize'}",{'find extremum'},[],[],0,1,1,0,0
+what countries have won a similar number of games,{'cluster'},{'similarity'},{'cluster'},['cluster'],['cluster'],1,1,1,1,1
+what is the propensity of the number of vehicles in japan and korea from the year 2000 to 2010,set(),{'Trend'},{''},[],[],0,1,1,0,0
+does life expectancy have any relation with the percentage of smokers,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+is the male to female ratio more imbalanced in the last decade in russia,set(),{'Compare'},{''},[],[],0,1,1,0,0
+is the speed of economic development relative to the population of each country,set(),{'correlate'},{''},[],[],0,1,1,0,0
+show me the gdp ranking of european countries,set(),"{'Retrieve Value', 'Sort', 'Compare'}",{''},[],[],0,1,1,0,0
+"to cluster the states in the us, i wish to use middle income",{'Cluster'},set(),set(),[],[],1,0,0,0,0
+do all the countries in africa have a lower average pci than all the countries in europe,set(),{'Compare'},{''},[],[],0,1,1,0,0
+could you tell me the continental location of the poorest ( lowest income ) country,set(),{'Find Minimum'},{'retrieve value'},[],[],0,1,1,0,0
+"when looking at the average income in european countries, what is the variance",set(),{'compute derived value'},{'characterize distribution'},[],[],0,1,1,0,0
+what are the minimum and maximum populations of the chinese provinces,{'Find Extremum'},set(),set(),[],[],1,0,0,0,0
+what is the average height of the floors of these buildings,set(),{'Compute Derived Value'},{'characterize distribution'},[],[],0,1,1,0,0
+compare the number of tall buildings in hong kong with taiwan,{'Compare'},set(),set(),[],[],1,0,0,0,0
+compare the number of tall buildings in hong kong with taiwan,{'Compare'},set(),set(),[],[],1,0,0,0,0
+what location has the highest number of tall buildings,{'Find Extremum'},{'Compute Derived Value'},{'find extremum '},['find extremum'],['find extremum'],1,1,1,1,1
+"provide the total sum of all the separated, divorced, and widowed people in lindi",{'Compute Derived Value'},{'Summarize'},"{'compute derived value', ' filter'}",['compute derived value'],['compute derived value'],1,2,2,1,1
+does simiyu have a similar structure of peope as that of katavi,{'similarity'},set(),set(),[],[],1,0,0,0,0
+can you tell me how mara attributes are distributed,set(),{'Characterize Distribution'},"{' filter', 'distribution'}",[],[],0,2,2,0,0
+is the total attribute of one area equal to the sum of the other attributes in any area,{'Compare'},{'Compute Derived Value'},{'compare'},['compare'],['compare'],1,1,1,1,1
+relationship between imdb rating and rotten tomatoes rating,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+what's the production budget for movies in different years,{'Characterize Distribution'},{'Compute Derived Value'},{'characterize distribution'},[],[],1,1,1,0,0
+movie gross and budget relationship based on genre,set(),"{'correlate', 'characterize distribution'}",{'dependency'},[],[],0,1,1,0,0
+show me imdb rating versus rotten tomatoes rating,set(),{'Compare'},{'correlate'},[],[],0,1,1,0,0
+what creative type of movie had the highest production budget for each content rating,set(),"{'Compute Derived Value', 'Find Extremum'}",{'characterize distribution'},[],[],0,1,1,0,0
+what is the relationship between production budget and worldwide gross for each major genre,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+what is the relationship between release year and average production budget,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+what major genre had the highest average worldwide gross,{'Find Extremum'},{'Compute Derived Value'},{'find extremum'},['find extremum'],['find extremum'],1,1,1,1,1
+what major genre had the lowest average worldwide gross,{'Find Extremum'},{'Compute Derived Value'},{'find extremum'},['find extremum'],['find extremum'],1,1,1,1,1
+how much did average worldwide gross vary by major genre,set(),"{'Characterize Distribution', 'Compute Derived Value'}",{'find extremum'},[],[],0,1,1,0,0
+how many movies are there are of each creative type,{'characterize distribution'},{'summarize'},{'characterize distribution'},['characterize distribution'],['characterize distribution'],1,1,1,1,1
+which creative type had the most movies,set(),"{'Summarize', 'Compute Derived Value'}",{'characterize distribution'},[],[],0,1,1,0,0
+which creative type had the fewest movies,set(),"{'Summarize', 'Compute Derived Value'}",{'characterize distribution'},[],[],0,1,1,0,0
+what is the total worldwide gross for each major genre across time,{'summarize'},{'compute derived value'},{'summarize'},['summarize'],['summarize'],1,1,1,1,1
+is there a relationship between production budget and worldwide gross for each content rating,{'correlate'},set(),set(),[],[],1,0,0,0,0
+what is the distribution of running times for each movie,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+is there a relationship between imdb rating and rotten tomatoes rating,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+movie run time distribution,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+how production budget changes over release years,{'Trend'},set(),set(),[],[],1,0,0,0,0
+what was the average production budget of movies by year,set(),{'Compute Derived Value'},{'trend'},[],[],0,1,1,0,0
+"what's the average production budget of the different rated movies, separated by creative type",set(),"{'Summarize', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+which genre movie makes most worldwide gross,set(),"{'Retrieve Value', 'Find Maximum'}",{'find extremum'},[],[],0,1,1,0,0
+are imdb rating and rotten tomatoes rating related,{'correlate'},set(),set(),[],[],1,0,0,0,0
+what is the worldwide gross distribution per genre,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+what's the breakdown of production budget by creative type per content rating,set(),{'Characterize Distribution'},{'compare'},[],[],0,1,1,0,0
+how does rotten tomatoes rating change as imdb rating,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+what is the total worldwide gross earned by each major genre and content rating,set(),"{'compute derived value', 'summarize'}",{'compare'},[],[],0,1,1,0,0
+"for each genre and rating, what is the total world-wide gross earnings",set(),"{'Summarize', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+how much did each type of movie earn in across the whole world,set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+how much money did movies of each genre and rating make,set(),"{'summarize', 'characterize distribution'}",{'compare'},[],[],0,1,1,0,0
+"what was the average budget for each content rating and creative type, as multiple column charts",{'Compare'},"{'Characterize Distribution', 'Compute Derived Value'}",{'compare'},['compare'],['compare'],1,1,1,1,1
+what is the average production budget in each year,set(),{'Compute Derived Value'},{'characterize distribution'},[],[],0,1,1,0,0
+compare imdb rating to rotten tomatoes rating,{'compare'},set(),set(),[],[],1,0,0,0,0
+which creative types have the most movies,set(),"{'Summarize', 'Compute Derived Value'}",{'characterize distribution'},[],[],0,1,1,0,0
+"on average, how much was earned by movies of each genre",set(),{'Compute Derived Value'},"{' characterize distribution', 'compare'}",[],[],0,2,2,0,0
+how many movies are of each length,{'characterize distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+help me see outliers in imdb and rotten tomatoes ratings,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+what was the average worldwide gross of movies by genre,set(),{'summarize'},{'characterize distribution'},[],[],0,1,1,0,0
+how much did major genres gross in total,set(),"{'compute derived value', 'summarize'}",{'compare'},[],[],0,1,1,0,0
+gross across genres regarding content rating,{'Compare'},{'Characterize Distribution'},{'compare'},['compare'],['compare'],1,1,1,1,1
+what's the distribution of running times by movie,{'characterize distribution'},set(),set(),[],[],1,0,0,0,0
+how many movies are there in 20 minute bins of running time,{'characterize distribution'},{'summarize'},{'characterize distribution'},['characterize distribution'],['characterize distribution'],1,1,1,1,1
+how many movies are there for each creative type,{'characterize distribution'},{'summarize'},{'characterize distribution'},['characterize distribution'],['characterize distribution'],1,1,1,1,1
+show me the variation in the amount ordered by different entities in different orders,set(),"{'characterize distribution', 'sort'}",{''},[],[],0,1,1,0,0
+worldwide gross for each genre for each year 1995 to now,{'compare'},"{'compute derived value', 'summarize', 'characterize distribution'}","{' compare', 'filter'}",[],[],1,2,2,0,0
+"cumulative gross for each content rating, by major genre",set(),"{'summarize', 'correlate'}",{'compare'},[],[],0,1,1,0,0
+relation between worldwide gross and production budget for each major genre,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+which position has the highest average of playing time,set(),{'compute derived value'},{'find extremum'},[],[],0,1,1,0,0
+name movies released in 2017,set(),{'Retrieve Value'},{'filter'},[],[],0,1,1,0,0
+is the normal distribuition satisfied by the length of the movies,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+sort the movies by length,{'Sort'},set(),set(),[],[],1,0,0,0,0
+how long is the run time of average r-rated movies,set(),{'compute derived value'},"{' filter', 'characterize distribution'}",[],[],0,2,2,0,0
+give me the numbers of movies that were released in 2017,set(),{'Retrieve Value'},"{'compute derived value', ' filter'}",[],[],0,2,2,0,0
+is there an average run time for movies,set(),{'calculate mean'},{'characterize distribution'},[],[],0,1,1,0,0
+is the running time of movies recently longer than it used to be,{'Trend'},set(),set(),['trend'],['trend'],1,0,0,1,1
+do movie tags and duration have a connection,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+determine if the running time of movies has increased in recent years,{'Trend'},set(),set(),['trend'],['trend'],1,0,0,1,1
+show me the dates that netflix released movies,set(),{'Retrieve Value'},"{' filter', 'characterize distribution'}",[],[],0,2,2,0,0
+does any movies not have a description,set(),{'existence check'},{'summarize'},[],[],0,1,1,0,0
+at what point was data added to the table for netflix,{'retrieve value'},set(),set(),[],[],1,0,0,0,0
+"what is the percentage of the white population in blount county, alabama",{'Compute Derived Value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+"what percentage of the blount county, alabama population is white",{'Compute Derived Value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+sort all the counties in connecticut by the percentages of the hispanic population,{'Sort'},{'Filter'},{'sort'},['sort'],['sort'],1,1,1,1,1
+tell me which county has the greatest number of female residents,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+calculate the average black population for each state,{'Compute Derived Value'},{'Summarize'},{'compute derived value'},['compute derived value'],['compute derived value'],1,1,1,1,1
+i want to see the distribution of the school rankings in geita in 2006,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+do the pass rate and the ownership of schools have any correlation,{'correlate'},set(),set(),[],[],1,0,0,0,0
+create a list of schools showing the descending order by change_p,{'sort'},{'summarize'},{'sort'},['sort'],['sort'],1,1,1,1,1
+can you provide a list of school names in geita,{'filter'},set(),{'retrieve value'},[],[],1,1,1,0,0
+determine if there are any schools in neighboring regions that have similar avg_m,set(),{'Find Similarity'},{'similarity'},[],[],0,1,1,0,0
+list the values of kwema modern pr school's change_p in all the years,set(),{'Retreive Value'},{'retrieve value'},[],[],0,1,1,0,0
+what schools have similar avg_m in the neighboring region,{'Similarity'},set(),set(),[],[],1,0,0,0,0
+which of these school have a pass rate of over 90,{'Filter'},set(),{'compare'},[],[],1,1,1,0,0
+they want to know what tactic is most effective during football,set(),{'correlate'},{'compare'},[],[],0,1,1,0,0
+were you aware of the most recent news,set(),{'retrieve value'},{''},[],[],0,1,1,0,0
+the clubs should be arranged by their shooting attempts,set(),{'Sort'},{'compare'},[],[],0,1,1,0,0
+what was the total amount of goals scored in the game that liverpool played in,{'compute derived value'},set(),set(),['compute derived value'],['compute derived value'],1,0,0,1,1
+the games are sorted by experts by their date,set(),set(),set(),[],[],0,0,0,0,0
+rank these clubs by their shooting attempts,set(),{'Sort'},{'rank'},[],[],0,1,1,0,0
+are the students who are younger more likely to use wechat,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+can lower study times among students cause greater failure rates in class,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+can you name an unusual reason for choosing this school,set(),{'Find Anomalies'},{'characterize distribution'},[],[],0,1,1,0,0
+could you show me the list sorted by study time ( longest to shortest ),{'Sort'},set(),set(),[],[],1,0,0,0,0
+find the distribution by age,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+can you tell me which students have fathers that are teachers,{'Filter'},set(),set(),['filter'],['filter'],1,0,0,1,1
+retrieve the students with fathers who work as teachers,set(),{'Retrieval'},{'filter'},[],[],0,1,1,0,0
+tell me the youngest students in the dataset,{'Find Extremum'},{'Retreive Value'},{'find extremum'},['find extremum'],['find extremum'],1,1,1,1,1
+tell me the types of jobs the student's mothers have,set(),{'retrieve value'},{'characterize distribution'},[],[],0,1,1,0,0
+i 'm wondering would the travel time decrease for students if they spent more time studying,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+would more time spent on studying reduce travel time for students,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+do countries with high populations wish to slow down population growth,{'correlate'},set(),set(),['correlate'],['correlate'],1,0,0,1,1
+can you tell me the state which may have the largest average population in the next year,set(),"{'compute derived value', 'summarize'}",{'compare'},[],[],0,1,1,0,0
+can you see any abnormalities in the suicide rates,{'Find Anomalies'},set(),set(),['find anomalies'],['find anomalies'],1,0,0,1,1
+name the country with the lowest suicide rate,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+do you know the average number of suicides in europe,set(),{'Retrieve Value'},{'compute derived data'},[],[],0,1,1,0,0
+are there any countries with anomalously low suicides rates,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+is there similarities between gdp per capita and suicide rates,{'similarity'},{'correlate'},{'similarity'},[],[],1,1,1,0,0
+were there any countries with abnormally low suicide rates,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+"with the suicide larger than 100, determine the ages in albania",set(),"{'filter', 'retrieve value'}",{'characterize distribution'},[],[],0,1,1,0,0
+the country with the lowest suicide rate is,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+what is the distribution rate of suicide,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+what is the total number of all suicides in 1999,{'Filter'},{'Compute Derived Value'},"{' filter', 'characterize distribution'}",[],[],1,2,2,0,0
+would there be any clustering of countries in terms of suicide rates,{'Cluster'},set(),set(),[],[],1,0,0,0,0
+create a list showing the ages of people who committed suicide in albania,{'Retrieve Value'},set(),set(),['retrieve value'],['retrieve value'],1,0,0,1,1
+"for the gdp of china, has it gone up or down over the last decade",{'Trend'},set(),set(),[],[],1,0,0,0,0
+"of all countries, how is the gdp distribution",{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+has there been an increase or decrease in the gdp of china over the last 10 years,{'Trend'},set(),set(),[],[],1,0,0,0,0
+how much is the average of profit of each state,set(),"{'Characterize Distribution', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+how do the company earn in each state,set(),"{'summarize', 'dependency'}",{'compare'},[],[],0,1,1,0,0
+what were the total sales for each date in each category,set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+how much was sold each day for each category,set(),"{'Characterize Distribution', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+what is the average profit for each state,set(),{'Compute Derived Value'},{'compare'},[],[],0,1,1,0,0
+what is the relationship between profit and sales,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+what is the average profit of each ship mode divided by segment,{'compare'},"{'compute derived value', 'summarize'}",{'compare'},['compare'],['compare'],1,1,1,1,1
+what is the sales forecast for each date,set(),{'Compute Derived Value'},{'compare'},[],[],0,1,1,0,0
+how many orders were placed for each order quantity,set(),{'summarize'},{'characterize distribution'},[],[],0,1,1,0,0
+what is the relationship between sales and profit for each region,set(),{'correlate'},{'dependency'},[],[],0,1,1,0,0
+how many orders were placed for each sub-category,set(),{'summarize'},{'characterize distribution'},[],[],0,1,1,0,0
+"what is the total profit for each region, based on ship status",set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+what is the sales trend of the different product categories,{'Trend'},set(),set(),[],[],1,0,0,0,0
+how many products have 3 or more quantity ordered,set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+how many products are ordered in single quantity,set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+density of sales across regions and their profitability,set(),"{'summarize', 'characterize distribution'}",{'compare'},[],[],0,1,1,0,0
+what are the profits across different states,set(),{'summarize'},{'compare'},[],[],0,1,1,0,0
+what product category has more orders placed,{'compare'},{'summarize'},{'compare'},['compare'],['compare'],1,1,1,1,1
+sales forecast between jan 2016 and july 2017,set(),"{'summarize', 'trend', 'characterize distribution'}","{' filter', 'retrieve value'}",[],[],0,2,2,0,0
+i want to know how many orders there are by the quantity of the order,set(),"{'summarize', 'characterize distribution'}",{'compute derived value'},[],[],0,1,1,0,0
+what is our profit based on shipping mode by customer segment,set(),"{'summarize', 'correlate'}",{'compare'},[],[],0,1,1,0,0
+what is the sales vs profit ratio of the four regions,set(),"{'compute derived value', 'correlate'}",{'compare'},[],[],0,1,1,0,0
+what is the average profit of each state,set(),{'Compute Derived Value'},{'compare'},[],[],0,1,1,0,0
+what is the sales vs profit ratio of all the zones,{'Compare'},{'Compute Derived Value'},{'compare'},['compare'],['compare'],1,1,1,1,1
+what is the average profit of different segments on the ship modes of transport,set(),"{'Characterize Distribution', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+how much is the profit for sales for each,set(),"{'Summarize', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+what is the correlation between sales and profit by region,{'correlate'},set(),set(),[],[],1,0,0,0,0
+can you create a graph showing sales and profit by region,{'compare'},{'summarize'},{'compare'},['compare'],['compare'],1,1,1,1,1
+"from all of the universities in london, list the one who has the most faculties",set(),{'Find Extremum'},{'filter'},[],[],0,1,1,0,0
+show me a university that has more than 30 faculties and more than 50 teachers,{'Filter'},set(),set(),[],[],1,0,0,0,0
+universities with similar number of teachers,{'Similarity'},{'Cluster'},{'similarity'},[],[],1,1,1,0,0
+"from all of the universities in london, list the one who has the most faculties",set(),{'Find Extremum'},{'filter'},[],[],0,1,1,0,0
+the universities cover which locations,set(),{'Retrieve Value'},{'characterize distribution'},[],[],0,1,1,0,0
+what is the teacher distribution of new york universities,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+would teachers in harvard be considered outliers if the university was in new york,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+what is the number of divisions in harvard university,set(),{'Retrieve Value'},{'filter'},[],[],0,1,1,0,0
+which movie is the highest-grossing,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+do you feel that midfield players have a lower market value than front court players,{'compare'},set(),set(),['compare'],['compare'],1,0,0,1,1
+can you tell me if there is a correlation between revenue and the release year,{'Correlate'},set(),set(),[],[],1,0,0,0,0
+is there a typical film lengths group,set(),{'Characterize Distribution'},{''},[],[],0,1,1,0,0
+in the premier league how are the transferred players ages distributed,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+tell me a reason why top backcourt players have a higher market value than the top frontcourt player,set(),{'compare'},{'filter'},[],[],0,1,1,0,0
+which player had an abnormal transfer_fee,{'Find Anomalies'},set(),set(),[],[],1,0,0,0,0
+how old was david when he was transferred in 2010,{'retrieve value'},set(),set(),[],[],1,0,0,0,0
+"what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010鈥毭劽011",set(),{'Retrieve Value'},"{' filter', 'filter'}",[],[],0,2,2,0,0
+"for the center forward position, what was the highest market value for the 2011-2012 season",set(),{'Find Maximum'},"{' filter', 'find extremum'}",[],[],0,2,2,0,0
+tell me the numbers of the transferred players in different leagues in the 2010-2011 season,set(),"{'Characterize Distribution', 'Summarize'}","{' filter', 'compare'}",[],[],0,2,2,0,0
+"what player had a market value of 50,000,000 and was transferred for 58,500,000 in the 2010‚äì2011",set(),{'Retrieve Value'},"{' filter', 'filter'}",[],[],0,2,2,0,0
+could you buy a player with his market value higher than a transfer fee,set(),{'Compare'},{'filter'},[],[],0,1,1,0,0
+what is the average transfer_fee for players who transferred to the premier league,set(),{'Compute Derived Value'},"{' filter', 'characterize distribution'}",[],[],0,2,2,0,0
+list center-backs by what their transfer_fee was,{'Retrieve Value'},{'Sort'},"{' filter', 'retrieve value'}",[],[],1,2,2,0,0
+which player was the oldest that was transferred,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+what is the distribution of the leagues who paid for transferred players in 2010,{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+are you aware of any clustering of the seasons in which players were transferred to the premier league,{'cluster'},set(),set(),[],[],1,0,0,0,0
+"if you were to average it out, how upbeat would you say the songs are",set(),{'compute derived value'},{'characterize distribution'},[],[],0,1,1,0,0
+describe the popularity of the loudest song,set(),"{'Retrieval', 'Characterize Distribution'}",{'retrieve value'},[],[],0,1,1,0,0
+can you help me find some popular songs,set(),{'Filter'},{'sort'},[],[],0,1,1,0,0
+"in terms of length, how long is ' beautiful people '",{'retrieve value'},set(),set(),['retrieve value'],['retrieve value'],1,0,0,1,1
+tell me which genres were mentioned,set(),{'retrieve unique values'},{'summarize'},[],[],0,1,1,0,0
+what songs of the pop genrea has sam smith released,{'Filter'},set(),{'compare'},[],[],1,1,1,0,0
+are there singers who span multiple genres,set(),"{'cluster', 'characterize distribution'}",{'retrieve value'},[],[],0,1,1,0,0
+determine in what year the income of undergraduate students was higher,set(),{'Find Maximum'},"{' trend', 'compare'}",[],[],0,2,2,0,0
+how are postgraduate student numbers distributed every year,{'characterize distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+could you tell me if there is any correlation between the number of undergraduate and postgraduate students,{'correlate'},set(),set(),[],[],1,0,0,0,0
+state the average income of postgraduate students in each country,set(),"{'Summarize', 'Compute Derived Value'}",{'compare'},[],[],0,1,1,0,0
+what is the number of postgraduate students for each year,set(),{'Retrieval'},{'characterize distribution'},[],[],0,1,1,0,0
+"in each year, what is the distribution of the number of postgraduates",{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+the chart teaches them the horsepower range,set(),{'distribution'},{'determine range'},[],[],0,1,1,0,0
+name me a country that's happiness score does not coincide with the region it belongs to,set(),"{'filter', 'compare'}",{'dependency'},[],[],0,1,1,0,0
+tell me the country with the lowest trust score,set(),{'Find Minimum'},{'find extremum'},[],[],0,1,1,0,0
+is there a correlation between happiness scores and other attributes,{'correlate'},set(),set(),[],[],1,0,0,0,0
+"what countries, other than finland, have higher happiness scores and lower gdp",{'compare'},{'filter'},{'compare'},['compare'],['compare'],1,1,1,1,1
+can you tell me the area in the previous decade that increased rapidly in the happiness score,set(),{'Find Trend'},{'trend'},[],[],0,1,1,0,0
+"can you tell me, in terms of economy, what is the range across all countries",{'Determine Range'},set(),set(),[],[],1,0,0,0,0
+show me any clustering there may be in the gdp that has a happiness score of larger than 5,{'Cluster'},set(),set(),[],[],1,0,0,0,0
+within the last year have any countries experienced a sudden decrease in happiness score,set(),{'Find Anomalies'},{'trend'},[],[],0,1,1,0,0
+can you tell me the range of happiness score in western europe,{'determine range'},set(),set(),[],[],1,0,0,0,0
+"out of all the countries, which ones have a happiness score higher then finland",{'filter'},set(),set(),['filter'],['filter'],1,0,0,1,1
+can you tell me in what range will the number of countries in each region fall,set(),{'determine range'},{'characterize distribution'},[],[],0,1,1,0,0
+please identify the parameters of the happiness score in western europe,{'characterize distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+show all the countries with happiness scores higher than 5,{'filter'},set(),set(),['filter'],['filter'],1,0,0,1,1
+name the continent that contains the greatest number of countries that are top 10 on the happiness index,set(),{'cluster'},{'find extremum'},[],[],0,1,1,0,0
+do any countries have happiness scores that don 't match with their gdp,set(),{'correlate'},{'characterize distribution'},[],[],0,1,1,0,0
+"of all the countries trust score, which country has the lowest",{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+name the country that scores the least on trust,set(),"{'Retrieve Value', 'Find Minimum'}",{'find extremum'},[],[],0,1,1,0,0
+what is the range across all the countries in terms of economy,set(),{'Determine Range'},{'find extremum'},[],[],0,1,1,0,0
+"organize the countries based on happiness score, with the score limit on each group being 10",{'characterize distribution'},{'sort'},{'characterize distribution'},['characterize distribution'],['characterize distribution'],1,1,1,1,1
+show me the distribution of the health score as it is presented in different regions,{'Characterize Distribution'},set(),set(),[],[],1,0,0,0,0
+tell me the average gdp of countries in western europe,set(),{'compute derived value'},"{' filter', 'characterize distribution'}",[],[],0,2,2,0,0
+organize the countries by their region,{'sort'},{'cluster'},{'sort'},[],[],1,1,1,0,0
+"for all the regions, can you show me the pattern of the happiness score",set(),{'Characterize Distribution'},{'cluster'},[],[],0,1,1,0,0
+what are all the countries that have a happiness score similar to fineland 5 is an acceptable error score,set(),{'retrieval by similarity'},"{'filter', ' similarity'}",[],[],0,2,2,0,0
+what is the range of economy across all the countries,{'Determine Range'},set(),set(),[],[],1,0,0,0,0
+rank countries high to low by their family score,{'sort'},{'retrieve value'},{'sort'},['sort'],['sort'],1,1,1,1,1
+can we conclude that higher happiness comes from higher freedom,set(),{'correlation'},{'correlate'},[],[],0,1,1,0,0
+what dimension of the happiness index has the maximum fluctuation,set(),{'Find Extremum'},"{'summarize', ' compare'}",[],[],0,2,2,0,0
+retrieve the country that has had a sudden decrease in happiness score within a year,set(),"{'Find Anomalies', 'Trend', 'Compare'}",{'filter'},[],[],0,1,1,0,0
+"across all regions, what is the happiness score pattern",{'Characterize Distribution'},set(),set(),['characterize distribution'],['characterize distribution'],1,0,0,1,1
+the health score is highest in which country,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+the highest health score is held by which country,{'Find Extremum'},set(),set(),['find extremum'],['find extremum'],1,0,0,1,1
+please help me identify the least common age,set(),"{'Find Anomalies', 'Characterize Distribution'}",{'Find Anomalies'},['find anomalies'],['find anomalies'],0,1,1,1,1

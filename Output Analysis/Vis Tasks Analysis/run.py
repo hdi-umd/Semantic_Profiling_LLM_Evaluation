@@ -54,9 +54,10 @@ def analyze_visual_task_and_goals_similarity(llm_codes, gt,q, caller):
                     break
                 else: #not found by llm
                     gt_only.append(gt_code)
+    pos_matches = set(pos_matches)
+    llm_only = set(llm_codes["Low-level visualization task"]) - pos_matches        #found by llm alone  
+    gt_only = set(gt_only)
     
-    llm_only = set(llm_codes["Low-level visualization task"]) - set(pos_matches)        #found by llm alone  
-            
     return{
     f"{caller}_query":q,
     f"{caller}_positive matches" : pos_matches,
@@ -194,8 +195,8 @@ def run(input_file, caller):
 
 if __name__=="__main__":
     files={
-        # "gpt": "../final LLM Annotations/gpt4_results.json",
-        # "gemini": "../final LLM Annotations/gemini_results.json",
+        "gpt": "../final LLM Annotations/gpt4_results.json",
+        "gemini": "../final LLM Annotations/gemini_results.json",
         "llama": "../final LLM Annotations/llama_results.json",
         "mixtral": "../final LLM Annotations/mixtral_results.json"
     }

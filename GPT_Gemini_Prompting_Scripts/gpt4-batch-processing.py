@@ -1,3 +1,4 @@
+"""Used to prepare batch processing of prompts for GPT4."""
 import json
 from openai import OpenAI
 import yaml, os
@@ -10,7 +11,7 @@ client = OpenAI(api_key=config["openai"])
 
 def format_queries_jsonl(queries):
     messages = []
-    with open("./prompt_vis_task.txt", "r") as f:
+    with open("./prompt_vis_task.txt", "r") as f: #prompt modified for vis-tasks only.
         prompt = f.read()
 
     print("formatting queries")

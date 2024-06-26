@@ -17,11 +17,12 @@ library(nlme)
 library(lme4)
 library(scales)
 library(report)
+library(ggpattern)
 
-gpt_df <- read_csv("../results/gpt_data_context_results.csv")
-gemini_df <- read_csv("../results/gemini_data_context_results.csv")
-llama_df <- read_csv("../results/llama_data_context_results.csv")
-mistral_df <- read_csv("../results/mixtral_data_context_results.csv")
+gpt_df <- read_csv("./results/gpt_data_context_results.csv")
+gemini_df <- read_csv("./results/gemini_data_context_results.csv")
+llama_df <- read_csv("./results/llama_data_context_results.csv")
+mistral_df <- read_csv("./results/mixtral_data_context_results.csv")
 
 
 names(mistral_df)[names(mistral_df) == 'mixtral_query'] <- 'query'
@@ -85,29 +86,31 @@ rdc_df<- rdc_df[! rdc_df$query %in% no_gt,]
 rdc_df<-rdc_df%>% 
   filter(!is.na(`positive matches count`)&!is.na(`llm only matches count`) & !is.na(`gt only matches count`))%>%
   mutate(
-    agreements = ifelse(`positive matches count`>0 & (`llm only matches count`==0 & `gt only matches count`==0), "agreement", 
-                        ifelse(`positive matches count`==0 & (`llm only matches count`>0 & `gt only matches count`>0), "disagreement", 
-                               "partial-agreement"
+    agreements = ifelse(`positive matches count`>0 & (`llm only matches count`==0 & `gt only matches count`==0), "Total agreement", 
+                        ifelse(`positive matches count`==0 & (`llm only matches count`>0 & `gt only matches count`>0), "Total disagreement", 
+                               "Partial agreement"
                         )
     )
   )%>%
-  mutate(agreements = fct_relevel(agreements,c("agreement","partial-agreement","disagreement")))
+  mutate(agreements = fct_relevel(agreements,c("Total agreement","Partial agreement","Total disagreement")))
 
 nrow(rdc_df)
   
-rdc_df%>%
+vis_df <- rdc_df%>%
   filter(!is.na(agreements))%>%
   group_by(llm, agreements)%>%
   summarize(
     counts=n(),
     percentage = n()/ nrow(rdc_df) * 100
-    )%>%
+    )
+
+vis_df%>%
   ggplot(aes(fill=agreements, y=llm, x=counts)) + 
   geom_bar(position="fill", stat="identity")+
   scale_x_continuous(labels = percent)+
   scale_y_discrete(labels=c("Gemini-Pro", "GPT-4", "Llama3", "Mixtral"))+
   scale_fill_manual(
-    labels = c("Total Agreeement", "Partial Agreement", "Total Disagreement"), 
+    labels = c("Total agreeement", "Partial agreement", "Total disagreement"), 
     values = c("#E59D23", "#8B8500", "#006B60")
   )+
   theme_minimal()+
@@ -121,11 +124,49 @@ rdc_df%>%
   labs( x="% of responses", y="", title = "LLM and Human Data Column Annotations")+
   guides(fill=guide_legend(title = ""))
 
+# Pattern based chart for accessibility purposes
+vis_df%>%
+  ggplot(aes(y=llm, x=counts)) + 
+  geom_bar_pattern(
+    aes(
+      pattern_fill = agreements,
+      pattern = agreements,
+      fill= agreements
+    ),  
+    position = "fill",
+    stat="identity",
+    colour  = 'black',
+    # fill = "white",
+    pattern_density = 0.5,
+    pattern_key_scale_factor = 0.2
+  )+
+  scale_x_continuous(labels = percent)+
+  scale_pattern_fill_manual(
+    # labels = c("Total agreement", "Partial Agreement", "Total disagreement"),
+    values = c("Total agreement"="#E59D23", "Partial agreement"="#8B8500", "Total disagreement"="#006B60")
+  )+
+  scale_fill_manual(
+    # labels = c("Total agreeement", "Partial Agreement", "Total disagreement"),
+    values = c("#E59D23", "#8B8500", "#006B60"),
+    # values= cbPalette,
+    guide="none"
+  )+
+  theme_minimal()+
+  theme(
+    aspect.ratio = 1/4, legend.position = c(.5,-.45),
+    # panel.background = element_blank(),axis.title.x=element_blank(),
+    plot.title = element_text(hjust=0.3),
+    text = element_text(size=20),
+    legend.direction = "horizontal",
+    legend.title=element_blank()
+  )+
+  labs( x="% of responses", y="", title ="LLM and Human Data Column Annotations")
+
 
 # in the cases where the column was not found by llm, what \% of them were because they were inferred?
 
 #data transforms
-dt_trans <- read_csv("../results/cleaned_transforms_results.csv")
+dt_trans <- read_csv("./results/cleaned_transforms_results.csv")
 dt_trans["total_examined"] <- dt_trans["errors_count"] + dt_trans["non_df_returned_count"] + dt_trans["total_dfs_returned"]
 
 dt_trans%>%
@@ -163,6 +204,51 @@ dt_trans%>%
   )+
   labs( x="% of responses", y="", title = "LLMs vs Human Annotations Schema Matches")+
   guides(fill=guide_legend(title = ""))
+
+#pattern based chart for accessibility
+out<-rename(dt_trans, c("matching_df" = "Matching data schemas", "mismatching_df" = "Mismatched data schemas"))
+dt_trans%>%
+  pivot_longer(
+    cols=c("matching_df", "mismatching_df"),
+    names_to = "metrics",
+    values_to = "count"
+  )%>%
+  mutate(metrics = fct_relevel(metrics,c("matching_df", "mismatching_df")))%>%
+  ggplot(aes(y=llm, x=count)) + 
+  geom_bar_pattern(
+    aes(
+      pattern_fill = metrics,
+      pattern = metrics
+      # fill= metrics
+    ),  
+    position = "fill",
+    stat="identity",
+    colour  = 'black',
+    fill = "white",
+    pattern_density = 0.5,
+    pattern_key_scale_factor = 0.2
+  )+
+  scale_x_continuous(labels = percent)+
+  scale_pattern_fill_manual(
+    # labels = c("Matching data schemas", "Mismatched data schemas"),
+    values = c("matching_df"="#E59D23", "mismatching_df"="#8B8500")
+  )+
+  # scale_fill_manual(
+  #   values = c("#E59D23", "#8B8500", "#006B60"),
+  #   # values= cbPalette,
+  #   guide="none"
+  # )+
+  theme_minimal()+
+  theme(
+    aspect.ratio = 1/4, legend.position = c(.5,-.45),
+    # panel.background = element_blank(),axis.title.x=element_blank(),
+    plot.title = element_text(hjust=0.3),
+    text = element_text(size=20),
+    legend.direction = "horizontal",
+    legend.title=element_blank()
+  )+
+  labs( x="% of responses", y="", title = "LLMs vs Human Annotations Schema Matches")
+  # guides(fill=guide_legend(title = ""))
 
 
 #how many of the disagreements had ambiguities?
