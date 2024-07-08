@@ -1,0 +1,6 @@
+name: dg
+channels:
+  - conda-forge
+dependencies:
+  - python==3.10
+  - ipython

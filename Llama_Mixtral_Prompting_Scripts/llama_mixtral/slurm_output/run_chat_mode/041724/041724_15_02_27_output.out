@@ -1,0 +1,436 @@
+/var/spool/slurm/slurmd.spool/job2428558/slurm_script: line 3: module: command not found
+/var/spool/slurm/slurmd.spool/job2428558/slurm_script: line 8: module: command not found
+/fs/nexus-scratch/kcobbina/miniconda3/envs/aae/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[INFO|tokenization_utils_base.py:2046] 2024-04-17 15:03:43,171 >> loading file tokenizer.model from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/tokenizer.model
+[INFO|tokenization_utils_base.py:2046] 2024-04-17 15:03:43,172 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2046] 2024-04-17 15:03:43,172 >> loading file special_tokens_map.json from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/special_tokens_map.json
+[INFO|tokenization_utils_base.py:2046] 2024-04-17 15:03:43,172 >> loading file tokenizer_config.json from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2046] 2024-04-17 15:03:43,172 >> loading file tokenizer.json from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/tokenizer.json
+[INFO|configuration_utils.py:728] 2024-04-17 15:03:43,384 >> loading configuration file config.json from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/config.json
+[INFO|configuration_utils.py:791] 2024-04-17 15:03:43,385 >> Model config LlamaConfig {
+  "_name_or_path": "meta-llama/Llama-2-70b-chat-hf",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 8192,
+  "initializer_range": 0.02,
+  "intermediate_size": 28672,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 64,
+  "num_hidden_layers": 80,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.38.0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|modeling_utils.py:3257] 2024-04-17 15:03:43,752 >> loading weights file model.safetensors from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/model.safetensors.index.json
+Downloading shards:   0%|          | 0/15 [00:00<?, ?it/s]Downloading shards:  20%|██        | 3/15 [00:00<00:00, 25.03it/s]Downloading shards:  40%|████      | 6/15 [00:00<00:00, 24.54it/s]Downloading shards:  60%|██████    | 9/15 [00:00<00:00, 23.60it/s]Downloading shards:  80%|████████  | 12/15 [00:00<00:00, 23.84it/s]Downloading shards: 100%|██████████| 15/15 [00:00<00:00, 24.57it/s]Downloading shards: 100%|██████████| 15/15 [00:00<00:00, 24.35it/s]
+[INFO|modeling_utils.py:1400] 2024-04-17 15:03:44,386 >> Instantiating LlamaForCausalLM model under default dtype torch.float16.
+[INFO|configuration_utils.py:845] 2024-04-17 15:03:44,389 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2
+}
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:24<05:41, 24.42s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:48<05:18, 24.48s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:13<04:52, 24.40s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [01:37<04:27, 24.31s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:02<04:04, 24.46s/it]Loading checkpoint shards:  40%|████      | 6/15 [02:27<03:42, 24.76s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [02:51<03:16, 24.57s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [03:14<02:48, 24.04s/it]Loading checkpoint shards:  60%|██████    | 9/15 [03:48<02:41, 26.98s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [04:16<02:17, 27.51s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [04:41<01:46, 26.69s/it]Loading checkpoint shards:  80%|████████  | 12/15 [05:07<01:19, 26.52s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [05:32<00:51, 25.92s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [05:57<00:25, 25.62s/it]Loading checkpoint shards: 100%|██████████| 15/15 [05:58<00:00, 18.36s/it]Loading checkpoint shards: 100%|██████████| 15/15 [05:58<00:00, 23.91s/it]
+[INFO|modeling_utils.py:3992] 2024-04-17 15:09:45,238 >> All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+[INFO|modeling_utils.py:4000] 2024-04-17 15:09:45,238 >> All the weights of LlamaForCausalLM were initialized from the model checkpoint at meta-llama/Llama-2-70b-chat-hf.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:800] 2024-04-17 15:09:45,487 >> loading configuration file generation_config.json from cache at /cmlscratch/kcobbina/cache/models--meta-llama--Llama-2-70b-chat-hf/snapshots/e9149a12809580e8602995856f8098ce973d1080/generation_config.json
+[INFO|configuration_utils.py:845] 2024-04-17 15:09:45,487 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "do_sample": true,
+  "eos_token_id": 2,
+  "max_length": 4096,
+  "pad_token_id": 0,
+  "temperature": 0.6,
+  "top_p": 0.9
+}
+
+Processing querries:   0%|          | 0/500 [00:00<?, ?it/s][WARNING|tokenization_utils.py:562] 2024-04-17 15:09:45,615 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   0%|          | 1/500 [00:41<5:41:48, 41.10s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:10:26,715 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   0%|          | 2/500 [01:20<5:34:28, 40.30s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:11:06,453 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   1%|          | 3/500 [02:00<5:31:52, 40.07s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:11:46,240 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   1%|          | 4/500 [02:38<5:23:09, 39.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:12:23,838 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   1%|          | 5/500 [03:18<5:24:42, 39.36s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:13:03,673 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   1%|          | 6/500 [03:57<5:24:47, 39.45s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:13:43,292 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   1%|▏         | 7/500 [04:37<5:24:50, 39.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:14:23,007 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   2%|▏         | 8/500 [05:17<5:24:39, 39.59s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:15:02,720 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   2%|▏         | 9/500 [05:56<5:23:29, 39.53s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:15:42,114 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   2%|▏         | 10/500 [06:36<5:23:47, 39.65s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:16:22,030 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   2%|▏         | 11/500 [07:16<5:23:05, 39.64s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:17:01,658 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   2%|▏         | 12/500 [07:55<5:22:49, 39.69s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:17:41,464 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   3%|▎         | 13/500 [08:34<5:18:25, 39.23s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:18:19,634 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   3%|▎         | 14/500 [09:13<5:19:16, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:18:59,476 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   3%|▎         | 15/500 [09:53<5:19:13, 39.49s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:19:39,147 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   3%|▎         | 16/500 [10:33<5:19:41, 39.63s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:20:19,100 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   3%|▎         | 17/500 [11:11<5:14:49, 39.11s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:20:56,993 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   4%|▎         | 18/500 [11:50<5:15:01, 39.21s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:21:36,453 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   4%|▍         | 19/500 [12:30<5:16:08, 39.44s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:22:16,404 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   4%|▍         | 20/500 [13:10<5:15:57, 39.49s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:22:56,036 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   4%|▍         | 21/500 [13:49<5:15:25, 39.51s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:23:35,581 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   4%|▍         | 22/500 [14:29<5:14:58, 39.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:24:15,180 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   5%|▍         | 23/500 [15:07<5:10:32, 39.06s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:24:53,135 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   5%|▍         | 24/500 [15:47<5:11:54, 39.32s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:25:33,044 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   5%|▌         | 25/500 [16:26<5:11:38, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:26:12,528 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   5%|▌         | 26/500 [17:06<5:11:58, 39.49s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:26:52,310 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   5%|▌         | 27/500 [17:45<5:10:21, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:27:31,395 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   6%|▌         | 28/500 [18:25<5:10:01, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:28:10,899 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   6%|▌         | 29/500 [19:04<5:09:37, 39.44s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:28:50,419 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   6%|▌         | 30/500 [19:43<5:08:18, 39.36s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:29:29,584 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   6%|▌         | 31/500 [20:23<5:08:49, 39.51s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:30:09,441 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   6%|▋         | 32/500 [21:03<5:08:59, 39.61s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:30:49,303 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   7%|▋         | 33/500 [21:43<5:09:33, 39.77s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:31:29,439 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   7%|▋         | 34/500 [22:23<5:09:25, 39.84s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:32:09,438 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   7%|▋         | 35/500 [23:03<5:07:49, 39.72s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:32:48,877 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   7%|▋         | 36/500 [23:42<5:07:11, 39.72s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:33:28,608 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   7%|▋         | 37/500 [24:21<5:04:36, 39.47s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:34:07,500 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   8%|▊         | 38/500 [25:01<5:03:26, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:34:46,751 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   8%|▊         | 39/500 [25:40<5:02:41, 39.40s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:35:26,124 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   8%|▊         | 40/500 [26:19<5:01:55, 39.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:36:05,472 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   8%|▊         | 41/500 [26:58<5:00:16, 39.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:36:44,416 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   8%|▊         | 42/500 [27:38<4:59:31, 39.24s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:37:23,626 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   9%|▊         | 43/500 [28:16<4:56:38, 38.95s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:38:01,888 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   9%|▉         | 44/500 [28:55<4:57:13, 39.11s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:38:41,376 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   9%|▉         | 45/500 [29:35<4:58:09, 39.32s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:39:21,184 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   9%|▉         | 46/500 [30:15<4:58:00, 39.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:40:00,723 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:   9%|▉         | 47/500 [30:54<4:57:31, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:40:40,183 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  10%|▉         | 48/500 [31:34<4:57:02, 39.43s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:41:19,667 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  10%|▉         | 49/500 [32:13<4:57:01, 39.52s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:41:59,383 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  10%|█         | 50/500 [32:53<4:57:05, 39.61s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:42:39,223 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  10%|█         | 51/500 [33:33<4:56:10, 39.58s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:43:18,721 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  10%|█         | 52/500 [34:12<4:55:42, 39.60s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:43:58,387 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  11%|█         | 53/500 [34:52<4:54:35, 39.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:44:37,785 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  11%|█         | 54/500 [35:31<4:53:02, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:45:16,926 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  11%|█         | 55/500 [36:10<4:51:25, 39.29s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:45:55,922 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  11%|█         | 56/500 [36:49<4:50:05, 39.20s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:46:34,906 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  11%|█▏        | 57/500 [37:28<4:49:26, 39.20s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:47:14,107 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  12%|█▏        | 58/500 [38:07<4:48:03, 39.10s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:47:52,981 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  12%|█▏        | 59/500 [38:46<4:47:18, 39.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:48:32,041 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  12%|█▏        | 60/500 [39:25<4:46:38, 39.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:49:11,120 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  12%|█▏        | 61/500 [40:04<4:45:37, 39.04s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:49:50,041 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  12%|█▏        | 62/500 [40:43<4:45:10, 39.06s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:50:29,171 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  13%|█▎        | 63/500 [41:22<4:44:30, 39.06s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:51:08,230 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  13%|█▎        | 64/500 [42:01<4:43:56, 39.07s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:51:47,332 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  13%|█▎        | 65/500 [42:40<4:42:59, 39.03s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:52:26,268 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  13%|█▎        | 66/500 [43:20<4:43:03, 39.13s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:53:05,629 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  13%|█▎        | 67/500 [43:58<4:41:16, 38.98s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:53:44,244 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  14%|█▎        | 68/500 [44:37<4:40:46, 39.00s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:54:23,286 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  14%|█▍        | 69/500 [45:16<4:40:06, 38.99s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:55:02,273 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  14%|█▍        | 70/500 [45:55<4:39:18, 38.97s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:55:41,202 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  14%|█▍        | 71/500 [46:35<4:40:05, 39.17s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:56:20,844 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  14%|█▍        | 72/500 [47:14<4:40:08, 39.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:57:00,343 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  15%|█▍        | 73/500 [47:54<4:40:08, 39.36s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:57:39,919 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  15%|█▍        | 74/500 [48:33<4:39:54, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:58:19,487 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  15%|█▌        | 75/500 [49:13<4:39:14, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:58:58,903 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  15%|█▌        | 76/500 [49:52<4:39:00, 39.48s/it][WARNING|tokenization_utils.py:562] 2024-04-17 15:59:38,526 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  15%|█▌        | 77/500 [50:32<4:38:22, 39.49s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:00:18,021 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  16%|█▌        | 78/500 [51:11<4:36:57, 39.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:00:57,147 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  16%|█▌        | 79/500 [51:51<4:36:37, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:01:36,678 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  16%|█▌        | 80/500 [52:28<4:32:26, 38.92s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:02:14,426 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  16%|█▌        | 81/500 [53:08<4:33:14, 39.13s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:02:54,036 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  16%|█▋        | 82/500 [53:47<4:32:54, 39.17s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:03:33,319 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  17%|█▋        | 83/500 [54:26<4:32:16, 39.18s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:04:12,496 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  17%|█▋        | 84/500 [55:06<4:32:08, 39.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:04:51,928 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  17%|█▋        | 85/500 [55:45<4:31:56, 39.32s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:05:31,399 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  17%|█▋        | 86/500 [56:25<4:31:37, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:06:10,877 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  17%|█▋        | 87/500 [57:04<4:31:16, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:06:50,394 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  18%|█▊        | 88/500 [57:44<4:30:13, 39.35s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:07:29,615 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  18%|█▊        | 89/500 [58:23<4:29:41, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:08:09,028 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  18%|█▊        | 90/500 [59:03<4:29:32, 39.44s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:08:48,644 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  18%|█▊        | 91/500 [59:42<4:28:50, 39.44s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:09:28,070 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  18%|█▊        | 92/500 [1:00:21<4:27:42, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:10:07,273 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  19%|█▊        | 93/500 [1:01:01<4:27:10, 39.39s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:10:46,703 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  19%|█▉        | 94/500 [1:01:40<4:26:34, 39.40s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:11:26,118 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  19%|█▉        | 95/500 [1:02:19<4:25:55, 39.40s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:12:05,513 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  19%|█▉        | 96/500 [1:02:59<4:25:24, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:12:44,981 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  19%|█▉        | 97/500 [1:03:38<4:23:21, 39.21s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:13:23,705 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  20%|█▉        | 98/500 [1:04:17<4:23:06, 39.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:14:03,117 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  20%|█▉        | 99/500 [1:04:57<4:23:02, 39.36s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:14:42,681 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  20%|██        | 100/500 [1:05:36<4:22:31, 39.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:15:22,105 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  20%|██        | 101/500 [1:06:16<4:22:07, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:16:01,617 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  20%|██        | 102/500 [1:06:55<4:21:41, 39.45s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:16:41,146 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  21%|██        | 103/500 [1:07:34<4:20:49, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:17:20,488 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  21%|██        | 104/500 [1:08:14<4:20:22, 39.45s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:18:00,010 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  21%|██        | 105/500 [1:08:53<4:19:23, 39.40s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:18:39,297 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  21%|██        | 106/500 [1:09:33<4:19:12, 39.47s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:19:18,937 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  21%|██▏       | 107/500 [1:10:11<4:15:31, 39.01s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:19:56,875 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  22%|██▏       | 108/500 [1:10:50<4:15:31, 39.11s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:20:36,216 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  22%|██▏       | 109/500 [1:11:29<4:14:51, 39.11s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:21:15,316 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  22%|██▏       | 110/500 [1:12:09<4:15:07, 39.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:21:54,897 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  22%|██▏       | 111/500 [1:12:48<4:14:41, 39.28s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:22:34,259 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  22%|██▏       | 112/500 [1:13:27<4:12:33, 39.06s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:23:12,786 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  23%|██▎       | 113/500 [1:14:06<4:11:57, 39.06s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:23:51,868 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  23%|██▎       | 114/500 [1:14:45<4:11:42, 39.12s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:24:31,133 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  23%|██▎       | 115/500 [1:15:24<4:11:28, 39.19s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:25:10,475 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  23%|██▎       | 116/500 [1:16:04<4:11:52, 39.36s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:25:50,218 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  23%|██▎       | 117/500 [1:16:44<4:12:14, 39.52s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:26:30,111 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  24%|██▎       | 118/500 [1:17:24<4:12:12, 39.61s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:27:09,952 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  24%|██▍       | 119/500 [1:18:04<4:11:57, 39.68s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:27:49,783 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  24%|██▍       | 120/500 [1:18:43<4:09:51, 39.45s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:28:28,703 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  24%|██▍       | 121/500 [1:19:22<4:09:25, 39.49s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:29:08,272 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  24%|██▍       | 122/500 [1:20:02<4:08:57, 39.52s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:29:47,860 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  25%|██▍       | 123/500 [1:20:40<4:06:07, 39.17s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:30:26,220 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  25%|██▍       | 124/500 [1:20:54<3:18:47, 31.72s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:30:40,565 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  25%|██▌       | 125/500 [1:21:34<3:32:16, 33.97s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:31:19,763 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  25%|██▌       | 126/500 [1:22:13<3:41:55, 35.60s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:31:59,188 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  25%|██▌       | 127/500 [1:22:52<3:48:06, 36.69s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:32:38,425 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  26%|██▌       | 128/500 [1:23:31<3:51:34, 37.35s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:33:17,307 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  26%|██▌       | 129/500 [1:24:10<3:54:13, 37.88s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:33:56,427 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  26%|██▌       | 130/500 [1:24:49<3:55:51, 38.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:34:35,529 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  26%|██▌       | 131/500 [1:25:29<3:57:45, 38.66s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:35:15,149 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  26%|██▋       | 132/500 [1:26:09<3:58:56, 38.96s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:35:54,803 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  27%|██▋       | 133/500 [1:26:47<3:57:38, 38.85s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:36:33,406 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  27%|██▋       | 134/500 [1:27:27<3:58:07, 39.04s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:37:12,877 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  27%|██▋       | 135/500 [1:28:07<3:58:49, 39.26s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:37:52,656 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  27%|██▋       | 136/500 [1:28:46<3:58:07, 39.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:38:31,885 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  27%|██▋       | 137/500 [1:29:25<3:57:38, 39.28s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:39:11,229 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  28%|██▊       | 138/500 [1:30:04<3:57:06, 39.30s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:39:50,581 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  28%|██▊       | 139/500 [1:30:43<3:54:19, 38.94s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:40:28,695 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  28%|██▊       | 140/500 [1:31:22<3:54:25, 39.07s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:41:08,056 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  28%|██▊       | 141/500 [1:32:00<3:52:24, 38.84s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:41:46,369 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  28%|██▊       | 142/500 [1:32:40<3:53:09, 39.08s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:42:25,992 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  29%|██▊       | 143/500 [1:33:20<3:53:37, 39.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:43:05,699 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  29%|██▉       | 144/500 [1:33:59<3:53:10, 39.30s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:43:45,080 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  29%|██▉       | 145/500 [1:34:39<3:53:03, 39.39s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:44:24,683 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  29%|██▉       | 146/500 [1:35:18<3:52:34, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:45:04,167 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  29%|██▉       | 147/500 [1:35:57<3:51:49, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:45:43,539 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  30%|██▉       | 148/500 [1:36:37<3:51:01, 39.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:46:22,863 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  30%|██▉       | 149/500 [1:37:16<3:50:34, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:47:02,359 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  30%|███       | 150/500 [1:37:56<3:50:17, 39.48s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:47:41,982 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  30%|███       | 151/500 [1:38:35<3:48:59, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:48:21,093 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  30%|███       | 152/500 [1:39:14<3:48:00, 39.31s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:49:00,273 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  31%|███       | 153/500 [1:39:54<3:47:52, 39.40s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:49:39,884 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  31%|███       | 154/500 [1:40:33<3:47:16, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:50:19,324 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  31%|███       | 155/500 [1:41:13<3:47:21, 39.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:50:59,161 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  31%|███       | 156/500 [1:41:52<3:46:16, 39.47s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:51:38,451 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  31%|███▏      | 157/500 [1:42:32<3:46:00, 39.53s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:52:18,149 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  32%|███▏      | 158/500 [1:43:12<3:45:29, 39.56s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:52:57,769 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  32%|███▏      | 159/500 [1:43:51<3:44:43, 39.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:53:37,265 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  32%|███▏      | 160/500 [1:44:31<3:44:05, 39.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:54:16,816 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  32%|███▏      | 161/500 [1:45:09<3:41:47, 39.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:54:55,395 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  32%|███▏      | 162/500 [1:45:49<3:41:36, 39.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:55:34,933 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  33%|███▎      | 163/500 [1:46:28<3:40:54, 39.33s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:56:14,239 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  33%|███▎      | 164/500 [1:47:07<3:39:27, 39.19s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:56:53,101 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  33%|███▎      | 165/500 [1:47:47<3:39:38, 39.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:57:32,792 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  33%|███▎      | 166/500 [1:48:26<3:39:24, 39.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:58:12,384 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  33%|███▎      | 167/500 [1:49:06<3:39:06, 39.48s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:58:52,010 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  34%|███▎      | 168/500 [1:49:48<3:42:14, 40.16s/it][WARNING|tokenization_utils.py:562] 2024-04-17 16:59:33,776 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  34%|███▍      | 169/500 [1:50:29<3:44:19, 40.66s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:00:15,604 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  34%|███▍      | 170/500 [1:51:11<3:45:16, 40.96s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:00:57,249 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  34%|███▍      | 171/500 [1:51:53<3:46:01, 41.22s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:01:39,076 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  34%|███▍      | 172/500 [1:52:35<3:45:59, 41.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:02:20,698 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  35%|███▍      | 173/500 [1:53:16<3:45:37, 41.40s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:03:02,233 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  35%|███▍      | 174/500 [1:53:58<3:45:32, 41.51s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:03:44,004 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  35%|███▌      | 175/500 [1:54:39<3:44:56, 41.53s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:04:25,575 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  35%|███▌      | 176/500 [1:55:21<3:45:04, 41.68s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:05:07,606 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  35%|███▌      | 177/500 [1:56:03<3:43:41, 41.55s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:05:48,860 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  36%|███▌      | 178/500 [1:56:44<3:43:11, 41.59s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:06:30,537 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  36%|███▌      | 179/500 [1:57:26<3:42:56, 41.67s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:07:12,396 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  36%|███▌      | 180/500 [1:58:08<3:42:22, 41.70s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:07:54,150 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  36%|███▌      | 181/500 [1:58:50<3:41:38, 41.69s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:08:35,817 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  36%|███▋      | 182/500 [1:59:32<3:41:10, 41.73s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:09:17,647 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  37%|███▋      | 183/500 [2:00:13<3:39:37, 41.57s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:09:58,840 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  37%|███▋      | 184/500 [2:00:54<3:38:53, 41.56s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:10:40,387 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  37%|███▋      | 185/500 [2:01:36<3:37:48, 41.49s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:11:21,700 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  37%|███▋      | 186/500 [2:02:17<3:37:26, 41.55s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:12:03,397 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  37%|███▋      | 187/500 [2:02:59<3:36:28, 41.50s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:12:44,768 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  38%|███▊      | 188/500 [2:03:40<3:36:05, 41.56s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:13:26,467 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  38%|███▊      | 189/500 [2:04:19<3:31:23, 40.78s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:14:05,444 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  38%|███▊      | 190/500 [2:04:59<3:29:23, 40.53s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:14:45,378 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  38%|███▊      | 191/500 [2:05:39<3:27:50, 40.36s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:15:25,338 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  38%|███▊      | 192/500 [2:06:19<3:26:26, 40.22s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:16:05,227 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  39%|███▊      | 193/500 [2:06:59<3:24:35, 39.99s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:16:44,676 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  39%|███▉      | 194/500 [2:07:39<3:24:06, 40.02s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:17:24,778 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  39%|███▉      | 195/500 [2:08:18<3:22:37, 39.86s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:18:04,261 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  39%|███▉      | 196/500 [2:08:58<3:21:37, 39.79s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:18:43,900 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  39%|███▉      | 197/500 [2:09:37<3:20:08, 39.63s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:19:23,152 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  40%|███▉      | 198/500 [2:10:11<3:11:34, 38.06s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:19:57,549 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  40%|███▉      | 199/500 [2:10:27<2:37:13, 31.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:20:13,206 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  40%|████      | 200/500 [2:11:05<2:45:57, 33.19s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:20:50,718 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  40%|████      | 201/500 [2:11:43<2:52:45, 34.67s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:21:28,829 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  40%|████      | 202/500 [2:11:53<2:15:40, 27.32s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:21:38,999 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  41%|████      | 203/500 [2:12:32<2:33:09, 30.94s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:22:18,390 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  41%|████      | 204/500 [2:12:54<2:19:29, 28.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:22:40,443 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  41%|████      | 205/500 [2:13:32<2:33:35, 31.24s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:23:18,597 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  41%|████      | 206/500 [2:13:49<2:11:15, 26.79s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:23:34,999 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  41%|████▏     | 207/500 [2:14:27<2:27:03, 30.12s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:24:12,882 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  42%|████▏     | 208/500 [2:15:06<2:39:16, 32.73s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:24:51,700 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  42%|████▏     | 209/500 [2:15:15<2:04:53, 25.75s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:25:01,179 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  42%|████▏     | 210/500 [2:15:53<2:22:28, 29.48s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:25:39,346 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  42%|████▏     | 211/500 [2:16:33<2:36:08, 32.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:26:18,626 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  42%|████▏     | 212/500 [2:17:10<2:43:24, 34.04s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:26:56,461 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  43%|████▎     | 213/500 [2:17:50<2:50:22, 35.62s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:27:35,761 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  43%|████▎     | 214/500 [2:18:28<2:54:10, 36.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:28:14,447 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  43%|████▎     | 215/500 [2:19:07<2:56:05, 37.07s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:28:52,758 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  43%|████▎     | 216/500 [2:19:45<2:56:53, 37.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:29:30,834 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  43%|████▎     | 217/500 [2:20:23<2:57:32, 37.64s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:30:09,106 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  44%|████▎     | 218/500 [2:21:02<2:59:09, 38.12s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:30:48,331 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  44%|████▍     | 219/500 [2:21:40<2:58:08, 38.04s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:31:26,179 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  44%|████▍     | 220/500 [2:22:19<2:58:26, 38.24s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:32:04,884 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  44%|████▍     | 221/500 [2:22:56<2:56:45, 38.01s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:32:42,375 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  44%|████▍     | 222/500 [2:23:35<2:57:48, 38.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:33:21,594 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  45%|████▍     | 223/500 [2:24:15<2:58:24, 38.65s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:34:00,871 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  45%|████▍     | 224/500 [2:24:54<2:58:21, 38.77s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:34:39,947 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  45%|████▌     | 225/500 [2:25:28<2:51:31, 37.43s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:35:14,223 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  45%|████▌     | 226/500 [2:26:06<2:52:06, 37.69s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:35:52,529 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  45%|████▌     | 227/500 [2:26:45<2:52:59, 38.02s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:36:31,316 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  46%|████▌     | 228/500 [2:27:25<2:54:18, 38.45s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:37:10,779 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  46%|████▌     | 229/500 [2:28:04<2:54:54, 38.73s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:37:50,147 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  46%|████▌     | 230/500 [2:28:44<2:55:29, 39.00s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:38:29,783 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  46%|████▌     | 231/500 [2:29:24<2:56:03, 39.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:39:09,688 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  46%|████▋     | 232/500 [2:30:03<2:55:38, 39.32s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:39:49,128 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  47%|████▋     | 233/500 [2:30:42<2:54:12, 39.15s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:40:27,872 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  47%|████▋     | 234/500 [2:31:21<2:54:03, 39.26s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:41:07,401 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  47%|████▋     | 235/500 [2:32:01<2:53:31, 39.29s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:41:46,750 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  47%|████▋     | 236/500 [2:32:40<2:53:37, 39.46s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:42:26,605 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  47%|████▋     | 237/500 [2:33:20<2:52:45, 39.41s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:43:05,909 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  48%|████▊     | 238/500 [2:33:59<2:51:59, 39.39s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:43:45,241 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  48%|████▊     | 239/500 [2:34:39<2:52:30, 39.66s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:44:25,527 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  48%|████▊     | 240/500 [2:35:20<2:52:32, 39.82s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:45:05,718 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  48%|████▊     | 241/500 [2:35:58<2:50:15, 39.44s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:45:44,283 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  48%|████▊     | 242/500 [2:36:37<2:49:08, 39.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:46:23,376 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  49%|████▊     | 243/500 [2:37:15<2:46:46, 38.94s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:47:01,374 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  49%|████▉     | 244/500 [2:37:54<2:45:46, 38.85s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:47:40,034 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  49%|████▉     | 245/500 [2:38:33<2:45:55, 39.04s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:48:19,513 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  49%|████▉     | 246/500 [2:39:12<2:44:48, 38.93s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:48:58,190 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  49%|████▉     | 247/500 [2:39:52<2:44:59, 39.13s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:49:37,781 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  50%|████▉     | 248/500 [2:40:31<2:44:30, 39.17s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:50:17,036 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  50%|████▉     | 249/500 [2:41:10<2:44:10, 39.24s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:50:56,457 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  50%|█████     | 250/500 [2:41:50<2:43:54, 39.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:51:36,014 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  50%|█████     | 251/500 [2:42:30<2:43:41, 39.44s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:52:15,710 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  50%|█████     | 252/500 [2:43:09<2:42:46, 39.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:52:54,941 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  51%|█████     | 253/500 [2:43:47<2:41:08, 39.14s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:53:33,526 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  51%|█████     | 254/500 [2:44:27<2:40:43, 39.20s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:54:12,869 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  51%|█████     | 255/500 [2:45:05<2:38:59, 38.94s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:54:51,183 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  51%|█████     | 256/500 [2:45:45<2:39:34, 39.24s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:55:31,135 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  51%|█████▏    | 257/500 [2:46:24<2:39:12, 39.31s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:56:10,612 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  52%|█████▏    | 258/500 [2:47:04<2:38:47, 39.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:56:50,123 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  52%|█████▏    | 259/500 [2:47:38<2:31:07, 37.62s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:57:23,670 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  52%|█████▏    | 260/500 [2:48:18<2:33:29, 38.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:58:03,785 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  52%|█████▏    | 261/500 [2:48:56<2:32:42, 38.34s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:58:42,037 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  52%|█████▏    | 262/500 [2:49:35<2:32:35, 38.47s/it][WARNING|tokenization_utils.py:562] 2024-04-17 17:59:20,818 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  53%|█████▎    | 263/500 [2:50:14<2:33:05, 38.76s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:00:00,245 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  53%|█████▎    | 264/500 [2:50:54<2:33:29, 39.02s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:00:39,895 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  53%|█████▎    | 265/500 [2:51:33<2:33:03, 39.08s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:01:19,099 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  53%|█████▎    | 266/500 [2:52:11<2:31:33, 38.86s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:01:57,460 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  53%|█████▎    | 267/500 [2:52:51<2:31:15, 38.95s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:02:36,619 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  54%|█████▎    | 268/500 [2:53:29<2:29:57, 38.78s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:03:15,007 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  54%|█████▍    | 269/500 [2:54:08<2:30:03, 38.98s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:03:54,436 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  54%|█████▍    | 270/500 [2:54:48<2:29:49, 39.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:04:33,780 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  54%|█████▍    | 271/500 [2:55:27<2:29:15, 39.11s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:05:12,936 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  54%|█████▍    | 272/500 [2:55:48<2:08:31, 33.82s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:05:34,429 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  55%|█████▍    | 273/500 [2:56:27<2:13:34, 35.31s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:06:13,199 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  55%|█████▍    | 274/500 [2:57:07<2:17:44, 36.57s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:06:52,712 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  55%|█████▌    | 275/500 [2:57:45<2:18:43, 37.00s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:07:30,702 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  55%|█████▌    | 276/500 [2:58:24<2:20:42, 37.69s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:08:10,009 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  55%|█████▌    | 277/500 [2:59:02<2:21:05, 37.96s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:08:48,602 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  56%|█████▌    | 278/500 [2:59:29<2:07:56, 34.58s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:09:15,290 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  56%|█████▌    | 279/500 [3:00:09<2:12:38, 36.01s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:09:54,641 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  56%|█████▌    | 280/500 [3:00:47<2:15:04, 36.84s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:10:33,407 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  56%|█████▌    | 281/500 [3:01:07<1:55:45, 31.72s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:10:53,176 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  56%|█████▋    | 282/500 [3:01:36<1:52:39, 31.00s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:11:22,520 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  57%|█████▋    | 283/500 [3:02:16<2:01:04, 33.48s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:12:01,759 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  57%|█████▋    | 284/500 [3:02:54<2:06:02, 35.01s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:12:40,353 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  57%|█████▋    | 285/500 [3:03:09<1:44:11, 29.08s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:12:55,591 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  57%|█████▋    | 286/500 [3:03:48<1:53:51, 31.92s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:13:34,143 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  57%|█████▋    | 287/500 [3:04:27<2:00:33, 33.96s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:14:12,861 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  58%|█████▊    | 288/500 [3:05:06<2:05:57, 35.65s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:14:52,451 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  58%|█████▊    | 289/500 [3:05:46<2:09:14, 36.75s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:15:31,767 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  58%|█████▊    | 290/500 [3:05:59<1:44:07, 29.75s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:15:45,182 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  58%|█████▊    | 291/500 [3:06:38<1:52:45, 32.37s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:16:23,670 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  58%|█████▊    | 292/500 [3:07:08<1:50:30, 31.88s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:16:54,395 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  59%|█████▊    | 293/500 [3:07:46<1:56:29, 33.77s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:17:32,575 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  59%|█████▉    | 294/500 [3:08:25<2:01:21, 35.35s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:18:11,615 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  59%|█████▉    | 295/500 [3:09:05<2:04:32, 36.45s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:18:50,637 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  59%|█████▉    | 296/500 [3:09:42<2:05:24, 36.89s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:19:28,534 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  59%|█████▉    | 297/500 [3:10:21<2:06:29, 37.39s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:20:07,098 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  60%|█████▉    | 298/500 [3:11:00<2:07:34, 37.90s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:20:46,178 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  60%|█████▉    | 299/500 [3:11:39<2:08:04, 38.23s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:21:25,193 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  60%|██████    | 300/500 [3:12:17<2:07:10, 38.15s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:22:03,164 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  60%|██████    | 301/500 [3:12:56<2:07:27, 38.43s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:22:42,246 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  60%|██████    | 302/500 [3:13:35<2:07:21, 38.59s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:23:21,213 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  61%|██████    | 303/500 [3:14:14<2:07:09, 38.73s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:24:00,266 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  61%|██████    | 304/500 [3:14:52<2:05:39, 38.47s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:24:38,112 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  61%|██████    | 305/500 [3:15:31<2:05:46, 38.70s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:25:17,360 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  61%|██████    | 306/500 [3:16:10<2:05:29, 38.81s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:25:56,433 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  61%|██████▏   | 307/500 [3:16:50<2:05:26, 39.00s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:26:35,861 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  62%|██████▏   | 308/500 [3:17:28<2:04:07, 38.79s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:27:14,172 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  62%|██████▏   | 309/500 [3:18:07<2:03:47, 38.89s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:27:53,290 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  62%|██████▏   | 310/500 [3:18:46<2:03:15, 38.92s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:28:32,286 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  62%|██████▏   | 311/500 [3:19:25<2:02:25, 38.87s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:29:11,025 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  62%|██████▏   | 312/500 [3:20:04<2:01:38, 38.82s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:29:49,748 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  63%|██████▎   | 313/500 [3:20:43<2:01:06, 38.86s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:30:28,693 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  63%|██████▎   | 314/500 [3:21:20<1:59:12, 38.46s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:31:06,210 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  63%|██████▎   | 315/500 [3:21:58<1:58:28, 38.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:31:44,551 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  63%|██████▎   | 316/500 [3:22:36<1:57:21, 38.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:32:22,471 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  63%|██████▎   | 317/500 [3:23:07<1:49:50, 36.01s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:32:53,215 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  64%|██████▎   | 318/500 [3:23:27<1:34:17, 31.08s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:33:12,799 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  64%|██████▍   | 319/500 [3:24:06<1:41:10, 33.54s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:33:52,060 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  64%|██████▍   | 320/500 [3:24:44<1:44:33, 34.85s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:34:29,983 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  64%|██████▍   | 321/500 [3:25:23<1:47:40, 36.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:35:08,973 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  64%|██████▍   | 322/500 [3:25:37<1:27:50, 29.61s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:35:23,447 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  65%|██████▍   | 323/500 [3:25:54<1:15:47, 25.69s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:35:40,000 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  65%|██████▍   | 324/500 [3:26:33<1:26:48, 29.59s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:36:18,694 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  65%|██████▌   | 325/500 [3:27:11<1:33:57, 32.22s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:36:57,030 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  65%|██████▌   | 326/500 [3:27:50<1:39:41, 34.38s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:37:36,457 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  65%|██████▌   | 327/500 [3:28:21<1:35:59, 33.29s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:38:07,205 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  66%|██████▌   | 328/500 [3:29:00<1:40:35, 35.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:38:46,490 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  66%|██████▌   | 329/500 [3:29:38<1:42:30, 35.97s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:39:24,509 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  66%|██████▌   | 330/500 [3:30:16<1:43:25, 36.50s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:40:02,256 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  66%|██████▌   | 331/500 [3:30:56<1:45:32, 37.47s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:40:41,984 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  66%|██████▋   | 332/500 [3:31:34<1:45:48, 37.79s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:41:20,519 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  67%|██████▋   | 333/500 [3:32:14<1:46:56, 38.42s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:42:00,418 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  67%|██████▋   | 334/500 [3:32:54<1:47:15, 38.77s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:42:40,003 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  67%|██████▋   | 335/500 [3:33:34<1:47:26, 39.07s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:43:19,762 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  67%|██████▋   | 336/500 [3:34:13<1:47:22, 39.28s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:43:59,544 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  67%|██████▋   | 337/500 [3:34:53<1:46:40, 39.27s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:44:38,785 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  68%|██████▊   | 338/500 [3:35:32<1:45:58, 39.25s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:45:17,990 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  68%|██████▊   | 339/500 [3:36:11<1:45:00, 39.14s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:45:56,861 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  68%|██████▊   | 340/500 [3:36:50<1:44:27, 39.17s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:46:36,123 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  68%|██████▊   | 341/500 [3:37:27<1:42:17, 38.60s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:47:13,389 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  68%|██████▊   | 342/500 [3:38:07<1:42:18, 38.85s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:47:52,816 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  69%|██████▊   | 343/500 [3:38:26<1:26:32, 33.08s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:48:12,420 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  69%|██████▉   | 344/500 [3:39:05<1:30:42, 34.89s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:48:51,537 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  69%|██████▉   | 345/500 [3:39:45<1:33:26, 36.17s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:49:30,709 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  69%|██████▉   | 346/500 [3:40:24<1:35:01, 37.02s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:50:09,716 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  69%|██████▉   | 347/500 [3:41:01<1:34:21, 37.00s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:50:46,672 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  70%|██████▉   | 348/500 [3:41:38<1:34:12, 37.19s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:51:24,288 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  70%|██████▉   | 349/500 [3:41:49<1:13:41, 29.28s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:51:35,129 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  70%|███████   | 350/500 [3:42:06<1:04:16, 25.71s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:51:52,490 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  70%|███████   | 351/500 [3:42:44<1:12:49, 29.33s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:52:30,271 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  70%|███████   | 352/500 [3:43:23<1:19:10, 32.10s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:53:08,833 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  71%|███████   | 353/500 [3:44:01<1:23:00, 33.88s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:53:46,878 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  71%|███████   | 354/500 [3:44:39<1:25:51, 35.28s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:54:25,426 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  71%|███████   | 355/500 [3:45:18<1:27:35, 36.24s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:55:03,917 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  71%|███████   | 356/500 [3:45:55<1:27:57, 36.65s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:55:41,521 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  71%|███████▏  | 357/500 [3:46:34<1:28:57, 37.33s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:56:20,425 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  72%|███████▏  | 358/500 [3:47:12<1:28:55, 37.58s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:56:58,577 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  72%|███████▏  | 359/500 [3:47:50<1:28:09, 37.51s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:57:35,942 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  72%|███████▏  | 360/500 [3:48:28<1:28:08, 37.78s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:58:14,335 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  72%|███████▏  | 361/500 [3:49:06<1:27:51, 37.93s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:58:52,609 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  72%|███████▏  | 362/500 [3:49:45<1:27:36, 38.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:59:31,095 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  73%|███████▎  | 363/500 [3:50:06<1:15:15, 32.96s/it][WARNING|tokenization_utils.py:562] 2024-04-17 18:59:52,081 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  73%|███████▎  | 364/500 [3:50:44<1:18:14, 34.52s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:00:30,239 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  73%|███████▎  | 365/500 [3:51:22<1:20:06, 35.60s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:01:08,357 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  73%|███████▎  | 366/500 [3:51:43<1:09:26, 31.09s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:01:28,929 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  73%|███████▎  | 367/500 [3:52:04<1:02:19, 28.12s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:01:50,108 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  74%|███████▎  | 368/500 [3:52:33<1:02:18, 28.33s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:02:18,919 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  74%|███████▍  | 369/500 [3:53:11<1:08:14, 31.26s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:02:57,016 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  74%|███████▍  | 370/500 [3:53:34<1:02:15, 28.74s/it][WARNING|tokenization_utils.py:562] 2024-04-17 19:03:19,874 >> Keyword arguments {'add_special_tokens': False} not recognized.
+Processing querries:  74%|███████▍  | 371/500 [3:53:55<56:41, 26.37s/it]  [WARNING|tokenization_utils.py:562] 2024-04-17 19:03:40,705 >> Keyword arguments {'add_special_tokens': False} not recognized.
+slurmstepd: error: *** JOB 2428558 ON cml32 CANCELLED AT 2024-04-17T19:03:47 ***
