@@ -3,11 +3,11 @@ import json, os
 import  difflib
 
 def cleanup():
-    master = "../Output Analysis/final LLM Annotations/mixtral_results.json"
+    master = "../Output Analysis/final LLM Annotations/gpt4_results.json"
 
     #load original gt
     original = json.load(open(master, 'r'))
-    vis_tasks = json.load(open("./LLM Output/llama3/mixtral_results.json", 'r'))
+    vis_tasks = json.load(open("./LLM Output/GPT/gpt_results.json", 'r'))
     
     for item in original:
         if not item: continue
