@@ -1,5 +1,11 @@
 # Evaluating LLM Semantic Profiling Capabilities
 
+**Abstract**: Automatically generating data visualizations in response to human utterances on datasets necessitates a deep semantic understanding of the utterance, including implicit and explicit references to data attributes, visualization tasks, and necessary data preparation steps. Natural Language Interfaces (NLIs) for data visualization have explored ways to infer such information, yet challenges persist due to inherent uncertainty in human speech. Recent advances in Large Language Models (LLMs) provide an avenue to address these challenges, but their ability to extract the relevant semantic information remains unexplored. In this study, we evaluate four publicly available LLMs (GPT-4, Gemini-Pro, Llama3, and Mixtral), investigating their ability to comprehend utterances even in the presence of uncertainty and identify the relevant data context and visual tasks. Our fndings reveal that LLMs are sensitive to uncertainties in utterances. Despite this sensitivity, they are able to extract the relevant data context. However, LLMs struggle with inferring visualization tasks. Based on these results, we highlight future research directions on using LLMs for visualization generation. Our supplementary materials have been shared in this repository. 
+
+[Paper Link](https://arxiv.org/abs/2407.06129)
+
+## Repo Content
+
 Contains the codebase used for prompting LLMs and performing comparisons with human annotations.We evaluated two proprietary and two open-source LLMs.
 
 **Proprietary LLMs**. We evaluated OpenAI's GPT4-Turbo and Google's Gemini-Pro. GPT4-Turbo has a training data cutoff of December 2023 and Gemini-Pro's training data cutoff is described as "early 2023" [According to Google AI documentation](https://anvilproject.org/guides/content/creating-links). We utilized the Application Programming Interfaces (APIs) for both of these models to generate responses for the 500 utterances in our corpus.
